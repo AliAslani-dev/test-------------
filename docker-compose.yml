@@ -1,0 +1,7 @@
+services:
+  zarhub:
+    image: zarhub:${VERSION}
+    container_name: zarhub-${ENVIRONMENT}
+    ports:
+      - "${EXTERNAL_PORT}:3004"
+    restart: unless-stopped

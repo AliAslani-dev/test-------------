@@ -1,0 +1,92 @@
+stages:
+  - build
+  - deploy
+
+variables:
+  FRONTEND_DEPLOY_BASE: "/data/cicd/frontend/zarhub"
+  VERSION: "v1.0.0"
+
+build-develop:
+  extends: .build-template
+  variables:
+    HOST: "$DEVELOP_HOST"
+    ENVIRONMENT: "develop"
+  rules:
+    - if: $CI_COMMIT_BRANCH == "dev"
+
+deploy-develop:
+  extends: .deploy-template
+  needs:
+    - job: build-develop
+  variables:
+    HOST: "$DEVELOP_HOST"
+    ENVIRONMENT: "develop"
+    EXTERNAL_PORT: "3009"
+  rules:
+    - if: $CI_COMMIT_BRANCH == "dev"
+      when: on_success
+
+build-production:
+  extends: .build-template
+  variables:
+    HOST: "$PRODUCTION_HOST"
+    ENVIRONMENT: "production"
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"
+
+deploy-production:
+  extends: .deploy-template
+  needs:
+    - job: build-production
+  variables:
+    HOST: "$PRODUCTION_HOST"
+    ENVIRONMENT: "production"
+    EXTERNAL_PORT: "3008"
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"
+      when: on_success
+
+.build-template:
+  stage: build
+  image: docker:latest
+  before_script:
+    - |
+      if [ "$ENVIRONMENT" = "develop" ]; then
+        export DOCKER_IMAGE_TAG="develop-${VERSION}"
+      else
+        export DOCKER_IMAGE_TAG="${VERSION}"
+      fi
+    - mkdir -p ~/.ssh
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_rsa
+    - chmod 600 ~/.ssh/id_rsa
+    - ssh-keyscan -H "$HOST" >> ~/.ssh/known_hosts
+  script:
+    - echo "DOCKER_IMAGE_TAG=$DOCKER_IMAGE_TAG" > variables.env
+    - export IMAGE_NAME="zarhub:${DOCKER_IMAGE_TAG}"
+    - docker build -t "$IMAGE_NAME" .
+    - docker save "$IMAGE_NAME" | gzip > zarhub.tar.gz
+    - export DEPLOY_DIR="${FRONTEND_DEPLOY_BASE}_${ENVIRONMENT}/"
+    - ssh "$HOST" "mkdir -p '${DEPLOY_DIR}'"
+    - scp zarhub.tar.gz "$HOST:${DEPLOY_DIR}zarhub.tar.gz"
+    - scp docker-compose.yml "$HOST:${DEPLOY_DIR}docker-compose.yml"
+  artifacts:
+    expire_in: 1 day
+    reports:
+      dotenv: variables.env
+    paths:
+      - variables.env
+
+.deploy-template:
+  stage: deploy
+  before_script:
+    - mkdir -p ~/.ssh
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_rsa
+    - chmod 600 ~/.ssh/id_rsa
+    - ssh-keyscan -H "$HOST" >> ~/.ssh/known_hosts
+  script:
+    - export DEPLOY_DIR="${FRONTEND_DEPLOY_BASE}_${ENVIRONMENT}/"
+    - ssh "$HOST" "cd '${DEPLOY_DIR}' && gunzip -c zarhub.tar.gz | docker load"
+    - ssh "$HOST" "echo 'ENVIRONMENT=${ENVIRONMENT}' > '${DEPLOY_DIR}.env'"
+    - ssh "$HOST" "echo 'VERSION=${DOCKER_IMAGE_TAG}' >> '${DEPLOY_DIR}.env'"
+    - ssh "$HOST" "echo 'EXTERNAL_PORT=${EXTERNAL_PORT}' >> '${DEPLOY_DIR}.env'"
+    - ssh "$HOST" "cd '${DEPLOY_DIR}' && docker compose up -d --remove-orphans"

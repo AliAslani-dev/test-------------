@@ -1,0 +1,752 @@
+{
+    "active": {
+        "Fa": "فعال",
+        "En": "Active",
+        "Tu": "Aktif"
+    },
+    "add_frame": {
+        "Fa": "افزودن قاب",
+        "En": "Add frame",
+        "Tu": "Çerçeve ekle"
+    },
+    "add_selected_frames_count": {
+        "Fa": "افزودن {count} قاب انتخاب‌شده",
+        "En": "Add {count} selected frames",
+        "Tu": "Seçilen {count} çerçeveyi ekle"
+    },
+    "add_to_collection": {
+        "Fa": "افزودن به کالکشن",
+        "En": "Add to collection",
+        "Tu": "Koleksiyona ekle"
+    },
+    "additional_frame_fields": {
+        "Fa": "مشخصات تکمیلی قاب",
+        "En": "Additional frame details",
+        "Tu": "Ek çerçeve bilgileri"
+    },
+    "all": {
+        "Fa": "همه",
+        "En": "All",
+        "Tu": "Tümü"
+    },
+    "all_categories": {
+        "Fa": "همه دسته‌بندی‌ها",
+        "En": "All categories",
+        "Tu": "Tüm kategoriler"
+    },
+    "all_frames_loaded": {
+        "Fa": "همه قاب‌ها نمایش داده شدند.",
+        "En": "All frames have been loaded.",
+        "Tu": "Tüm çerçeveler yüklendi."
+    },
+    "all_gender_categories": {
+        "Fa": "همه جنسیت‌ها",
+        "En": "All gender categories",
+        "Tu": "Tüm cinsiyet kategorileri"
+    },
+    "apply_changes": {
+        "Fa": "اعمال تغییرات",
+        "En": "Apply changes",
+        "Tu": "Değişiklikleri uygula"
+    },
+    "apply_filters": {
+        "Fa": "اعمال فیلترها",
+        "En": "Apply filters",
+        "Tu": "Filtreleri uygula"
+    },
+    "archived": {
+        "Fa": "بایگانی شده",
+        "En": "Archived",
+        "Tu": "Arşivlendi"
+    },
+    "assigned_frame_count": {
+        "Fa": "{count} قاب تخصیص‌یافته",
+        "En": "{count} assigned frames",
+        "Tu": "{count} atanmış çerçeve"
+    },
+    "assigned_frames_hint": {
+        "Fa": "برای افزودن قاب جدید، کارت اول را انتخاب کنید.",
+        "En": "Use the first card to add a new frame.",
+        "Tu": "Yeni çerçeve eklemek için ilk kartı kullanın."
+    },
+    "assigned_frames_title": {
+        "Fa": "قاب‌های این کالکشن",
+        "En": "Frames in this collection",
+        "Tu": "Bu koleksiyondaki çerçeveler"
+    },
+    "available_to_add": {
+        "Fa": "قابل افزودن",
+        "En": "Available to add",
+        "Tu": "Eklenebilir"
+    },
+    "back": {
+        "Fa": "بازگشت",
+        "En": "Back",
+        "Tu": "Geri"
+    },
+    "back_to_collections": {
+        "Fa": "بازگشت به کالکشن‌ها",
+        "En": "Back to collections",
+        "Tu": "Koleksiyonlara dön"
+    },
+    "banner_alt": {
+        "Fa": "بنر {index}",
+        "En": "Banner {index}",
+        "Tu": "Banner {index}"
+    },
+    "banner_edit_hint": {
+        "Fa": "برای تغییر، روی بنر کلیک کنید. هنگام ویرایش باید همه بنرهای فعلی و بنرهای جدید را دوباره انتخاب کنید.",
+        "En": "Click the banner to change it. When editing, reselect all current and new banners.",
+        "Tu": "Değiştirmek için bannera tıklayın. Düzenlerken mevcut ve yeni tüm bannerları yeniden seçin."
+    },
+    "banner_no_gaps": {
+        "Fa": "بنرها باید به‌ترتیب و بدون جای خالی انتخاب شوند.",
+        "En": "Banners must be selected in order without gaps.",
+        "Tu": "Bannerlar boşluk bırakmadan sırayla seçilmelidir."
+    },
+    "banner_number": {
+        "Fa": "بنر {index}",
+        "En": "Banner {index}",
+        "Tu": "Banner {index}"
+    },
+    "banner_preview_alt": {
+        "Fa": "پیش‌نمایش بنر {index}",
+        "En": "Banner {index} preview",
+        "Tu": "Banner {index} önizlemesi"
+    },
+    "banner_ratio_hint": {
+        "Fa": "نسبت پیشنهادی بنر: ۴ به ۱",
+        "En": "Recommended banner ratio: 4:1",
+        "Tu": "Önerilen banner oranı: 4:1"
+    },
+    "banner_reselect_all_current": {
+        "Fa": "برای ویرایش بنرها باید تمام بنرهای فعلی را نیز دوباره انتخاب کنید.",
+        "En": "To edit banners, all current banners must be reselected.",
+        "Tu": "Bannerları düzenlemek için mevcut tüm bannerları yeniden seçmelisiniz."
+    },
+    "banner_reselect_required": {
+        "Fa": "برای ویرایش بنرها باید همه بنرهای فعلی را همراه با بنرهای جدید دوباره انتخاب کنید.",
+        "En": "To edit banners, reselect all current banners together with the new ones.",
+        "Tu": "Bannerları düzenlemek için mevcut bannerları yeni bannerlarla birlikte yeniden seçin."
+    },
+    "banners": {
+        "Fa": "بنرها",
+        "En": "Banners",
+        "Tu": "Bannerlar"
+    },
+    "banners_create_hint": {
+        "Fa": "حداکثر سه بنر انتخاب کنید. نسبت نمایش بنرها ۴ به ۱ است.",
+        "En": "Select up to three banners. Banner display ratio is 4:1.",
+        "Tu": "En fazla üç banner seçin. Banner görüntü oranı 4:1’dir."
+    },
+    "banners_save_error": {
+        "Fa": "ذخیره بنرهای کالکشن انجام نشد.",
+        "En": "Failed to save collection banners.",
+        "Tu": "Koleksiyon bannerları kaydedilemedi."
+    },
+    "banners_saved_success": {
+        "Fa": "بنرهای کالکشن با موفقیت ذخیره شدند.",
+        "En": "Collection banners saved successfully.",
+        "Tu": "Koleksiyon bannerları başarıyla kaydedildi."
+    },
+    "bucket": {
+        "Fa": "گالری",
+        "En": "Gallery",
+        "Tu": "Galeri"
+    },
+    "cancel": {
+        "Fa": "انصراف",
+        "En": "Cancel",
+        "Tu": "İptal"
+    },
+    "carat": {
+        "Fa": "عیار",
+        "En": "Carat",
+        "Tu": "Ayar"
+    },
+    "carat_value": {
+        "Fa": "عیار {value}",
+        "En": "Carat {value}",
+        "Tu": "Ayar {value}"
+    },
+    "categories": {
+        "Fa": "دسته‌بندی‌ها",
+        "En": "Categories",
+        "Tu": "Kategoriler"
+    },
+    "category": {
+        "Fa": "دسته‌بندی",
+        "En": "Category",
+        "Tu": "Kategori"
+    },
+    "category_fallback": {
+        "Fa": "دسته {id}",
+        "En": "Category {id}",
+        "Tu": "Kategori {id}"
+    },
+    "clear_filters": {
+        "Fa": "حذف فیلترها",
+        "En": "Clear filters",
+        "Tu": "Filtreleri temizle"
+    },
+    "clear_selection": {
+        "Fa": "لغو انتخاب",
+        "En": "Clear selection",
+        "Tu": "Seçimi temizle"
+    },
+    "click_to_change_banners": {
+        "Fa": "برای تغییر بنرها کلیک کنید",
+        "En": "Click to change banners",
+        "Tu": "Bannerları değiştirmek için tıklayın"
+    },
+    "close": {
+        "Fa": "بستن",
+        "En": "Close",
+        "Tu": "Kapat"
+    },
+    "collection_name": {
+        "Fa": "نام کالکشن",
+        "En": "Collection name",
+        "Tu": "Koleksiyon adı"
+    },
+    "collection_name_placeholder": {
+        "Fa": "نام کالکشن را وارد کنید",
+        "En": "Enter collection name",
+        "Tu": "Koleksiyon adını girin"
+    },
+    "confirm": {
+        "Fa": "تأیید",
+        "En": "Confirm",
+        "Tu": "Onayla"
+    },
+    "create_collection": {
+        "Fa": "ایجاد کالکشن",
+        "En": "Create collection",
+        "Tu": "Koleksiyon oluştur"
+    },
+    "create_first_tag_hint": {
+        "Fa": "اولین کالکشن را ایجاد کنید و قاب‌ها را به آن اختصاص دهید.",
+        "En": "Create the first collection and assign frames to it.",
+        "Tu": "İlk koleksiyonu oluşturun ve çerçeveleri atayın."
+    },
+    "create_new_collection": {
+        "Fa": "ایجاد کالکشن جدید",
+        "En": "Create new collection",
+        "Tu": "Yeni koleksiyon oluştur"
+    },
+    "disable": {
+        "Fa": "غیرفعال کردن",
+        "En": "Disable",
+        "Tu": "Devre dışı bırak"
+    },
+    "disable_collection": {
+        "Fa": "غیرفعال کردن کالکشن",
+        "En": "Disable collection",
+        "Tu": "Koleksiyonu devre dışı bırak"
+    },
+    "disabled": {
+        "Fa": "غیرفعال",
+        "En": "Disabled",
+        "Tu": "Devre dışı"
+    },
+    "discard_changes": {
+        "Fa": "لغو تغییرات",
+        "En": "Discard changes",
+        "Tu": "Değişiklikleri iptal et"
+    },
+    "discount": {
+        "Fa": "تخفیف",
+        "En": "Discount",
+        "Tu": "İndirim"
+    },
+    "discount_percent": {
+        "Fa": "{value}٪ تخفیف",
+        "En": "{value}% discount",
+        "Tu": "%{value} indirim"
+    },
+    "edit_banners_frames": {
+        "Fa": "ویرایش بنرها و قاب‌ها",
+        "En": "Edit banners and frames",
+        "Tu": "Bannerları ve çerçeveleri düzenle"
+    },
+    "empty_frame": {
+        "Fa": "قاب خالی",
+        "En": "Empty frame",
+        "Tu": "Boş çerçeve"
+    },
+    "enable": {
+        "Fa": "فعال کردن",
+        "En": "Enable",
+        "Tu": "Etkinleştir"
+    },
+    "enable_collection": {
+        "Fa": "فعال کردن کالکشن",
+        "En": "Enable collection",
+        "Tu": "Koleksiyonu etkinleştir"
+    },
+    "enabled": {
+        "Fa": "فعال",
+        "En": "Enabled",
+        "Tu": "Etkin"
+    },
+    "enter_collection_name": {
+        "Fa": "نام کالکشن را وارد کنید.",
+        "En": "Enter the collection name.",
+        "Tu": "Koleksiyon adını girin."
+    },
+    "error_load_categories": {
+        "Fa": "دریافت دسته‌بندی‌ها با خطا مواجه شد.",
+        "En": "Failed to load categories.",
+        "Tu": "Kategoriler yüklenemedi."
+    },
+    "error_load_filter_options": {
+        "Fa": "دریافت گزینه‌های فیلتر با خطا مواجه شد.",
+        "En": "Failed to load filter options.",
+        "Tu": "Filtre seçenekleri yüklenemedi."
+    },
+    "error_load_frames": {
+        "Fa": "دریافت قاب‌ها با خطا مواجه شد.",
+        "En": "Failed to load frames.",
+        "Tu": "Çerçeveler yüklenemedi."
+    },
+    "error_load_tag": {
+        "Fa": "دریافت اطلاعات کالکشن با خطا مواجه شد.",
+        "En": "Failed to load collection details.",
+        "Tu": "Koleksiyon bilgileri yüklenemedi."
+    },
+    "error_load_tags": {
+        "Fa": "دریافت کالکشن‌ها با خطا مواجه شد.",
+        "En": "Failed to load collections.",
+        "Tu": "Koleksiyonlar yüklenemedi."
+    },
+    "extra_price": {
+        "Fa": "قیمت اضافات",
+        "En": "Extra price",
+        "Tu": "Ek fiyat"
+    },
+    "extra_wage": {
+        "Fa": "اجرت اضافات",
+        "En": "Extra wage",
+        "Tu": "Ek işçilik"
+    },
+    "filters_lazy_hint": {
+        "Fa": "فیلترها روی API اعمال می‌شوند و صفحات بعدی هنگام اسکرول به‌صورت خودکار دریافت خواهند شد.",
+        "En": "Filters are applied to the API and later pages load automatically while scrolling.",
+        "Tu": "Filtreler API’ye uygulanır ve sonraki sayfalar kaydırırken otomatik yüklenir."
+    },
+    "frame_alt": {
+        "Fa": "قاب",
+        "En": "Frame",
+        "Tu": "Çerçeve"
+    },
+    "frame_alt_with_model": {
+        "Fa": "قاب {model}",
+        "En": "Frame {model}",
+        "Tu": "Çerçeve {model}"
+    },
+    "frame_count": {
+        "Fa": "{count} قاب",
+        "En": "{count} frames",
+        "Tu": "{count} çerçeve"
+    },
+    "frame_details": {
+        "Fa": "جزئیات قاب",
+        "En": "Frame details",
+        "Tu": "Çerçeve detayları"
+    },
+    "frame_image_alt": {
+        "Fa": "تصویر قاب {index}",
+        "En": "Frame image {index}",
+        "Tu": "Çerçeve görseli {index}"
+    },
+    "frame_products": {
+        "Fa": "محصولات قاب",
+        "En": "Frame products",
+        "Tu": "Çerçeve ürünleri"
+    },
+    "frame_products_hint": {
+        "Fa": "محصولات و تنوع‌های ثبت‌شده برای این قاب",
+        "En": "Products and variants registered for this frame",
+        "Tu": "Bu çerçeve için kayıtlı ürünler ve varyantlar"
+    },
+    "frame_remove_error": {
+        "Fa": "حذف قاب از کالکشن انجام نشد.",
+        "En": "Failed to remove frame from collection.",
+        "Tu": "Çerçeve koleksiyondan kaldırılamadı."
+    },
+    "frame_removed_success": {
+        "Fa": "قاب از کالکشن حذف شد.",
+        "En": "Frame removed from collection.",
+        "Tu": "Çerçeve koleksiyondan kaldırıldı."
+    },
+    "frame_second_image_alt": {
+        "Fa": "{model} - تصویر دوم",
+        "En": "{model} - second image",
+        "Tu": "{model} - ikinci görsel"
+    },
+    "frame_total_weight": {
+        "Fa": "وزن کل قاب:",
+        "En": "Frame total weight:",
+        "Tu": "Çerçeve toplam ağırlığı:"
+    },
+    "frames_assign_error": {
+        "Fa": "افزودن قاب‌ها به کالکشن انجام نشد.",
+        "En": "Failed to add frames to collection.",
+        "Tu": "Çerçeveler koleksiyona eklenemedi."
+    },
+    "frames_assigned_success": {
+        "Fa": "قاب‌های انتخاب‌شده به کالکشن اضافه شدند.",
+        "En": "Selected frames added to collection.",
+        "Tu": "Seçilen çerçeveler koleksiyona eklendi."
+    },
+    "frames_found": {
+        "Fa": "{count} قاب پیدا شد",
+        "En": "{count} frames found",
+        "Tu": "{count} çerçeve bulundu"
+    },
+    "gender_categories": {
+        "Fa": "جنسیت",
+        "En": "Gender categories",
+        "Tu": "Cinsiyet kategorileri"
+    },
+    "go_to_frame_search": {
+        "Fa": "رفتن به بخش جستجو و افزودن قاب",
+        "En": "Go to frame search and add section",
+        "Tu": "Çerçeve arama ve ekleme bölümüne git"
+    },
+    "gram": {
+        "Fa": "گرم",
+        "En": "g",
+        "Tu": "gram"
+    },
+    "in_other_collections": {
+        "Fa": "در {count} کالکشن دیگر",
+        "En": "In {count} other collections",
+        "Tu": "Diğer {count} koleksiyonda"
+    },
+    "in_this_collection": {
+        "Fa": "موجود در کالکشن",
+        "En": "In this collection",
+        "Tu": "Bu koleksiyonda"
+    },
+    "load_more_products": {
+        "Fa": "نمایش محصولات بیشتر",
+        "En": "Load more products",
+        "Tu": "Daha fazla ürün göster"
+    },
+    "loading_more_frames": {
+        "Fa": "در حال دریافت قاب‌های بیشتر...",
+        "En": "Loading more frames...",
+        "Tu": "Daha fazla çerçeve yükleniyor..."
+    },
+    "manage_collection": {
+        "Fa": "مدیریت کالکشن",
+        "En": "Manage collection",
+        "Tu": "Koleksiyonu yönet"
+    },
+    "max_three_banners": {
+        "Fa": "حداکثر سه بنر قابل انتخاب است.",
+        "En": "You can select up to three banners.",
+        "Tu": "En fazla üç banner seçebilirsiniz."
+    },
+    "max_weight": {
+        "Fa": "حداکثر وزن",
+        "En": "Maximum weight",
+        "Tu": "Maksimum ağırlık"
+    },
+    "min_weight": {
+        "Fa": "حداقل وزن",
+        "En": "Minimum weight",
+        "Tu": "Minimum ağırlık"
+    },
+    "model": {
+        "Fa": "مدل",
+        "En": "Model",
+        "Tu": "Model"
+    },
+    "model_search_placeholder": {
+        "Fa": "جستجو بر اساس مدل",
+        "En": "Search by model",
+        "Tu": "Modele göre ara"
+    },
+    "move_down": {
+        "Fa": "انتقال به پایین",
+        "En": "Move down",
+        "Tu": "Aşağı taşı"
+    },
+    "move_up": {
+        "Fa": "انتقال به بالا",
+        "En": "Move up",
+        "Tu": "Yukarı taşı"
+    },
+    "new_banners_selected": {
+        "Fa": "بنرهای جدید انتخاب شدند",
+        "En": "New banners selected",
+        "Tu": "Yeni bannerlar seçildi"
+    },
+    "new_tag_position_hint": {
+        "Fa": "کالکشن جدید به‌صورت خودکار در آخر ترتیب فعلی قرار می‌گیرد؛ بعداً با فلش‌های بالا و پایین می‌توانید ترتیب را تغییر دهید.",
+        "En": "The new collection is added to the end automatically; you can reorder it later with the up/down controls.",
+        "Tu": "Yeni koleksiyon otomatik olarak sona eklenir; daha sonra yukarı/aşağı kontrolleriyle sıralayabilirsiniz."
+    },
+    "next_slide": {
+        "Fa": "اسلاید بعدی",
+        "En": "Next slide",
+        "Tu": "Sonraki slayt"
+    },
+    "no_banner": {
+        "Fa": "بنری برای این کالکشن ثبت نشده است",
+        "En": "No banner has been added to this collection.",
+        "Tu": "Bu koleksiyona banner eklenmemiş."
+    },
+    "no_frames_with_filters": {
+        "Fa": "قابی با این فیلترها پیدا نشد",
+        "En": "No frames match these filters.",
+        "Tu": "Bu filtrelerle eşleşen çerçeve bulunamadı."
+    },
+    "no_image": {
+        "Fa": "بدون تصویر",
+        "En": "No image",
+        "Tu": "Görsel yok"
+    },
+    "no_new_banner_selected": {
+        "Fa": "بنر جدیدی برای ذخیره انتخاب نشده است.",
+        "En": "No new banner is selected to save.",
+        "Tu": "Kaydedilecek yeni banner seçilmedi."
+    },
+    "no_product_variants": {
+        "Fa": "برای این محصول تنوعی ثبت نشده است.",
+        "En": "No variants are registered for this product.",
+        "Tu": "Bu ürün için varyant kayıtlı değil."
+    },
+    "no_products_for_frame": {
+        "Fa": "محصولی برای این قاب ثبت نشده است.",
+        "En": "No products are registered for this frame.",
+        "Tu": "Bu çerçeve için ürün kayıtlı değil."
+    },
+    "no_tags_for_category": {
+        "Fa": "کالکشنی برای این دسته‌بندی وجود ندارد",
+        "En": "There are no collections for this category.",
+        "Tu": "Bu kategori için koleksiyon yok."
+    },
+    "not_selected": {
+        "Fa": "انتخاب نشده",
+        "En": "Not selected",
+        "Tu": "Seçilmedi"
+    },
+    "order_changed": {
+        "Fa": "ترتیب کالکشن‌ها تغییر کرده است",
+        "En": "Collection order has changed.",
+        "Tu": "Koleksiyon sırası değişti."
+    },
+    "order_save_error": {
+        "Fa": "ذخیره ترتیب کالکشن‌ها انجام نشد.",
+        "En": "Failed to save collection order.",
+        "Tu": "Koleksiyon sırası kaydedilemedi."
+    },
+    "order_saved_success": {
+        "Fa": "ترتیب کالکشن‌ها با موفقیت ذخیره شد.",
+        "En": "Collection order saved successfully.",
+        "Tu": "Koleksiyon sırası başarıyla kaydedildi."
+    },
+    "percent": {
+        "Fa": "درصد",
+        "En": "%",
+        "Tu": "yüzde"
+    },
+    "percent_value": {
+        "Fa": "{value} درصد",
+        "En": "{value}%",
+        "Tu": "%{value}"
+    },
+    "position_of": {
+        "Fa": "جایگاه {position} از {total}",
+        "En": "Position {position} of {total}",
+        "Tu": "{total} içinde {position}. sıra"
+    },
+    "previous_slide": {
+        "Fa": "اسلاید قبلی",
+        "En": "Previous slide",
+        "Tu": "Önceki slayt"
+    },
+    "product_count": {
+        "Fa": "{count} محصول",
+        "En": "{count} products",
+        "Tu": "{count} ürün"
+    },
+    "product_image_alt": {
+        "Fa": "تصویر محصول {index}",
+        "En": "Product image {index}",
+        "Tu": "Ürün görseli {index}"
+    },
+    "product_variants": {
+        "Fa": "تنوع‌های محصول",
+        "En": "Product variants",
+        "Tu": "Ürün varyantları"
+    },
+    "products_load_error": {
+        "Fa": "دریافت محصولات این قاب انجام نشد.",
+        "En": "Failed to load products for this frame.",
+        "Tu": "Bu çerçevenin ürünleri yüklenemedi."
+    },
+    "range_from": {
+        "Fa": "تنوع از",
+        "En": "Range from",
+        "Tu": "Aralık başlangıcı"
+    },
+    "range_summary": {
+        "Fa": "{from} تا {to} {unit}",
+        "En": "{from} to {to} {unit}",
+        "Tu": "{from} - {to} {unit}"
+    },
+    "range_to": {
+        "Fa": "تا",
+        "En": "to",
+        "Tu": "ile"
+    },
+    "remove_frame_confirm": {
+        "Fa": "آیا مطمئن هستید که قاب «{frame}» از کالکشن «{tag}» حذف شود؟",
+        "En": "Remove frame “{frame}” from collection “{tag}”? The frame itself will not be deleted; only this relationship will be removed.",
+        "Tu": "“{frame}” çerçevesi “{tag}” koleksiyonundan kaldırılsın mı? Çerçeve silinmez; yalnızca bu ilişki kaldırılır."
+    },
+    "remove_frame_title": {
+        "Fa": "حذف قاب از کالکشن",
+        "En": "Remove frame from collection",
+        "Tu": "Çerçeveyi koleksiyondan kaldır"
+    },
+    "remove_from_collection": {
+        "Fa": "حذف از کالکشن",
+        "En": "Remove from collection",
+        "Tu": "Koleksiyondan kaldır"
+    },
+    "retry": {
+        "Fa": "تلاش مجدد",
+        "En": "Retry",
+        "Tu": "Tekrar dene"
+    },
+    "save_banners": {
+        "Fa": "ذخیره بنرها",
+        "En": "Save banners",
+        "Tu": "Bannerları kaydet"
+    },
+    "scroll_for_more_frames": {
+        "Fa": "برای نمایش قاب‌های بیشتر اسکرول کنید",
+        "En": "Scroll to load more frames",
+        "Tu": "Daha fazla çerçeve için kaydırın"
+    },
+    "search_add_frames": {
+        "Fa": "جستجو و افزودن قاب",
+        "En": "Search and add frames",
+        "Tu": "Çerçeve ara ve ekle"
+    },
+    "select_category_first": {
+        "Fa": "ابتدا یک دسته‌بندی انتخاب کنید.",
+        "En": "Select a category first.",
+        "Tu": "Önce bir kategori seçin."
+    },
+    "select_tag_banners": {
+        "Fa": "انتخاب بنرهای کالکشن",
+        "En": "Select collection banners",
+        "Tu": "Koleksiyon bannerlarını seç"
+    },
+    "selected_frames_count": {
+        "Fa": "{count} قاب انتخاب شده",
+        "En": "{count} frames selected",
+        "Tu": "{count} çerçeve seçildi"
+    },
+    "seller_id_unavailable": {
+        "Fa": "شناسه فروشنده در دسترس نیست.",
+        "En": "Seller ID is unavailable.",
+        "Tu": "Satıcı kimliği kullanılamıyor."
+    },
+    "stock_count": {
+        "Fa": "موجودی {count}",
+        "En": "Stock {count}",
+        "Tu": "Stok {count}"
+    },
+    "tag_create_error": {
+        "Fa": "ایجاد کالکشن با خطا مواجه شد.",
+        "En": "Failed to create collection.",
+        "Tu": "Koleksiyon oluşturulamadı."
+    },
+    "tag_created_success": {
+        "Fa": "کالکشن با موفقیت ایجاد شد.",
+        "En": "Collection created successfully.",
+        "Tu": "Koleksiyon başarıyla oluşturuldu."
+    },
+    "tag_disabled_success": {
+        "Fa": "کالکشن غیرفعال شد.",
+        "En": "Collection disabled.",
+        "Tu": "Koleksiyon devre dışı bırakıldı."
+    },
+    "tag_enabled_success": {
+        "Fa": "کالکشن فعال شد.",
+        "En": "Collection enabled.",
+        "Tu": "Koleksiyon etkinleştirildi."
+    },
+    "tag_not_found": {
+        "Fa": "کالکشن پیدا نشد",
+        "En": "Collection not found",
+        "Tu": "Koleksiyon bulunamadı"
+    },
+    "tags": {
+        "Fa": "کالکشن‌ها",
+        "En": "Collections",
+        "Tu": "Koleksiyonlar"
+    },
+    "tags_subtitle": {
+        "Fa": "ساخت کالکشن، مدیریت ترتیب نمایش، بنرها و قاب‌های تخصیص‌یافته",
+        "En": "Create collections and manage ordering, banners, and assigned frames.",
+        "Tu": "Koleksiyon oluşturun; sıralama, bannerlar ve atanmış çerçeveleri yönetin."
+    },
+    "toggle_collection_confirm": {
+        "Fa": "آیا از {action} کالکشن «{name}» مطمئن هستید؟",
+        "En": "Are you sure you want to {action} collection “{name}”?",
+        "Tu": "“{name}” koleksiyonunu {action} istediğinizden emin misiniz?"
+    },
+    "toggle_status_error": {
+        "Fa": "تغییر وضعیت کالکشن انجام نشد.",
+        "En": "Failed to change collection status.",
+        "Tu": "Koleksiyon durumu değiştirilemedi."
+    },
+    "total_weight": {
+        "Fa": "وزن کل",
+        "En": "Total weight",
+        "Tu": "Toplam ağırlık"
+    },
+    "variant_count": {
+        "Fa": "{count} تنوع",
+        "En": "{count} variants",
+        "Tu": "{count} varyant"
+    },
+    "variant_stock": {
+        "Fa": "موجودی",
+        "En": "Stock",
+        "Tu": "Stok"
+    },
+    "variant_weight": {
+        "Fa": "وزن",
+        "En": "Weight",
+        "Tu": "Ağırlık"
+    },
+    "wage_profit": {
+        "Fa": "اجرت و سود",
+        "En": "Wage and profit",
+        "Tu": "İşçilik ve kâr"
+    },
+    "wage_profit_discount": {
+        "Fa": "تخفیف اجرت و سود",
+        "En": "Wage and profit discount",
+        "Tu": "İşçilik ve kâr indirimi"
+    },
+    "weight_value": {
+        "Fa": "{value} گرم",
+        "En": "{value} g",
+        "Tu": "{value} gram"
+    },
+    "without_model": {
+        "Fa": "بدون مدل",
+        "En": "No model",
+        "Tu": "Model yok"
+    }
+}

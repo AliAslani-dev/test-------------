@@ -1,0 +1,87 @@
+{
+    "zar_hub": {
+        "Fa": "زرهاب",
+        "En": "Jewel AI",
+        "Tu": "Jewel AI"
+    },
+    "admin": {
+        "Fa": "ادمین",
+        "En": "Admin",
+        "Tu": "Admin"
+    },
+    "gold_wholesaler": {
+        "Fa": "بنکدار",
+        "En": "Gold Wholesaler",
+        "Tu": "Altın Toptancısı"
+    },
+    "banking-seller": {
+        "Fa": "فروشنده زرهاب",
+        "En": "Seller",
+        "Tu": "Satış"
+    },
+    "accesses": {
+        "Fa": "دسترسی‌ها",
+        "En": "Accesses",
+        "Tu": "Erişimler"
+    },
+    "image_uploader": {
+        "drop_your_image_here_or_browse": {
+            "Fa": "تصویر خود را اینجا رها یا انتخاب کنید",
+            "En": "Drop your image here or browse",
+            "Tu": "Resminizi buraya bırakın veya seçin"
+        },
+        "supported_formats": {
+            "Fa": "پشتیبانی از: JPG، JPEG2000، PNG",
+            "En": "Supported formats: JPG, JPEG2000, PNG",
+            "Tu": "Desteklenen formatlar: JPG, JPEG2000, PNG"
+        },
+        "supported_size": {
+            "Fa": "حجم هر فایل: حداکثر ۱ مگابایت",
+            "En": "Max file size: 1 MB",
+            "Tu": "Maksimum dosya boyutu: 1 MB"
+        },
+        "supported_count": {
+            "Fa": "تعداد فایل: حداکثر ۵ فایل",
+            "En": "Max file count: 5 files",
+            "Tu": "Maksimum dosya sayısı: 5 dosya"
+        },
+        "size_limit": {
+            "Fa": "سایز فایل انتخابی حداکثر یک مگابایت باشد.",
+            "En": "The selected file size must be maximum 1 MB.",
+            "Tu": "Seçilen dosya boyutu en fazla 1 MB olmalıdır."
+        },
+        "https_request": {
+            "Fa": "برای نمایش زنده دوربین نیاز به HTTPS است. دوربین سیستم باز می‌شود.",
+            "En": "HTTPS is required for live camera display. System camera will open.",
+            "Tu": "Canlı kamera görüntüsü için HTTPS gereklidir. Sistem kamerası açılacak."
+        },
+        "camera_access": {
+            "Fa": "دسترسی دوربین ممکن نیست. دوربین سیستم باز می‌شود.",
+            "En": "Camera access is not possible. System camera will open.",
+            "Tu": "Kameraya erişilemiyor. Sistem kamerası açılacak."
+        },
+        "camera": {
+            "Fa": "دوربین",
+            "En": "Camera",
+            "Tu": "Kamera"
+        },
+        "camera_switch": {
+            "Fa": "تغییر دوربین",
+            "En": "Switch Camera",
+            "Tu": "Kamerayı Değiştir"
+        },
+        "capture": {
+            "Fa": "گرفتن عکس",
+            "En": "Capture Photo",
+            "Tu": "Fotoğraf Çek"
+        }
+    },
+    "free_text_chip_selector": {
+        "placeholder": {
+            "Fa": "جستجو ...",
+            "En": "Search...",
+            "Tu": "Ara..."
+        }
+    }
+    
+}

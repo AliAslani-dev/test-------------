@@ -1,0 +1,34 @@
+{
+  "tab_title": {
+    "Fa": "حسابداری",
+    "En": "Accounting",
+    "Tu": "Muhasebe"
+  },
+  "asset_credit": {
+    "Fa": "طلب طلایی (گرم)",
+    "En": "Gold Credit (g)",
+    "Tu": "Altın Kredisi (g)"
+  },
+  "rial_credit": {
+    "Fa": "طلب ریالی",
+    "En": "Rial Credit",
+    "Tu": "Riyal Kredisi"
+  },
+  "admin_select_user": {
+    "Fa": "برای مشاهده حسابداری از جدول درخواست‌ها یک گالری را انتخاب کنید.",
+    "En": "To view accounting, select a gallery from the requests table.",
+    "Tu": "Muhasebeyi görüntülemek için talepler tablosundan bir galeri seçin."
+  },
+  "table": {
+    "buckets_table": {
+      "Fa": "جدول سفارش‌ها",
+      "En": "Orders Table",
+      "Tu": "Siparişler Tablosu"
+    },
+    "no_data_to_display": {
+      "Fa": "داده‌ای جهت نمایش وجود ندارد",
+      "En": "No data available to display",
+      "Tu": "Görüntülenecek veri yok"
+    }
+  }
+}

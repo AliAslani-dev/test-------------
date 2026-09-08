@@ -1,0 +1,359 @@
+{
+  "tab_title": {
+    "Fa": "کالا‌ها",
+    "En": "Products",
+    "Tu": "Ürünler"
+  },
+  "remove_all_filters": {
+    "Fa": "حذف فیلتر‌ها",
+    "En": "Remove all filters",
+    "Tu": "Tüm filtreleri temizle"
+  },
+  "filters": {
+    "Fa": "فیلتر‌های جستجو",
+    "En": "Search Filters",
+    "Tu": "Arama Filtreleri"
+  },
+  "add_product": {
+    "Fa": "افزودن کالا",
+    "En": "Add Product",
+    "Tu": "Ürün Ekle"
+  },
+  "refresh": {
+    "Fa": "بارگیری مجدد",
+    "En": "Reload",
+    "Tu": "Yeniden Yükle"
+  },
+  "add_new_variant": {
+    "Fa": "افزودن تنوع",
+    "En": "Add New Variant",
+    "Tu": "Yeni Varyasyon Ekle"
+  },
+  "save_changes": {
+    "Fa": "ذخیره تغییرات",
+    "En": "Save Changes",
+    "Tu": "Değişiklikleri Kaydet"
+  },
+  "success_notification": {
+    "Fa": "کالا با موفقیت ویرایش شد.",
+    "En": "Product edited successfully.",
+    "Tu": "Ürün başarıyla düzenlendi."
+  },
+  "error_notification": {
+    "Fa": "خطا در ویرایش کالا",
+    "En": "Error editing product",
+    "Tu": "Ürün düzenlenirken hata oluştu"
+  },
+  "filter": {
+    "filter_title": {
+      "Fa": "فیلتر جستجو",
+      "En": "Search Filter",
+      "Tu": "Arama Filtresi"
+    },
+    "placeholder": {
+      "Fa": "نام کالا ...",
+      "En": "Product name...",
+      "Tu": "Ürün adı..."
+    }
+  },
+  "table": {
+    "products_table": {
+      "Fa": "جدول کالا‌ها",
+      "En": "Products Table",
+      "Tu": "Ürün Tablosu"
+    },
+    "no_data_to_display": {
+      "Fa": "داده‌ای جهت نمایش وجود ندارد",
+      "En": "No data to display",
+      "Tu": "Görüntülenecek veri yok"
+    }
+  },
+  "select": {
+    "title": {
+      "Fa": "کالا",
+      "En": "Product",
+      "Tu": "Ürün"
+    },
+    "placeholder": {
+      "Fa": "جستجو با نام یا شناسه کالا ...",
+      "En": "Search by product name or ID...",
+      "Tu": "Ürün adı veya kimliği ile ara..."
+    },
+    "carat": {
+      "title": {
+        "Fa": "عیار کالا",
+        "En": "Product Karat",
+        "Tu": "Ürün Ayarı"
+      },
+      "placeholder": {
+        "Fa": "جستجو با مقدار عیار کالا ...",
+        "En": "Search by karat value...",
+        "Tu": "Ayar değeri ile ara..."
+      }
+    }
+  },
+  "frame_info": {
+    "image_doesnt_attached": {
+      "Fa": "تصویری ثبت نشده است",
+      "En": "No image attached",
+      "Tu": "Görsel eklenmedi"
+    },
+    "archived": {
+      "Fa": "آرشیو شده",
+      "En": "Archived",
+      "Tu": "Arşivlendi"
+    },
+    "min_weight": {
+      "Fa": "حداقل وزن",
+      "En": "Min Weight",
+      "Tu": "Min Ağırlık"
+    },
+    "max_weight": {
+      "Fa": "بیشترین وزن",
+      "En": "Max Weight",
+      "Tu": "Maks Ağırlık"
+    },
+    "total_weight": {
+      "Fa": "وزن کل",
+      "En": "Total Weight",
+      "Tu": "Toplam Ağırlık"
+    },
+    "wage": {
+      "Fa": "اجرت",
+      "En": "Labor Fee",
+      "Tu": "İşçilik"
+    },
+    "profit": {
+      "Fa": "سود",
+      "En": "Profit",
+      "Tu": "Kâr"
+    },
+    "discount": {
+      "Fa": "تخفیف",
+      "En": "Discount",
+      "Tu": "İndirim"
+    },
+    "additional_fields": {
+      "Fa": "فیلدهای تکمیلی",
+      "En": "Additional Specifications",
+      "Tu": "Ek Özellikler"
+    },
+    "show_more": {
+      "Fa": "نمایش بیشتر",
+      "En": "Show more",
+      "Tu": "Daha fazla göster"
+    },
+    "show_less": {
+      "Fa": "نمایش کمتر",
+      "En": "Show less",
+      "Tu": "Daha az göster"
+    },
+    "gram": {
+      "Fa": "گرم",
+      "En": "g",
+      "Tu": "g"
+    }
+  },
+  "dialog": {
+    "add": {
+      "title": {
+        "Fa": "افزودن کالا",
+        "En": "Add Product",
+        "Tu": "Ürün Ekle"
+      },
+      "button": {
+        "Fa": "افزودن",
+        "En": "Add",
+        "Tu": "Ekle"
+      },
+      "success_notification": {
+        "Fa": "کالا با موفقیت اضافه شد.",
+        "En": "Product added successfully.",
+        "Tu": "Ürün başarıyla eklendi."
+      },
+      "error_notification": {
+        "Fa": "خطا در افزودن کالا",
+        "En": "Error adding product",
+        "Tu": "Ürün eklenirken hata oluştu"
+      }
+    },
+    "edit": {
+      "title": {
+        "Fa": "ویرایش کالا",
+        "En": "Edit Product",
+        "Tu": "Ürünü Düzenle"
+      },
+      "button": {
+        "Fa": "ویرایش",
+        "En": "Edit",
+        "Tu": "Düzenle"
+      },
+      "success_notification": {
+        "Fa": "کالا با موفقیت ویرایش شد.",
+        "En": "Product edited successfully.",
+        "Tu": "Ürün başarıyla düzenlendi."
+      },
+      "no_changes_notification": {
+        "Fa": "تغییری در کالا رخ نداده است.",
+        "En": "No changes made to the product.",
+        "Tu": "Üründe herhangi bir değişiklik yapılmadı."
+      },
+      "error_notification": {
+        "Fa": "خطا در ویرایش کالا",
+        "En": "Error editing product",
+        "Tu": "Ürün düzenlenirken hata oluştu"
+      }
+    },
+    "view": {
+      "title": {
+        "Fa": "مشاهده کالا",
+        "En": "View Product",
+        "Tu": "Ürünü Görüntüle"
+      }
+    },
+    "variant": {
+      "weight": {
+        "Fa": "وزن",
+        "En": "Weight",
+        "Tu": "Ağırlık"
+      },
+      "of_pure_gold": {
+        "Fa": "خالص طلا",
+        "En": "Pure Gold",
+        "Tu": "Saf Altın"
+      },
+      "gram": {
+        "Fa": "گرم",
+        "En": "g",
+        "Tu": "g"
+      },
+      "product_variant_number": {
+        "Fa": "تنوع محصول شماره",
+        "En": "Product Variant No.",
+        "Tu": "Ürün Varyasyon No."
+      },
+      "remove_variant": {
+        "Fa": "حذف تنوع",
+        "En": "Remove Variant",
+        "Tu": "Varyasyonu Kaldır"
+      },
+      "stock": {
+        "Fa": "تعداد",
+        "En": "Stock",
+        "Tu": "Stok"
+      },
+      "extra_wage": {
+        "Fa": "اجرت اضافات (ریال)",
+        "En": "Extras Labor Fee (Dollar)",
+        "Tu": "Ekstra İşçilik (Dolar)"
+      },
+      "extra_price": {
+        "Fa": "قیمت اضافات (ریال)",
+        "En": "Extras Price (Dollar)",
+        "Tu": "Ekstra Fiyat (Dolar)"
+      }
+    },
+    "model": {
+      "Fa": "نام کالا",
+      "En": "Product Name",
+      "Tu": "Ürün Adı"
+    },
+    "wage": {
+      "Fa": "اجرت (درصد)",
+      "En": "Labor Fee (%)",
+      "Tu": "İşçilik (%)"
+    },
+    "profit": {
+      "Fa": "سود (درصد)",
+      "En": "Profit (%)",
+      "Tu": "Kâr (%)"
+    },
+    "discount": {
+      "Fa": "تخفیف (درصد)",
+      "En": "Discount (%)",
+      "Tu": "İndirim (%)"
+    },
+    "carat": {
+      "Fa": "عیار کالا",
+      "En": "Product Karat",
+      "Tu": "Ürün Ayarı"
+    },
+    "gender_category": {
+      "Fa": "جنسیت",
+      "En": "Gender",
+      "Tu": "Cinsiyet"
+    },
+    "id": {
+      "Fa": "شناسه",
+      "En": "ID",
+      "Tu": "ID"
+    },
+    "variant_title": {
+      "Fa": "تنوع محصول",
+      "En": "Product Variant",
+      "Tu": "Ürün Varyasyonu"
+    },
+    "variant_no": {
+      "Fa": "تنوع شماره",
+      "En": "Variant No.",
+      "Tu": "Varyasyon No."
+    },
+    "enter_the_weight": {
+      "Fa": "وزن را وارد کنید (صفر نباشد)",
+      "En": "Enter the weight (cannot be zero)",
+      "Tu": "Ağırlığı girin (sıfır olamaz)"
+    },
+    "same_weight_in_rows": {
+      "Fa": "وزن‌های تکراری در ردیف‌های",
+      "En": "Duplicate weights in rows",
+      "Tu": "Satırlarda yinelenen ağırlıklar"
+    },
+    "is_not_allowed": {
+      "Fa": "مجاز نیست",
+      "En": "is not allowed",
+      "Tu": "izin verilmiyor"
+    },
+    "invalid_product_name": {
+      "Fa": "نام کالا معتبر نیست.",
+      "En": "Invalid product name.",
+      "Tu": "Geçersiz ürün adı."
+    },
+    "select_at_least_one_image": {
+      "Fa": "حداقل یک تصویر انتخاب کنید.",
+      "En": "Select at least one image.",
+      "Tu": "En az bir görsel seçin."
+    },
+    "product_created_but_no_product_id_received": {
+      "Fa": "ساخت محصول انجام شد اما شناسه محصول دریافت نشد.",
+      "En": "Product created, but no product ID was received.",
+      "Tu": "Ürün oluşturuldu ancak ürün ID'si alınamadı."
+    },
+    "add_variant": {
+      "Fa": "افزودن تنوع",
+      "En": "Add Variant",
+      "Tu": "Varyasyon Ekle"
+    },
+    "image_uploader_suported_count_helper_text": {
+      "Fa": "تعداد فایل: حداکثر ۵ فایل",
+      "En": "Max file count: 5 files",
+      "Tu": "Maksimum dosya sayısı: 5 dosya"
+    },
+    "image_uploader_supported_size_text": {
+      "Fa": "حجم هر فایل: حداکثر ۵ مگابایت",
+      "En": "Max file size: 5 MB",
+      "Tu": "Maksimum dosya boyutu: 5 MB"
+    },
+    "image_uploader_max_file_size_bytes_error_message": {
+      "Fa": "سایز فایل انتخابی حداکثر ۵ مگابایت باشد.",
+      "En": "The selected file size must be maximum 5 MB.",
+      "Tu": "Seçilen dosya boyutu en fazla 5 MB olmalıdır."
+    }
+  },
+  "keys": {
+    "carat": {
+      "Fa": "عیار کالا",
+      "En": "Product Karat",
+      "Tu": "Ürün Ayarı"
+    }
+  }
+}

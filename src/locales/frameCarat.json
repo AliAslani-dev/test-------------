@@ -1,0 +1,14 @@
+{
+  "select": {
+    "title": {
+      "Fa": "عیار",
+      "En": "Karat",
+      "Tu": "Ayar"
+    },
+    "placeholder": {
+      "Fa": "جستجو با مقدار عیار ...",
+      "En": "Search by karat value...",
+      "Tu": "Ayar değeri ile ara..."
+    }
+  }
+}

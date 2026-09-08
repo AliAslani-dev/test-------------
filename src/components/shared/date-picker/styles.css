@@ -1,0 +1,31 @@
+.css-1m8qzkt {
+    z-index: 100000 !important;
+}
+.css-1e0sis0 {
+    z-index: 100000 !important;
+}
+
+.date_picker_input {
+  width: 100%;
+  height: 38px;
+  border-radius: 4px !important;
+  padding: 0 14px;
+  font-family: 'IranYekan';
+  background-color: #fff;
+  border: 1px solid #E7E6E6;
+  transition: border-color 0.2s ease;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.date_picker_input:hover {
+  border-color: #E7E6E6;
+}
+  
+.date_picker_input:focus {
+  border-color: #E7E6E6 !important;
+  box-shadow: 0 0 0 1px #E7E6E6 !important;
+  outline: none !important;
+}

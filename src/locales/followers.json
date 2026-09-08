@@ -1,0 +1,183 @@
+{
+    "tab_title": {
+        "Fa": "درخواست‌های دنبال کردن",
+        "En": "Follow Requests",
+        "Tu": "Takip İstekleri"
+    },
+    "unknown_user": {
+        "Fa": "کاربر بدون اسم",
+        "En": "Unnamed User",
+        "Tu": "İsimsiz Kullanıcı"
+    },
+    "filter": {
+        "name": {
+            "Fa": "فیلتر جستجو",
+            "En": "Search Filter",
+            "Tu": "Arama Filtresi"
+        },
+        "placeholder": {
+            "Fa": "جستجوی نام گالری ...",
+            "En": "Search gallery name...",
+            "Tu": "Galeri adı ara..."
+        },
+        "status_title": {
+            "Fa": "وضعیت درخواست",
+            "En": "Request Status",
+            "Tu": "Talep Durumu"
+        },
+        "all": {
+            "Fa": "همه",
+            "En": "All",
+            "Tu": "Tümü"
+        },
+        "approved": {
+            "Fa": "تایید شده",
+            "En": "Approved",
+            "Tu": "Onaylandı"
+        },
+        "waiting": {
+            "Fa": "در انتظار",
+            "En": "Pending",
+            "Tu": "Beklemede"
+        },
+        "rejected": {
+            "Fa": "رد شده",
+            "En": "Rejected",
+            "Tu": "Reddedildi"
+        }
+    },  
+    "table": {
+        "follow_requests_table": {
+            "Fa": "جدول درخواست‌های دنبال کردن",
+            "En": "Follow Requests Table",
+            "Tu": "Takip İstekleri Tablosu"
+        },
+        "no_data_to_display": {
+            "Fa": "درخواستی جهت نمایش وجود ندارد.",
+            "En": "There are no requests to display.",
+            "Tu": "Görüntülenecek talep bulunmamaktadır."
+        },
+        "rejected": {
+            "Fa": "رد شده",
+            "En": "Rejected",
+            "Tu": "Reddedildi"
+        },
+        "waiting": {
+            "Fa": "در انتظار",
+            "En": "Pending",
+            "Tu": "Beklemede"
+        },
+        "approved": {
+            "Fa": "تایید شده",
+            "En": "Approved",
+            "Tu": "Onaylandı"
+        },
+        "status_successfully_changed": {
+            "Fa": "وضعیت درخواست با موفقیت تغییر کرد.",
+            "En": "Request status changed successfully.",
+            "Tu": "Talep durumu başarıyla değiştirildi."
+        },
+        "status_change_err": {
+            "Fa": "خطا در تغییر وضعیت درخواست",
+            "En": "Error changing request status",
+            "Tu": "Talep durumu değiştirilirken hata oluştu"
+        },
+        "dialog_title": {
+            "Fa": "تغییر وضعیت درخواست",
+            "En": "Change Request Status",
+            "Tu": "Talep Durumunu Değiştir"
+        },
+        "dialog_content_1": {
+            "Fa": "آیا از تغییر وضعیت درخواست به",
+            "En": "Are you sure you want to change the request status to",
+            "Tu": "Talep durumunu"
+        },
+        "dialog_content_2": {
+            "Fa": "اطمینان",
+            "En": "", 
+            "Tu": "olarak değiştirmek istediğinize"
+        },
+        "dialog_content_3": {
+            "Fa": "دارید؟",
+            "En": "?",
+            "Tu": "emin misiniz?"
+        },
+        "cancel": {
+            "Fa": "انصراف",
+            "En": "Cancel",
+            "Tu": "İptal"
+        },
+        "confirm": {
+            "Fa": "تایید",
+            "En": "Confirm",
+            "Tu": "Onayla"
+        }
+    },
+    "dialog": {
+        "title": {
+            "Fa": "مشاهده اطلاعات گالری",
+            "En": "View Gallery Information",
+            "Tu": "Galeri Bilgilerini Görüntüle"
+        },
+        "default_bucket_name":{
+            "Fa": "نام گالری",
+            "En": "Gallery Name",
+            "Tu": "Galeri Adı"
+        },
+        "seller_mobile": {
+            "Fa": "شماره تماس مسئول فروش",
+            "En": "Sales Manager Phone Number",
+            "Tu": "Satış Temsilcisi Telefon Numarası"
+        },
+        "seller_full_name": {
+            "Fa": "نام مسئول فروش",
+            "En": "Sales Manager Name",
+            "Tu": "Satış Temsilcisi Adı"
+        },
+        "full_name": {
+            "Fa": "نام مغازه‌دار",
+            "En": "Shopkeeper Name",
+            "Tu": "Mağaza Sahibi Adı"
+        },
+        "address": {
+            "Fa": "آدرس",
+            "En": "Address",
+            "Tu": "Adres"
+        },
+        "city": {
+            "Fa": "شهر",
+            "En": "City",
+            "Tu": "Şehir"
+        },
+        "province": {
+            "Fa": "استان",
+            "En": "Province",
+            "Tu": "Eyalet/İl"
+        },
+        "description": {
+            "Fa": "توضیحات گالری",
+            "En": "Gallery Description",
+            "Tu": "Galeri Açıklaması"
+        },
+        "showcase": {
+            "Fa": "عکس ویترین گالری",
+            "En": "Gallery Showcase Photo",
+            "Tu": "Galeri Vitrin Fotoğrafı"
+        },
+        "logo": {
+            "Fa": "لوگو",
+            "En": "Logo",
+            "Tu": "Logo"
+        },
+        "domain_prefix": {
+            "Fa": "دامنه وبسایت",
+            "En": "Website Domain",
+            "Tu": "Web Sitesi Alan Adı"
+        },
+        "close": {
+            "Fa": "بستن",
+            "En": "Close",
+            "Tu": "Kapat"
+        }
+    }
+}

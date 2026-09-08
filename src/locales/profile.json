@@ -1,0 +1,246 @@
+{
+    "tab_title": {
+        "Fa": "پروفایل",
+        "En": "Profile",
+        "Tu": "Profil"
+    },
+    "shop_information": {
+        "Fa": "اطلاعات فروشگاه",
+        "En": "Shop Information",
+        "Tu": "Mağaza Bilgileri"
+    },
+    "logo_and_showcase": {
+        "Fa": "لوگو و ویترین (امکان ویرایش)",
+        "En": "Logo and Showcase (Editable)",
+        "Tu": "Logo ve Vitrin (Düzenlenebilir)"
+    },
+    "identity_information": {
+        "Fa": "مشخصات هویتی",
+        "En": "Identity Information",
+        "Tu": "Kimlik Bilgileri"
+    },
+    "username": {
+        "Fa": "نام کاربری",
+        "En": "Username",
+        "Tu": "Kullanıcı Adı"
+    },
+    "email": {
+        "Fa": "ایمیل",
+        "En": "Email",
+        "Tu": "E-posta"
+    },
+    "role": {
+        "Fa": "نقش",
+        "En": "Role",
+        "Tu": "Rol"
+    },
+    "password": {
+        "Fa": "رمزعبور (امکان ویرایش)",
+        "En": "Password (Editable)",
+        "Tu": "Şifre (Düzenlenebilir)"
+    },
+    "re_password": {
+        "Fa": "تکرار رمزعبور",
+        "En": "Repeat Password",
+        "Tu": "Şifreyi Tekrarla"
+    },
+    "seller_mobile": {
+        "Fa": "شماره تماس مسئول فروش (امکان ویرایش)",
+        "En": "Sales Manager Contact Number (Editable)",
+        "Tu": "Satış Sorumlusu İletişim Numarası (Düzenlenebilir)"
+    },
+    "seller_full_name": {
+        "Fa": "نام مسئول فروش (امکان ویرایش)",
+        "En": "Sales Manager Name (Editable)",
+        "Tu": "Satış Sorumlusu Adı (Düzenlenebilir)"
+    },
+    "provider": {
+        "Fa": "مشتری",
+        "En": "Customer",
+        "Tu": "Müşteri"
+    },
+    "admin": {
+        "Fa": "ادمین",
+        "En": "Admin",
+        "Tu": "Yönetici"
+    },
+    "full_name": {
+        "Fa": "نام مغازه‌دار",
+        "En": "Shopkeeper Name",
+        "Tu": "Mağaza Sahibi Adı"
+    },
+    "mobile": {
+        "Fa": "شماره تماس مغازه‌دار",
+        "En": "Shopkeeper Contact Number",
+        "Tu": "Mağaza Sahibi İletişim Numarası"
+    },
+    "national_code": {
+        "Fa": "کد ملی مغازه‌دار",
+        "En": "Shopkeeper National Code",
+        "Tu": "Mağaza Sahibi T.C. Kimlik No"
+    },
+    "referer_name": {
+        "Fa": "نام معرف",
+        "En": "Referrer Name",
+        "Tu": "Referans Adı"
+    },
+    "address": {
+        "Fa": "آدرس (امکان ویرایش)",
+        "En": "Address (Editable)",
+        "Tu": "Adres (Düzenlenebilir)"
+    },
+    "city": {
+        "Fa": "شهر",
+        "En": "City",
+        "Tu": "Şehir"
+    },
+    "province": {
+        "Fa": "استان",
+        "En": "Province",
+        "Tu": "İl / Eyalet"
+    },
+    "description": {
+        "Fa": "توضیحات بنکداری (امکان ویرایش)",
+        "En": "Wholesaler description (Editable)",
+        "Tu": "Toptancı açıklaması (Düzenlenebilir)"
+    },
+    "showcase": {
+        "Fa": "عکس ویترین بنکداری (امکان ویرایش)",
+        "En": "Wholesaler showcase photo (Editable)",
+        "Tu": "Toptancı vitrin fotoğrafı (Düzenlenebilir)"
+    },
+    "logo": {
+        "Fa": "لوگو (امکان ویرایش)",
+        "En": "Logo (Editable)",
+        "Tu": "Logo (Düzenlenebilir)"
+    },
+    "signed_contract": {
+        "Fa": "قرارداد امضاشده",
+        "En": "Signed Contract",
+        "Tu": "İmzalanmış Sözleşme"
+    },
+    "business_license": {
+        "Fa": "دارای جواز کسب (امکان ثبت)",
+        "En": "Has Business License (Registrable)",
+        "Tu": "İşletme Ruhsatı Var (Kaydedilebilir)"
+    },
+    "yes": {
+        "Fa": "بله",
+        "En": "Yes",
+        "Tu": "Evet"
+    },
+    "no": {
+        "Fa": "خیر",
+        "En": "No",
+        "Tu": "Hayır"
+    },
+    "business_license_image": {
+        "Fa": "جواز کسب (امکان ثبت)",
+        "En": "Business License (Registrable)",
+        "Tu": "İşletme Ruhsatı (Kaydedilebilir)"
+    },
+    "website_address": {
+        "Fa": "آدرس فروشگاه اینترنتی",
+        "En": "Online Store Address",
+        "Tu": "İnternet Mağazası Adresi"
+    },
+    "qr_code": {
+        "Fa": "QR-Code",
+        "En": "QR-Code",
+        "Tu": "QR Kodu"
+    },
+    "shop_qr_code": {
+        "Fa": "QR-Code  فروشگاه (برای دانلود تصویر را لمس کنید)",
+        "En": "Shop QR-Code (Touch the image to download)",
+        "Tu": "Mağaza QR Kodu (İndirmek için resme dokunun)"
+    },
+    "province_select": {
+        "title": {
+            "Fa": "استان",
+            "En": "Province",
+            "Tu": "İl"
+        },
+        "placeholder": {
+            "Fa": "جستجو با نام استان ...",
+            "En": "Search by province name ...",
+            "Tu": "İl adına göre ara ..."
+        }
+    },
+    "city_select": {
+        "title": {
+            "Fa": "شهر",
+            "En": "City",
+            "Tu": "Şehir"
+        },
+        "placeholder": {
+            "Fa": "جستجو با نام شهر ...",
+            "En": "Search by city name ...",
+            "Tu": "Şehir adına göre ara ..."
+        }
+    },
+    "contract_title": {
+        "Fa": "قرارداد همکاری",
+        "En": "Cooperation Contract",
+        "Tu": "İşbirliği Sözleşmesi"
+    },
+    "contract_description": {
+        "Fa": "لطفاً متن قرارداد زیر را به دقت مطالعه و تایید نمایید.",
+        "En": "Please read and confirm the following contract text carefully.",
+        "Tu": "Lütfen aşağıdaki sözleşme metnini dikkatlice okuyup onaylayın."
+    },
+    "contract_accept_label_confirmed": {
+        "Fa": "متن قرارداد را مطالعه کرده و می‌پذیرم.",
+        "En": "I have read and accept the contract text.",
+        "Tu": "Sözleşme metnini okudum ve kabul ediyorum."
+    },
+    "contract_accept_label": {
+        "Fa": "متن قرارداد را مطالعه کرده و می‌پذیرم. (امکان تایید)",
+        "En": "I have read and accept the contract text. (Confirmable)",
+        "Tu": "Sözleşme metnini okudum ve kabul ediyorum. (Onaylanabilir)"
+    },
+    "contract_pdf_not_supported": {
+        "Fa": "نمایشگر PDF در دستگاه شما پشتیبانی نمی‌شود.",
+        "En": "PDF viewer is not supported on your device.",
+        "Tu": "Cihazınızda PDF görüntüleyici desteklenmiyor."
+    },
+    "confirm_button": {
+        "Fa": "اعمال تغییرات",
+        "En": "Apply Changes",
+        "Tu": "Değişiklikleri Uygula"
+    },
+    "success_notification": {
+        "Fa": "تغییرات با موفقیت ثبت شد.",
+        "En": "Changes saved successfully.",
+        "Tu": "Değişiklikler başarıyla kaydedildi."
+    },
+    "error_notification": {
+        "Fa": "خطا در ثبت تغییرات",
+        "En": "Error saving changes",
+        "Tu": "Değişiklikleri kaydederken hata oluştu"
+    },
+    "select_location_on_map": {
+        "Fa": "موقعیت بنکداری در نقشه (امکان ویرایش)",
+        "En": "Wholesaler location on map (Editable)",
+        "Tu": "Haritada toptancı konumu (Düzenlenebilir)"
+    },
+    "address_and_location": {
+        "Fa": "آدرس و موقعیت",
+        "En": "Address and Location",
+        "Tu": "Adres ve Konum"
+    },
+    "security_settings": {
+        "Fa": "تنظیمات امنیتی",
+        "En": "Security Settings",
+        "Tu": "Güvenlik Ayarları"
+    },
+    "license": {
+        "Fa": "مجوز کسب و کار",
+        "En": "Business License",
+        "Tu": "İşletme Lisansı"
+    },
+    "min_order_weight": {
+        "Fa": "حداقل مقدار سفارش (گرم)",
+        "En": "Minimum order weight (grams)",
+        "Tu": "Minimum sipariş ağırlığı (gram)"
+    }
+}

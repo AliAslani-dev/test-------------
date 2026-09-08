@@ -1,0 +1,146 @@
+{
+  "tab_title": {
+    "Fa": "مدیریت سازمان‌ها",
+    "En": "Organizations Management",
+    "Tu": "Organizasyon Yönetimi"
+  },
+  "add_organization": {
+    "Fa": "ایجاد سازمان",
+    "En": "Create Organization",
+    "Tu": "Yeni Organizasyon Ekle"
+  },
+  "toggle_success": {
+    "Fa": "وضعیت سازمان با موفقیت تغییر کرد",
+    "En": "Organization status changed successfully",
+    "Tu": "Organizasyon durumu başarıyla değiştirildi"
+  },
+  "toggle_error": {
+    "Fa": "خطا در تغییر وضعیت سازمان",
+    "En": "Error changing organization status",
+    "Tu": "Organizasyon durumu değiştirilirken hata oluştu"
+  },
+  "table": {
+    "organizations_table": {
+      "Fa": "جدول سازمان‌ها",
+      "En": "Organizations Table",
+      "Tu": "Organizasyonlar Tablosu"
+    },
+    "no_data_to_display": {
+      "Fa": "هیچ سازمانی یافت نشد",
+      "En": "No organizations found",
+      "Tu": "Organizasyon bulunamadı"
+    }
+  },
+  "dialog": {
+    "close": {
+      "Fa": "بستن",
+      "En": "Close",
+      "Tu": "Kapat"
+    },
+    "fa_name": {
+      "Fa": "نام فارسی",
+      "En": "Persian Name",
+      "Tu": "Farsça Ad"
+    },
+    "en_name": {
+      "Fa": "نام انگلیسی",
+      "En": "English Name",
+      "Tu": "İngilizce Ad"
+    },
+    "commission": {
+      "Fa": "کمیسیون (درصد)",
+      "En": "Commission (%)",
+      "Tu": "Komisyon (%)"
+    },
+    "is_enabled": {
+      "Fa": "وضعیت فعال",
+      "En": "Status",
+      "Tu": "Durum"
+    },
+    "enabled": {
+      "Fa": "فعال",
+      "En": "Active",
+      "Tu": "Aktif"
+    },
+    "disabled": {
+      "Fa": "غیرفعال",
+      "En": "Inactive",
+      "Tu": "Pasif"
+    },
+    "add": {
+      "title": {
+        "Fa": "افزودن سازمان جدید",
+        "En": "Add New Organization",
+        "Tu": "Yeni Organizasyon Ekle"
+      },
+      "button": {
+        "Fa": "افزودن",
+        "En": "Add",
+        "Tu": "Ekle"
+      },
+      "success_notification": {
+        "Fa": "سازمان با موفقیت اضافه شد",
+        "En": "Organization added successfully",
+        "Tu": "Organizasyon başarıyla eklendi"
+      },
+      "error_notification": {
+        "Fa": "خطا در افزودن سازمان",
+        "En": "Error adding organization",
+        "Tu": "Organizasyon eklenirken hata oluştu"
+      }
+    },
+    "edit": {
+      "title": {
+        "Fa": "ویرایش سازمان",
+        "En": "Edit Organization",
+        "Tu": "Organizasyonu Düzenle"
+      },
+      "button": {
+        "Fa": "ویرایش",
+        "En": "Edit",
+        "Tu": "Düzenle"
+      },
+      "success_notification": {
+        "Fa": "سازمان با موفقیت ویرایش شد",
+        "En": "Organization edited successfully",
+        "Tu": "Organizasyon başarıyla düzenlendi"
+      },
+      "error_notification": {
+        "Fa": "خطا در ویرایش سازمان",
+        "En": "Error editing organization",
+        "Tu": "Organizasyon düzenlenirken hata oluştu"
+      }
+    },
+    "view": {
+      "title": {
+        "Fa": "مشاهده سازمان",
+        "En": "View Organization",
+        "Tu": "Organizasyonu Görüntüle"
+      }
+    }
+  },
+  "select": {
+    "title": {
+      "Fa": "انتخاب سازمان",
+      "En": "Select Organization",
+      "Tu": "Organizasyon Seç"
+    },
+    "placeholder": {
+      "Fa": "جستجوی سازمان ...",
+      "En": "Search organization ...",
+      "Tu": "Organizasyon ara ..."
+    }
+  },
+  "filter": {
+    "filter_title": {
+      "Fa": "فیلتر جستجو",
+      "En": "Search Filter",
+      "Tu": "Arama Filtresi"
+    },
+    "placeholder": {
+      "Fa": "جستجوی سازمان ...",
+      "En": "Search organization ...",
+      "Tu": "Organizasyon ara ..."
+    }
+  }
+}

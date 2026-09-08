@@ -1,0 +1,165 @@
+{
+    "tab_title": {
+        "Fa": "مجموعه‌ها",
+        "En": "Showrooms",
+        "Tu": "Showroomlar"
+    },
+    "add_bucket": {
+        "Fa": "ایجاد مجموعه",
+        "En": "Create Showroom",
+        "Tu": "Showroom Oluştur"
+    },
+    "filter": {
+        "admin": {
+            "name": {
+                "Fa": "فیلتر جستجو",
+                "En": "Search Filter",
+                "Tu": "Arama Filtresi"
+            },
+            "placeholder": {
+                "Fa": "نام مجموعه یا نام کاربری ...",
+                "En": "Showroom name or username...",
+                "Tu": "Showroom adı veya kullanıcı adı..."
+            }
+        },
+        "provider": {
+            "name": {
+                "Fa": "فیلتر جستجو",
+                "En": "Search Filter",
+                "Tu": "Arama Filtresi"
+            },
+            "placeholder": {
+                "Fa": "نام مجموعه ...",
+                "En": "Showroom name...",
+                "Tu": "Showroom adı..."
+            }
+        }
+    },
+    "table": {
+        "buckets_table": {
+            "Fa": "جدول مجموعه‌ها",
+            "En": "Showrooms Table",
+            "Tu": "Showroom Tablosu"
+        },
+        "no_data_to_display": {
+            "Fa": "داده‌ای جهت نمایش وجود ندارد",
+            "En": "No data to display",
+            "Tu": "Görüntülenecek veri yok"
+        },
+        "enabling": {
+            "Fa": "فعال کردن",
+            "En": "Enabling",
+            "Tu": "Etkinleştiriliyor"
+        },
+        "disabling": {
+            "Fa": "غیرفعال کردن",
+            "En": "Disabling",
+            "Tu": "Devre dışı bırakılıyor"
+        },
+        "enable": {
+            "Fa": "فعال",
+            "En": "Active",
+            "Tu": "Aktif"
+        },
+        "disable": {
+            "Fa": "غیرفعال",
+            "En": "Inactive",
+            "Tu": "Pasif"
+        },
+        "toggle_enabled_success_notification": {
+            "Fa": "وضعیت با موفقیت به‌روزرسانی شد.",
+            "En": "Status updated successfully.",
+            "Tu": "Durum başarıyla güncellendi."
+        },
+        "toggle_enabled_error_notification": {
+            "Fa": "خطا در تغییر وضعیت",
+            "En": "Error changing status",
+            "Tu": "Durum değiştirme hatası"
+        }
+    },
+    "select": {
+        "title": {
+            "Fa": "مجموعه",
+            "En": "Showroom",
+            "Tu": "Showroom"
+        },
+        "placeholder": {
+            "Fa": "جستجو با نام یا کد مجموعه ...",
+            "En": "Search by showroom name or code...",
+            "Tu": "Showroom adı veya kodu ile ara..."
+        }
+    },
+    "dialog": {
+        "add": {
+            "title": {
+                "Fa": "افزودن مجموعه",
+                "En": "Add Showroom",
+                "Tu": "Showroom Ekle"
+            },
+            "button": {
+                "Fa": "افزودن",
+                "En": "Add",
+                "Tu": "Ekle"
+            },
+            "success_notification": {
+                "Fa": "مجموعه با موفقیت اضافه شد.",
+                "En": "Showroom added successfully.",
+                "Tu": "Showroom başarıyla eklendi."
+            },
+            "error_notification": {
+                "Fa": "خطا در افزودن مجموعه",
+                "En": "Error adding showroom",
+                "Tu": "Showroom eklenirken hata oluştu"
+            }
+        },
+        "edit": {
+            "title": {
+                "Fa": "ویرایش مجموعه",
+                "En": "Edit Showroom",
+                "Tu": "Showroomu Düzenle"
+            },
+            "button": {
+                "Fa": "ویرایش",
+                "En": "Edit",
+                "Tu": "Düzenle"
+            },
+            "success_notification": {
+                "Fa": "مجموعه با موفقیت ویرایش شد.",
+                "En": "Showroom edited successfully.",
+                "Tu": "Showroom başarıyla düzenlendi."
+            },
+            "error_notification": {
+                "Fa": "خطا در ویرایش مجموعه",
+                "En": "Error editing showroom",
+                "Tu": "Showroom düzenlenirken hata oluştu"
+            }
+        },
+        "view": {
+            "title": {
+                "Fa": "مشاهده مجموعه",
+                "En": "View Showroom",
+                "Tu": "Showroomu Görüntüle"
+            }
+        },
+        "name": {
+            "Fa": "نام مجموعه",
+            "En": "Showroom Name",
+            "Tu": "Showroom Adı"
+        },
+        "show_name": {
+            "Fa": "افزودن نام مجموعه به قاب‌ها",
+            "En": "Add showroom name to collections",
+            "Tu": "Showroom adını koleksiyonlara ekle"
+        },
+        "yes": {
+            "Fa": "بله",
+            "En": "Yes",
+            "Tu": "Evet"
+        },
+        "no": {
+            "Fa": "خیر",
+            "En": "No",
+            "Tu": "Hayır"
+        }
+    }
+}

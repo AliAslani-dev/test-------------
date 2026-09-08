@@ -1,0 +1,136 @@
+{
+    "tab_title": {
+        "Fa": "دسته‌بندی‌ها",
+        "En": "Categories",
+        "Tu": "Kategoriler"
+    },
+    "add_category": {
+        "Fa": "ایجاد دسته‌بندی",
+        "En": "Create Category",
+        "Tu": "Kategori Oluştur"
+    },
+    "table": {
+        "categories_table": {
+            "Fa": "جدول دسته‌بندی‌ها",
+            "En": "Categories Table",
+            "Tu": "Kategori Tablosu"
+        },
+        "no_data_to_display": {
+            "Fa": "داده‌ای جهت نمایش وجود ندارد",
+            "En": "No data to display",
+            "Tu": "Görüntülenecek veri yok"
+        }
+    },
+    "select": {
+        "title": {
+            "Fa": "دسته‌بندی",
+            "En": "Category",
+            "Tu": "Kategori"
+        },
+        "placeholder": {
+            "Fa": "جستجو با نام فارسی یا انگلیسی دسته‌بندی ...",
+            "En": "Search by Turkish or English category name...",
+            "Tu": "Türkçe veya İngilizce kategori adı ile ara..."
+        }
+    },
+    "gender_select": {
+        "title": {
+            "Fa": "جنسیت",
+            "En": "Gender",
+            "Tu": "Cinsiyet"
+        },
+        "placeholder": {
+            "Fa": "جستجو با نام فارسی یا انگلیسی جنسیت ...",
+            "En": "Search by Turkish or English gender name...",
+            "Tu": "Türkçe veya İngilizce cinsiyet adı ile ara..."
+        }
+    },
+    "dialog": {
+        "add": {
+            "title": {
+                "Fa": "افزودن دسته‌بندی",
+                "En": "Add Category",
+                "Tu": "Kategori Ekle"
+            },
+            "button": {
+                "Fa": "افزودن",
+                "En": "Add",
+                "Tu": "Ekle"
+            },
+            "success_notification": {
+                "Fa": "دسته‌بندی با موفقیت اضافه شد.",
+                "En": "Category added successfully.",
+                "Tu": "Kategori başarıyla eklendi."
+            },
+            "error_notification": {
+                "Fa": "خطا در افزودن دسته‌بندی",
+                "En": "Error adding category",
+                "Tu": "Kategori eklenirken hata oluştu"
+            }
+        },
+        "edit": {
+            "title": {
+                "Fa": "ویرایش دسته‌بندی",
+                "En": "Edit Category",
+                "Tu": "Kategori Düzenle"
+            },
+            "button": {
+                "Fa": "ویرایش",
+                "En": "Edit",
+                "Tu": "Düzenle"
+            },
+            "success_notification": {
+                "Fa": "دسته‌بندی با موفقیت ویرایش شد.",
+                "En": "Category edited successfully.",
+                "Tu": "Kategori başarıyla düzenlendi."
+            },
+            "error_notification": {
+                "Fa": "خطا در ویرایش دسته‌بندی",
+                "En": "Error editing category",
+                "Tu": "Kategori düzenlenirken hata oluştu"
+            }
+        },
+        "view": {
+            "title": {
+                "Fa": "مشاهده دسته‌بندی",
+                "En": "View Category",
+                "Tu": "Kategori Görüntüle"
+            }
+        },
+        "adding_field": {
+            "Fa": "افزودن فیلد",
+            "En": "Add Specification",
+            "Tu": "Özellik Ekle"
+        },
+        "fa_name": {
+            "Fa": "نام فارسی دسته‌بندی",
+            "En": "Turkish Category Name",
+            "Tu": "Türkçe Kategori Adı"
+        },
+        "en_name": {
+            "Fa": "نام انگلیسی دسته‌بندی",
+            "En": "English Category Name",
+            "Tu": "İngilizce Kategori Adı"
+        },
+        "field_name": {
+            "Fa": "نام فیلد",
+            "En": "Specification Name",
+            "Tu": "Özellik Adı"
+        },
+        "field_options": {
+            "Fa": "گزینه‌های فیلد",
+            "En": "Specification Options",
+            "Tu": "Özellik Seçenekleri"
+        },
+        "field_options_placeholder": {
+            "Fa": "گزینه را تایپ و Enter بزنید ...",
+            "En": "Type option and press Enter...",
+            "Tu": "Seçeneği yazın ve Enter'a basın..."
+        },
+        "field_remove": {
+            "Fa": "حذف فیلد",
+            "En": "Remove Specification",
+            "Tu": "Özelliği Kaldır"
+        }
+    }
+}

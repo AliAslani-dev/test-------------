@@ -1,0 +1,287 @@
+{
+    "tab_title": {
+        "Fa": "قاب‌ها",
+        "En": "Collections",
+        "Tu": "Koleksiyonlar"
+    },
+    "remove_all_filters": {
+        "Fa": "حذف فیلتر‌ها",
+        "En": "Remove all filters",
+        "Tu": "Tüm filtreleri temizle"
+    },
+    "filters": {
+        "Fa": "فیلتر‌های جستجو",
+        "En": "Search Filters",
+        "Tu": "Arama Filtreleri"
+    },
+    "add_frame": {
+        "Fa": "ایجاد قاب",
+        "En": "Create Collection",
+        "Tu": "Koleksiyon Oluştur"
+    },
+    "refresh": {
+        "Fa": "بارگیری مجدد",
+        "En": "Reload",
+        "Tu": "Yeniden Yükle"
+    },
+    "save_changes": {
+        "Fa": "ذخیره تغییرات",
+        "En": "Save Changes",
+        "Tu": "Değişiklikleri Kaydet"
+    },
+    "success_notification": {
+        "Fa": "قاب با موفقیت ویرایش شد.",
+        "En": "Collection edited successfully.",
+        "Tu": "Koleksiyon başarıyla düzenlendi."
+    },
+    "error_notification": {
+        "Fa": "خطا در ویرایش قاب",
+        "En": "Error editing collection",
+        "Tu": "Koleksiyon düzenlenirken hata oluştu"
+    },
+    "filter": {
+        "filter_title": {
+            "Fa": "فیلتر جستجو",
+            "En": "Search Filter",
+            "Tu": "Arama Filtresi"
+        },
+        "placeholder": {
+            "Fa": "نام یا شناسه قاب ...",
+            "En": "Collection name or ID...",
+            "Tu": "Koleksiyon adı veya kimliği..."
+        }
+    },
+    "status_filter": {
+        "title": {
+            "Fa": "وضعیت کالا",
+            "En": "Collection Status",
+            "Tu": "Koleksiyon Durumu"
+        },
+        "archived": {
+            "Fa": "بایگانی‌شده",
+            "En": "Archived",
+            "Tu": "Arşivlenmiş"
+        },
+        "unarchived": {
+            "Fa": "فعال",
+            "En": "Active",
+            "Tu": "Aktif"
+        }
+    },
+    "table": {
+        "products_table": {
+            "Fa": "جدول قاب‌ها",
+            "En": "Collections Table",
+            "Tu": "Koleksiyon Tablosu"
+        },
+        "no_data_to_display": {
+            "Fa": "داده‌ای جهت نمایش وجود ندارد",
+            "En": "No data to display",
+            "Tu": "Görüntülenecek veri yok"
+        },
+        "toggle_archived_success_notification": {
+            "Fa": "وضعیت قاب با موفقیت تغییر کرد.",
+            "En": "Collection status changed successfully.",
+            "Tu": "Koleksiyon durumu başarıyla değiştirildi."
+        },
+        "toggle_archived_error_notification": {
+            "Fa": "مشکلی پیش آمده است.",
+            "En": "Something went wrong.",
+            "Tu": "Bir sorun oluştu."
+        },
+        "unarchived": {
+            "Fa": "فعال",
+            "En": "Active",
+            "Tu": "Aktif"
+        },
+        "archived": {
+            "Fa": "بایگانی‌شده",
+            "En": "Archived",
+            "Tu": "Arşivlenmiş"
+        },
+        "archive": {
+            "Fa": "بایگانی کردن",
+            "En": "Archive",
+            "Tu": "Arşivle"
+        },
+        "unarchive": {
+            "Fa": "فعال کردن",
+            "En": "Unarchive",
+            "Tu": "Arşivden Çıkar"
+        }
+    },
+    "select": {
+        "title": {
+            "Fa": "قاب",
+            "En": "Collection",
+            "Tu": "Koleksiyon"
+        },
+        "placeholder": {
+            "Fa": "جستجو با نام یا شناسه قاب ...",
+            "En": "Search by collection name or ID...",
+            "Tu": "Koleksiyon adı veya kimliği ile ara..."
+        },
+        "carat": {
+            "title": {
+                "Fa": "عیار قاب",
+                "En": "Collection Karat",
+                "Tu": "Koleksiyon Ayarı"
+            },
+            "placeholder": {
+                "Fa": "جستجو با مقدار عیار قاب ...",
+                "En": "Search by karat value...",
+                "Tu": "Ayar değeri ile ara..."
+            }
+        }
+    },
+    "dialog": {
+        "add": {
+            "title": {
+                "Fa": "افزودن قاب",
+                "En": "Add Collection",
+                "Tu": "Koleksiyon Ekle"
+            },
+            "button": {
+                "Fa": "افزودن",
+                "En": "Add",
+                "Tu": "Ekle"
+            },
+            "success_notification": {
+                "Fa": "قاب با موفقیت اضافه شد.",
+                "En": "Collection added successfully.",
+                "Tu": "Koleksiyon başarıyla eklendi."
+            },
+            "error_notification": {
+                "Fa": "خطا در افزودن قاب",
+                "En": "Error adding collection",
+                "Tu": "Koleksiyon eklenirken hata oluştu"
+            }
+        },
+        "edit": {
+            "title": {
+                "Fa": "ویرایش قاب",
+                "En": "Edit Collection",
+                "Tu": "Koleksiyonu Düzenle"
+            },
+            "button": {
+                "Fa": "ویرایش",
+                "En": "Edit",
+                "Tu": "Düzenle"
+            },
+            "success_notification": {
+                "Fa": "قاب با موفقیت ویرایش شد.",
+                "En": "Collection edited successfully.",
+                "Tu": "Koleksiyon başarıyla düzenlendi."
+            },
+            "no_changes_notification": {
+                "Fa": "تغییری در قاب رخ نداده است.",
+                "En": "No changes made to the collection.",
+                "Tu": "Koleksiyonda herhangi bir değişiklik yapılmadı."
+            },
+            "error_notification": {
+                "Fa": "خطا در ویرایش قاب",
+                "En": "Error editing collection",
+                "Tu": "Koleksiyon düzenlenirken hata oluştu"
+            }
+        },
+        "view": {
+            "title": {
+                "Fa": "مشاهده قاب",
+                "En": "View Collection",
+                "Tu": "Koleksiyonu Görüntüle"
+            }
+        },
+        "model": {
+            "Fa": "نام قاب",
+            "En": "Collection Name",
+            "Tu": "Koleksiyon Adı"
+        },
+        "wage": {
+            "Fa": "اجرت (درصد)",
+            "En": "Labor Fee (%)",
+            "Tu": "İşçilik (%)"
+        },
+        "profit": {
+            "Fa": "سود (درصد)",
+            "En": "Profit (%)",
+            "Tu": "Kâr (%)"
+        },
+        "discount": {
+            "Fa": "تخفیف (درصد)",
+            "En": "Discount (%)",
+            "Tu": "İndirim (%)"
+        },
+        "carat": {
+            "Fa": "عیار قاب",
+            "En": "Collection Karat",
+            "Tu": "Koleksiyon Ayarı"
+        },
+        "category": {
+            "Fa": "دسته‌بندی",
+            "En": "Category",
+            "Tu": "Kategori"
+        },
+        "gender_category": {
+            "Fa": "جنسیت",
+            "En": "Gender",
+            "Tu": "Cinsiyet"
+        },
+        "id": {
+            "Fa": "شناسه",
+            "En": "ID",
+            "Tu": "ID"
+        },
+        "min_weight": {
+            "Fa": "کمترین وزن",
+            "En": "Minimum Weight",
+            "Tu": "Minimum Ağırlık"
+        },
+        "max_weight": {
+            "Fa": "بیشترین وزن",
+            "En": "Maximum Weight",
+            "Tu": "Maksimum Ağırlık"
+        },
+        "total_weight": {
+            "Fa": "وزن کل",
+            "En": "Total Weight",
+            "Tu": "Toplam Ağırlık"
+        },
+        "field_options_placeholder": {
+            "Fa": "یکی از موارد را انتخاب نمایید ...",
+            "En": "Please select one of the options...",
+            "Tu": "Lütfen seçeneklerden birini seçin..."
+        },
+        "blur_accept_label": {
+            "Fa": "تصویر(های) قاب تنها در صورتی قابل مشاهده باشد که گالری از سوی من تأیید شده باشد.",
+            "En": "Collection image(s) should only be visible if the gallery has been approved by me.",
+            "Tu": "Koleksiyon görselleri sadece galeri tarafımdan onaylandığında görünür olsun."
+        },
+        "note": {
+            "Fa": "دسترسی مذکور فقط به تصویر(های) انتخابی در این بخش جهت جذب گالری محدود است و نمایش سایر جزئیات، منوط به تأیید شماست.",
+            "En": "This access is limited only to the selected image(s) in this section to attract galleries; displaying further details is subject to your approval.",
+            "Tu": "Bu erişim, galerileri çekmek için yalnızca bu bölümdeki seçili görsellerle sınırlıdır; diğer ayrıntıların gösterilmesi sizin onayınıza bağlıdır."
+        },
+        "image_uploader_suported_count_helper_text": {
+            "Fa": "تعداد فایل: حداکثر ۳ فایل",
+            "En": "Max file count: 3 files",
+            "Tu": "Maksimum dosya sayısı: 3 dosya"
+        },
+        "image_uploader_supported_size_text": {
+            "Fa": "حجم هر فایل: حداکثر ۵ مگابایت",
+            "En": "Max file size: 5 MB",
+            "Tu": "Maksimum dosya boyutu: 5 MB"
+        },
+        "image_uploader_max_file_size_bytes_error_message": {
+            "Fa": "سایز فایل انتخابی حداکثر ۵ مگابایت باشد.",
+            "En": "The selected file size must be maximum 5 MB.",
+            "Tu": "Seçilen dosya boyutu en fazla 5 MB olmalıdır."
+        }
+    },
+    "keys": {
+        "carat": {
+            "Fa": "عیار قاب",
+            "En": "Collection Karat",
+            "Tu": "Koleksiyon Ayarı"
+        }
+    }
+}

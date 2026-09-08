@@ -1,0 +1,364 @@
+{
+  "tab_title": {
+    "Fa": "کاربر‌ها",
+    "En": "Users",
+    "Tu": "Kullanıcılar"
+  },
+  "add_user": {
+    "Fa": "ایجاد کاربر",
+    "En": "Create User",
+    "Tu": "Kullanıcı Oluştur"
+  },
+  "filter": {
+    "filter_title": {
+      "Fa": "فیلتر جستجو",
+      "En": "Search Filter",
+      "Tu": "Arama Filtresi"
+    },
+    "placeholder": {
+      "Fa": "نام کاربری یا ایمیل ...",
+      "En": "Username or email...",
+      "Tu": "Kullanıcı adı veya e-posta..."
+    }
+  },
+  "table": {
+    "users_table": {
+      "Fa": "جدول کاربر‌ها",
+      "En": "Users Table",
+      "Tu": "Kullanıcı Tablosu"
+    },
+    "no_data_to_display": {
+      "Fa": "داده‌ای جهت نمایش وجود ندارد",
+      "En": "No data to display",
+      "Tu": "Görüntülenecek veri yok"
+    },
+    "enabling": {
+      "Fa": "فعال کردن",
+      "En": "Enabling",
+      "Tu": "Etkinleştiriliyor"
+    },
+    "disabling": {
+      "Fa": "غیرفعال کردن",
+      "En": "Disabling",
+      "Tu": "Devre dışı bırakılıyor"
+    },
+    "enable": {
+      "Fa": "فعال",
+      "En": "Active",
+      "Tu": "Aktif"
+    },
+    "disable": {
+      "Fa": "غیرفعال",
+      "En": "Inactive",
+      "Tu": "Pasif"
+    },
+    "toggle_enabled_success_notification": {
+      "Fa": "وضعیت دسترسی با موفقیت به‌روزرسانی شد.",
+      "En": "Access status updated successfully.",
+      "Tu": "Erişim durumu başarıyla güncellendi."
+    },
+    "toggle_enabled_error_notification": {
+      "Fa": "خطا در تغییر وضعیت دسترسی",
+      "En": "Error changing access status",
+      "Tu": "Erişim durumu değiştirme hatası"
+    },
+    "roles": {
+      "banking-admin": {
+        "Fa": "ادمین",
+        "En": "Admin",
+        "Tu": "Admin"
+      },
+      "banking-provider": {
+        "Fa": "بنکدار",
+        "En": "Wholesaler",
+        "Tu": "Toptancı"
+      },
+      "banking-seller": {
+        "Fa": "فروشنده زرهاب",
+        "En": "Seller",
+        "Tu": "Satış"
+      }
+    },
+    "closing": {
+      "Fa": "بستن",
+      "En": "Closing",
+      "Tu": "Kapatma"
+    },
+    "opening": {
+      "Fa": "باز کردن",
+      "En": "Opening",
+      "Tu": "Açma"
+    },
+    "close": {
+      "Fa": "بسته",
+      "En": "Closed",
+      "Tu": "Kapalı"
+    },
+    "open": {
+      "Fa": "باز",
+      "En": "Open",
+      "Tu": "Açık"
+    },
+    "zero_stock_toggle_success_notification": {
+      "Fa": "وضعیت فروشگاه با موفقیت به‌روزرسانی شد.",
+      "En": "Store status successfully updated.",
+      "Tu": "Mağaza durumu başarıyla güncellendi."
+    },
+    "zero_stock_toggle_error_notification": {
+      "Fa": "خطا در تغییر وضعیت فروشگاه",
+      "En": "Error updating store status.",
+      "Tu": "Mağaza durumu güncellenirken hata oluştu."
+    }
+  },
+  "select": {
+    "title": {
+      "Fa": "کاربر",
+      "En": "User",
+      "Tu": "Kullanıcı"
+    },
+    "placeholder": {
+      "Fa": "جستجو با نام کاربری یا ایمیل کاربر ...",
+      "En": "Search by username or email...",
+      "Tu": "Kullanıcı adı veya e-posta ile ara..."
+    }
+  },
+  "province_select": {
+    "title": {
+      "Fa": "استان",
+      "En": "Province",
+      "Tu": "İl"
+    },
+    "placeholder": {
+      "Fa": "جستجو با نام استان ...",
+      "En": "Search by province name...",
+      "Tu": "İl adı ile ara..."
+    }
+  },
+  "city_select": {
+    "title": {
+      "Fa": "شهر",
+      "En": "District/City",
+      "Tu": "İlçe"
+    },
+    "placeholder": {
+      "Fa": "جستجو با نام شهر ...",
+      "En": "Search by district or city name...",
+      "Tu": "İlçe adı ile ara..."
+    }
+  },
+  "dialog": {
+    "add": {
+      "title": {
+        "Fa": "افزودن کاربر",
+        "En": "Add User",
+        "Tu": "Kullanıcı Ekle"
+      },
+      "button": {
+        "Fa": "افزودن",
+        "En": "Add",
+        "Tu": "Ekle"
+      },
+      "success_notification": {
+        "Fa": "کاربر با موفقیت اضافه شد.",
+        "En": "User added successfully.",
+        "Tu": "Kullanıcı başarıyla eklendi."
+      },
+      "error_notification": {
+        "Fa": "خطا در افزودن کاربر",
+        "En": "Error adding user",
+        "Tu": "Kullanıcı eklenirken hata oluştu"
+      }
+    },
+    "edit": {
+      "title": {
+        "Fa": "ویرایش کاربر",
+        "En": "Edit User",
+        "Tu": "Kullanıcıyı Düzenle"
+      },
+      "button": {
+        "Fa": "ویرایش",
+        "En": "Edit",
+        "Tu": "Düzenle"
+      },
+      "success_notification": {
+        "Fa": "کاربر با موفقیت ویرایش شد.",
+        "En": "User edited successfully.",
+        "Tu": "Kullanıcı başarıyla düzenlendi."
+      },
+      "error_notification": {
+        "Fa": "خطا در ویرایش کاربر",
+        "En": "Error editing user",
+        "Tu": "Kullanıcı düzenlenirken hata oluştu"
+      }
+    },
+    "view": {
+      "title": {
+        "Fa": "مشاهده کاربر",
+        "En": "View User",
+        "Tu": "Kullanıcıyı Görüntüle"
+      }
+    },
+    "bucket_name": {
+      "Fa": "نام مجموعه",
+      "En": "Showroom Name",
+      "Tu": "Showroom Adı"
+    },
+    "email": {
+      "Fa": "ایمیل",
+      "En": "Email",
+      "Tu": "E-posta"
+    },
+    "role": {
+      "Fa": "نقش",
+      "En": "Role",
+      "Tu": "Rol"
+    },
+    "password": {
+      "Fa": "رمزعبور",
+      "En": "Password",
+      "Tu": "Şifre"
+    },
+    "provider": {
+      "Fa": "بنکدار",
+      "En": "Wholesaler",
+      "Tu": "Toptancı"
+    },
+    "admin": {
+      "Fa": "ادمین",
+      "En": "Admin",
+      "Tu": "Admin"
+    },
+    "seller_mobile": {
+      "Fa": "شماره تماس فروشنده",
+      "En": "Seller Contact Number",
+      "Tu": "Satıcı İletişim Numarası"
+    },
+    "seller_full_name": {
+      "Fa": "نام فروشنده",
+      "En": "Seller Full Name",
+      "Tu": "Satıcı Adı Soyadı"
+    },
+    "full_name": {
+      "Fa": "نام مغازه‌دار",
+      "En": "Gallery Owner Name",
+      "Tu": "Galeri Sahibi Adı"
+    },
+    "mobile": {
+      "Fa": "شماره تماس مغازه‌دار",
+      "En": "Gallery Owner Mobile",
+      "Tu": "Galeri Sahibi Telefonu"
+    },
+    "national_code": {
+      "Fa": "کد ملی",
+      "En": "National ID",
+      "Tu": "T.C. Kimlik No"
+    },
+    "referer_name": {
+      "Fa": "نام معرف",
+      "En": "Referrer Name",
+      "Tu": "Referans Adı"
+    },
+    "address": {
+      "Fa": "آدرس",
+      "En": "Address",
+      "Tu": "Adres"
+    },
+    "city": {
+      "Fa": "شهر",
+      "En": "District",
+      "Tu": "İlçe"
+    },
+    "province": {
+      "Fa": "استان",
+      "En": "Province",
+      "Tu": "İl"
+    },
+    "description": {
+      "Fa": "توضیحات بنکداری",
+      "En": "Showroom Description",
+      "Tu": "Showroom Açıklaması"
+    },
+    "showcase": {
+      "Fa": "عکس ویترین بنکداری",
+      "En": "Showroom Display Photo",
+      "Tu": "Showroom Vitrin Fotoğrafı"
+    },
+    "logo": {
+      "Fa": "لوگو",
+      "En": "Logo",
+      "Tu": "Logo"
+    },
+    "signed_contract": {
+      "Fa": "قرارداد امضاشده",
+      "En": "Signed Contract",
+      "Tu": "İmzalı Sözleşme"
+    },
+    "business_license": {
+      "Fa": "دارای جواز کسب",
+      "En": "Has Business License",
+      "Tu": "İş Yeri Ruhsatı Var"
+    },
+    "birth_date": {
+      "Fa": "تاریخ تولد",
+      "En": "Birth Date",
+      "Tu": "Doğum Tarihi"
+    },
+    "yes": {
+      "Fa": "بله",
+      "En": "Yes",
+      "Tu": "Evet"
+    },
+    "no": {
+      "Fa": "خیر",
+      "En": "No",
+      "Tu": "Hayır"
+    },
+    "business_license_image": {
+      "Fa": "جواز کسب",
+      "En": "Business License",
+      "Tu": "İş Yeri Ruhsatı"
+    },
+    "domain": {
+      "Fa": "دامنه",
+      "En": "Domain",
+      "Tu": "Alan Adı"
+    },
+    "domain_duplicate_error": {
+      "Fa": "این دامنه قبلاً ثبت شده است.",
+      "En": "This domain is already registered.",
+      "Tu": "Bu alan adı zaten kayıtlı."
+    },
+    "domain_checking": {
+      "Fa": "در حال بررسی دامنه...",
+      "En": "Checking domain...",
+      "Tu": "Alan adı kontrol ediliyor..."
+    },
+    "domain_available": {
+      "Fa": "دامنه قابل استفاده است.",
+      "En": "Domain is available.",
+      "Tu": "Alan adı kullanılabilir."
+    },
+    "domain_check_failed_notification": {
+      "Fa": "خطایی در بررسی دامنه رخ داده است. لطفاً دوباره تلاش کنید.",
+      "En": "An error occurred while checking the domain. Please try again.",
+      "Tu": "Alan adı kontrol edilirken bir hata oluştu. Lütfen tekrar deneyin."
+    },
+    "roles": {
+      "banking-admin": {
+        "Fa": "ادمین",
+        "En": "Admin",
+        "Tu": "Admin"
+      },
+      "banking-provider": {
+        "Fa": "بنکدار",
+        "En": "Wholesaler",
+        "Tu": "Toptancı"
+      },
+      "banking-seller": {
+        "Fa": "فروشنده زرهاب",
+        "En": "Seller",
+        "Tu": "Satış"
+      }
+    }
+  }
+}

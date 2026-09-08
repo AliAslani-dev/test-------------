@@ -1,0 +1,59 @@
+{
+  "tab_title": {
+    "Fa": "حسابداری",
+    "En": "Accounting",
+    "Tu": "Muhasebe"
+  },
+  "total_asset_credit": {
+    "Fa": "گرم طلایی کل فروش",
+    "En": "Total Asset Credit",
+    "Tu": ""
+  },
+  "total_rial_credit": {
+    "Fa": "مقدار ریالی کل فروش",
+    "En": "Total Rial Credit",
+    "Tu": ""
+  },
+  "total_zarhub_asset_credit": {
+    "Fa": "گرم طلایی قابل برداشت (با کسر کمیسیون)",
+    "En": "Total Zarhub Asset Credit",
+    "Tu": ""
+  },
+  "total_zarhub_rial_credit": {
+    "Fa": "مقدار ریالی قابل برداشت (با کسر کمیسیون)",
+    "En": "Total Zarhub Rial Credit",
+    "Tu": ""
+  },
+  "total_client_asset_credit": {
+    "Fa": "گرم طلایی قابل پرداخت توسط گالری‌ها",
+    "En": "Total Client Asset Credit",
+    "Tu": ""
+  },
+  "total_client_rial_credit": {
+    "Fa": "مقدار ریالی قابل پرداخت توسط گالری‌ها",
+    "En": "Total Client Rial Credit",
+    "Tu": ""
+  },
+  "zarhub_share_asset": {
+    "Fa": "سهم طلایی زرهاب",
+    "En": "Zarhub Share Asset",
+    "Tu": ""
+  },
+  "zarhub_share_rial": {
+    "Fa": "سهم ریالی زرهاب",
+    "En": "Zarhub Share Rial",
+    "Tu": ""
+  },
+  "table": {
+    "buckets_table": {
+      "Fa": "جدول سفارش‌ها",
+      "En": "Orders Table",
+      "Tu": "Siparişler Tablosu"
+    },
+    "no_data_to_display": {
+      "Fa": "داده‌ای جهت نمایش وجود ندارد",
+      "En": "No data available to display",
+      "Tu": "Görüntülenecek veri yok"
+    }
+  }
+}
