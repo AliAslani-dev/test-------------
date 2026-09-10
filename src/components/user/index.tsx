@@ -95,6 +95,7 @@ const UserTab: FunctionComponent<UserTabProps> = ({ setActiveUserId }) => {
           description: row.description,
           showcase: row.showcase,
           domain: row.domain,
+          organizationId: row.organizationId,
           signedContract: row.signedContract,
           businessLicense: row.businessLicense,
           businessLicenseImage: row.businessLicenseImage,

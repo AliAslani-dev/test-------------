@@ -2,6 +2,8 @@ export const USER_ROLES = {
   ADMIN: 'banking-admin',
   PROVIDER: 'banking-provider',
   SELLER: 'banking-seller',
+  ORGANIZATIONAL: 'organizational',
+  GALLERY: 'gallery',
 } as const;
 
 export type UserRole = (typeof USER_ROLES)[keyof typeof USER_ROLES];

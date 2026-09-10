@@ -94,19 +94,36 @@ export const makeUserTableColumns = (
     render: (v) => {
       const { lang } = useLang();
       const { t } = useText('user', lang);
+      type ValidRole =
+        | 'banking-admin'
+        | 'banking-provider'
+        | 'banking-seller'
+        | 'organizational'
+        | 'gallery';
       if (
         typeof v !== 'string' ||
-        (v !== 'banking-admin' && v !== 'banking-provider' && v !== 'banking-seller')
+        ![
+          'banking-admin',
+          'banking-provider',
+          'banking-seller',
+          'organizational',
+          'gallery',
+        ].includes(v)
       ) {
         return null;
       }
-      const roleMap: Record<'banking-admin' | 'banking-provider' | 'banking-seller', string> = {
+
+      const role = v as ValidRole;
+
+      const roleMap: Record<ValidRole, string> = {
         'banking-admin': t('table.roles.banking-admin'),
         'banking-provider': t('table.roles.banking-provider'),
         'banking-seller': t('table.roles.banking-seller'),
+        organizational: t('table.roles.organizational'),
+        gallery: t('table.roles.gallery'),
       };
 
-      return <Typography fontSize={14}>{roleMap[v]}</Typography>;
+      return <Typography fontSize={14}>{roleMap[role]}</Typography>;
     },
   },
   {

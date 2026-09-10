@@ -27,6 +27,8 @@ export type UserTable = {
   description: null | string;
   showcase: null | string;
   domain: null | string;
+  organizationId: null | number;
+   organizationName?: string;
   signedContract: null | boolean;
   businessLicense: null | boolean;
   businessLicenseImage: null | string;

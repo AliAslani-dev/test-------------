@@ -23,6 +23,7 @@ export interface UserDTO {
   description: null | string;
   showcase: null | string;
   domain: null | string;
+  organizationId: null | number;
   signedContract: null | boolean;
   businessLicense: null | boolean;
   businessLicenseImage: null | string;
@@ -86,6 +87,7 @@ export const getUsersDTO = (response: any): UserDTO[] => {
     description: user.description ?? null,
     showcase: user.showcase ?? null,
     domain: user.domain ?? null,
+    organizationId: user.organization_id ?? null,
     signedContract:
       user.signed_contract !== null ? (user.signed_contract === 1 ? true : false) : null,
     businessLicense:

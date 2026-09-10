@@ -13,7 +13,7 @@ export const PERMISSIONS = {
   ORDERS_VIEW: 'orders.view',
   TAGS_VIEW: 'tags.view',
   PROFILE_VIEW: 'profile.view',
-  ORGANIZATION_VIEW : "organization.view"
+  ORGANIZATION_VIEW: 'organization.view',
 } as const;
 
 export type Permission = (typeof PERMISSIONS)[keyof typeof PERMISSIONS];
@@ -29,7 +29,7 @@ export const ROLE_PERMISSIONS: Record<UserRole, Permission[]> = {
     PERMISSIONS.FRAMES_VIEW,
     PERMISSIONS.PRODUCTS_VIEW,
     PERMISSIONS.TAGS_VIEW,
-    PERMISSIONS.ORGANIZATION_VIEW
+    PERMISSIONS.ORGANIZATION_VIEW,
   ],
   [USER_ROLES.SELLER]: [PERMISSIONS.DASHBOARD_VIEW, PERMISSIONS.TAGS_VIEW, PERMISSIONS.ORDERS_VIEW],
   [USER_ROLES.PROVIDER]: [
@@ -42,6 +42,8 @@ export const ROLE_PERMISSIONS: Record<UserRole, Permission[]> = {
     PERMISSIONS.PROFILE_VIEW,
     PERMISSIONS.DASHBOARD_VIEW,
   ],
+  [USER_ROLES.ORGANIZATIONAL]: [],
+  [USER_ROLES.GALLERY]: [],
 };
 
 /** Route (پیشوند) → Permission لازم برای دسترسی به آن مسیر و زیرمسیرهایش */

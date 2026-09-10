@@ -42,6 +42,8 @@ import {
 import { useLang } from '@/hooks/LanContext';
 import DatePicker from '@/components/shared/date-picker';
 import JDate from 'jalali-date';
+import { OrganizationSelect } from '@/components/organization/components/select';
+import { OrganizationDTO } from '@/api/admin/organization/dto';
 
 interface UserDialogProps {
   open: boolean;
@@ -105,6 +107,8 @@ const UserDialog: FunctionComponent<UserDialogProps> = ({
   const [domainStatus, setDomainStatus] = useState<
     'idle' | 'checking' | 'ok' | 'duplicate' | 'error'
   >('idle');
+  const [organizationId, setOrganizationId] = useState<number | null>(null);
+  const [organization, setOrganization] = useState<OrganizationDTO | null>(null);
 
   const [image, setImage] = useState<string>('');
   const [file, setFile] = useState<File | null>(null);
@@ -126,11 +130,17 @@ const UserDialog: FunctionComponent<UserDialogProps> = ({
   const isEdit = mode === 'edit' && !isView;
 
   const availableRoles = useMemo((): UserRole[] => {
-    return ['banking-provider', 'banking-admin', 'banking-seller'];
+    return ['banking-provider', 'banking-admin', 'banking-seller', 'organizational', 'gallery'];
   }, []);
 
   const isProviderRole = role?.includes('provider') || role === 'banking-provider';
-  const isAdminRole = !isProviderRole;
+  const isOrganizationalOrGallery = role === 'organizational' || role === 'gallery';
+  const isAdminRole = !isProviderRole && !isOrganizationalOrGallery;
+
+  // وقتی organization عوض میشه، organizationId رو آپدیت کن
+  useEffect(() => {
+    setOrganizationId(organization?.id ?? null);
+  }, [organization]);
 
   useEffect(() => {
     let finalBirthDate: string | null = null;
@@ -167,6 +177,8 @@ const UserDialog: FunctionComponent<UserDialogProps> = ({
       setAddress('');
       setDescription('');
       setDomain('');
+      setOrganizationId(null);
+      setOrganization(null);
 
       setImage('');
       setFile(null);
@@ -203,6 +215,20 @@ const UserDialog: FunctionComponent<UserDialogProps> = ({
     setAddress(u.address ?? '');
     setDescription(u.description ?? '');
     setDomain(u.domain ?? '');
+    setOrganizationId(u.organizationId ?? null);
+
+    // ست کردن organization برای Organizational و Gallery
+    if (u.organizationId) {
+      setOrganization({
+        id: u.organizationId,
+        faName: u.organizationName || '',
+        enName: '',
+        commission: 0,
+        isEnabled: true,
+      });
+    } else {
+      setOrganization(null);
+    }
 
     setImage(u.logo ?? '');
     setFile(null);
@@ -341,7 +367,8 @@ const UserDialog: FunctionComponent<UserDialogProps> = ({
       return emailOk && passwordOk && hasChanges;
     }
 
-    if (isProviderRole) {
+    /* PROVIDER + ORGANIZATIONAL + GALLERY */
+    if (isProviderRole || isOrganizationalOrGallery) {
       const passwordIsOk = isAdd
         ? password.length >= 5
         : password.length === 0 || password.length >= 5;
@@ -362,6 +389,7 @@ const UserDialog: FunctionComponent<UserDialogProps> = ({
       const signedContractIsOk = signedContract === 1;
       const businessLicenseIsOk =
         businessLicense === 0 ? true : isAdd ? businessLicenseImageFile !== null : true;
+      const organizationIsOk = isOrganizationalOrGallery ? organizationId !== null : true;
 
       const commonFieldsIsOk =
         passwordIsOk &&
@@ -380,11 +408,12 @@ const UserDialog: FunctionComponent<UserDialogProps> = ({
         logoIsOk &&
         showcaseIsOk &&
         signedContractIsOk &&
-        businessLicenseIsOk;
+        businessLicenseIsOk &&
+        organizationIsOk;
 
       if (isAdd) {
         const nameIsOk = NAME_RE.test(name);
-        const domainIsOk = domain.length > 0 && domainStatus === 'ok';
+        const domainIsOk = isProviderRole ? domain.length > 0 && domainStatus === 'ok' : true;
         return commonFieldsIsOk && nameIsOk && domainIsOk;
       }
 
@@ -415,7 +444,8 @@ const UserDialog: FunctionComponent<UserDialogProps> = ({
         strChanged(String(signedContract === 1), String(orig.signedContract)) ||
         strChanged(String(businessLicense === 1), String(orig.businessLicense)) ||
         !!businessLicenseImageFile ||
-        strChanged(birthDate, orig.birthDate ?? '');
+        strChanged(birthDate, orig.birthDate ?? '') ||
+        (isOrganizationalOrGallery && organizationId !== orig.organizationId);
 
       return hasChanges;
     }
@@ -426,6 +456,7 @@ const UserDialog: FunctionComponent<UserDialogProps> = ({
     isAdd,
     isAdminRole,
     isProviderRole,
+    isOrganizationalOrGallery,
     role,
     email,
     password,
@@ -451,6 +482,7 @@ const UserDialog: FunctionComponent<UserDialogProps> = ({
     signedContract,
     birthDate,
     showingUser,
+    organizationId,
   ]);
 
   const handleCloseInternal = () => {
@@ -471,6 +503,8 @@ const UserDialog: FunctionComponent<UserDialogProps> = ({
     setAddress('');
     setDescription('');
     setDomain('');
+    setOrganizationId(null);
+    setOrganization(null);
 
     setImage('');
     setFile(null);
@@ -537,13 +571,14 @@ const UserDialog: FunctionComponent<UserDialogProps> = ({
         }
       }
 
-      /* PROVIDER (NON-ADMIN) */
-      if (isProviderRole) {
+      /* PROVIDER + ORGANIZATIONAL + GALLERY */
+      if (isProviderRole || isOrganizationalOrGallery) {
         /* ADD */
         if (isAdd) {
-          const trimmedDomain = trim(domain);
+          const trimmedDomain = isProviderRole ? trim(domain) : '';
           if (province === null || city === null) return;
-          if (domain !== '' && trimmedDomain) {
+          
+          if (isProviderRole && trimmedDomain) {
             try {
               const res = await userCheckDomain(trimmedDomain);
               if (res?.duplicate) {
@@ -571,7 +606,7 @@ const UserDialog: FunctionComponent<UserDialogProps> = ({
           const created = await addProviderUser(
             email,
             password,
-            role as 'banking-provider',
+            role as 'banking-provider' | 'organizational' | 'gallery',
             name,
             sellerMobile,
             finalLogo as File,
@@ -584,12 +619,13 @@ const UserDialog: FunctionComponent<UserDialogProps> = ({
             city.name,
             address,
             description,
-            trimmedDomain,
+            isProviderRole ? trimmedDomain : null,
             finalShowcase as File,
             signedContract,
             businessLicense,
             businessLicenseImageFile,
             birthDate === '' ? null : birthDate,
+            isOrganizationalOrGallery ? organizationId : null,
           );
 
           showNotification(t('dialog.add.success_notification'), 'success');
@@ -602,6 +638,7 @@ const UserDialog: FunctionComponent<UserDialogProps> = ({
             role,
             enabled: true,
             actions: <></>,
+            organizationId: isOrganizationalOrGallery ? organizationId : undefined,
           } as UserTable);
 
           handleCloseInternal();
@@ -666,6 +703,10 @@ const UserDialog: FunctionComponent<UserDialogProps> = ({
             editedUserValues.birthDate = birthDate;
           }
 
+          if (isOrganizationalOrGallery && organizationId !== showingUser.organizationId) {
+            editedUserValues.organizationId = organizationId;
+          }
+
           let finalLogo = file;
           if (!file && !image) {
             finalLogo = await getFallbackFile('/images/DefaultLogo.jpg', 'DefaultLogo.jpg');
@@ -696,6 +737,7 @@ const UserDialog: FunctionComponent<UserDialogProps> = ({
             editedUserValues.businessLicense ?? null,
             businessLicenseImageFile || null,
             editedUserValues.birthDate || null,
+            isOrganizationalOrGallery ? organizationId : null,
           );
 
           showNotification(t('dialog.edit.success_notification'), 'success');
@@ -728,6 +770,7 @@ const UserDialog: FunctionComponent<UserDialogProps> = ({
         ...DialogSX.dialog,
         ...(isMobile && DialogSX.bottom_sheet_dialog),
       }}
+      disableAutoFocus 
     >
       <Box sx={DialogSX.header_container}>
         <DialogTitle sx={DialogSX.header_title}>{t(`dialog.${mode}.title`)}</DialogTitle>
@@ -796,7 +839,7 @@ const UserDialog: FunctionComponent<UserDialogProps> = ({
               />
             )}
 
-            {isProviderRole && (
+            {(isProviderRole || isOrganizationalOrGallery) && (
               <>
                 <Box sx={SX.row_two_col}>
                   {isAdd && (
@@ -809,58 +852,72 @@ const UserDialog: FunctionComponent<UserDialogProps> = ({
                       hasStar
                     />
                   )}
-                  <Box sx={{ width: '100%' }}>
-                    <CustomTextField
-                      id="domain"
-                      value={domain}
-                      setValue={setDomain}
-                      title={t('dialog.domain')}
-                      disabled={!isAdd}
-                      hasStar
-                      InputProps={{
-                        startAdornment: (
-                          <InputAdornment position="start">
-                            <Typography sx={{ color: 'text.disabled', direction: 'ltr', ml: 1 }}>
-                              zarhub.net/
-                            </Typography>
-                          </InputAdornment>
-                        ),
-                        endAdornment: (
-                          <>
-                            {domainStatus === 'ok' && <CheckCircleRoundedIcon color="success" />}
-                            {(domainStatus === 'duplicate' || domainStatus === 'error') && (
-                              <ErrorRoundedIcon color="error" />
-                            )}
-                            {(domainStatus === 'idle' || domainStatus === 'checking') && (
-                              <LanguageRoundedIcon color="disabled" />
-                            )}
-                          </>
-                        ),
-                        sx: {
-                          direction: 'ltr',
-                          '& input': { textAlign: 'left' },
-                        },
-                      }}
-                    />
-                    {isAdd && isProviderRole && (
-                      <Typography
-                        variant="caption"
-                        sx={{
-                          mt: 0.5,
-                          ml: 0.5,
-                          color:
-                            domainStatus === 'duplicate' || domainStatus === 'error'
-                              ? 'error.main'
-                              : 'text.secondary',
+                  
+                  {isProviderRole && (
+                    <Box sx={{ width: '100%' }}>
+                      <CustomTextField
+                        id="domain"
+                        value={domain}
+                        setValue={setDomain}
+                        title={t('dialog.domain')}
+                        disabled={!isAdd}
+                        hasStar
+                        InputProps={{
+                          startAdornment: (
+                            <InputAdornment position="start">
+                              <Typography sx={{ color: 'text.disabled', direction: 'ltr', ml: 1 }}>
+                                zarhub.net/
+                              </Typography>
+                            </InputAdornment>
+                          ),
+                          endAdornment: (
+                            <>
+                              {domainStatus === 'ok' && <CheckCircleRoundedIcon color="success" />}
+                              {(domainStatus === 'duplicate' || domainStatus === 'error') && (
+                                <ErrorRoundedIcon color="error" />
+                              )}
+                              {(domainStatus === 'idle' || domainStatus === 'checking') && (
+                                <LanguageRoundedIcon color="disabled" />
+                              )}
+                            </>
+                          ),
+                          sx: {
+                            direction: 'ltr',
+                            '& input': { textAlign: 'left' },
+                          },
                         }}
-                      >
-                        {domainStatus === 'checking' && t('dialog.domain_checking')}
-                        {domainStatus === 'ok' && t('dialog.domain_available')}
-                        {domainStatus === 'duplicate' && t('dialog.domain_duplicate_error')}
-                        {domainStatus === 'error' && t('dialog.domain_check_failed_notification')}
-                      </Typography>
-                    )}
-                  </Box>
+                      />
+                      {isAdd && isProviderRole && (
+                        <Typography
+                          variant="caption"
+                          sx={{
+                            mt: 0.5,
+                            ml: 0.5,
+                            color:
+                              domainStatus === 'duplicate' || domainStatus === 'error'
+                                ? 'error.main'
+                                : 'text.secondary',
+                          }}
+                        >
+                          {domainStatus === 'checking' && t('dialog.domain_checking')}
+                          {domainStatus === 'ok' && t('dialog.domain_available')}
+                          {domainStatus === 'duplicate' && t('dialog.domain_duplicate_error')}
+                          {domainStatus === 'error' && t('dialog.domain_check_failed_notification')}
+                        </Typography>
+                      )}
+                    </Box>
+                  )}
+
+                  {isOrganizationalOrGallery && (
+                    <Box sx={{ width: '100%' }}>
+                      <OrganizationSelect
+                        value={organization}
+                        setValue={setOrganization}
+                        disabled={isView}
+                        hasStar
+                      />
+                    </Box>
+                  )}
                 </Box>
 
                 <Box sx={SX.row_two_col}>
@@ -977,7 +1034,6 @@ const UserDialog: FunctionComponent<UserDialogProps> = ({
                   <Box sx={SX.uploader_wrapper}>
                     <Box sx={SX.uploader_wrapper_header}>
                       <Typography sx={SX.uploader_title}>{t('dialog.logo')}</Typography>
-                      {/* <Typography sx={SX.star}>*</Typography> */}
                     </Box>
                     <ImageUploader
                       value={file ?? undefined}
@@ -994,7 +1050,6 @@ const UserDialog: FunctionComponent<UserDialogProps> = ({
                   <Box sx={SX.uploader_wrapper}>
                     <Box sx={SX.uploader_wrapper_header}>
                       <Typography sx={SX.uploader_title}>{t('dialog.showcase')}</Typography>
-                      {/* <Typography sx={SX.star}>*</Typography> */}
                     </Box>
                     <ImageUploader
                       value={showcase ?? undefined}
@@ -1026,7 +1081,7 @@ const UserDialog: FunctionComponent<UserDialogProps> = ({
                           borderColor: '#E7E6E6',
                         },
                       }}
-                      onChange={(e) => setSignedContract(e.target.value)}
+                      onChange={(e) => setSignedContract(e.target.value as 0 | 1)}
                       disabled={isView}
                     >
                       <MenuItem value={0}>{t('dialog.no')}</MenuItem>
@@ -1046,7 +1101,7 @@ const UserDialog: FunctionComponent<UserDialogProps> = ({
                           borderColor: '#E7E6E6',
                         },
                       }}
-                      onChange={(e) => setBusinessLicense(e.target.value)}
+                      onChange={(e) => setBusinessLicense(e.target.value as 0 | 1)}
                       disabled={isView}
                     >
                       <MenuItem value={0}>{t('dialog.no')}</MenuItem>

@@ -1,3 +1,5 @@
+// src/api/admin/user/service.ts
+
 import { adminUserApi } from '@/api';
 import { UserRole } from '@/constants';
 import { DomainCheckDTO, getCitiesDTO, getProvincesDTO, getRegionDTO, getUsersDTO } from './dto';
@@ -80,10 +82,13 @@ export const editAdminUser = async (
   }
 };
 
+// ============================================
+// ADD PROVIDER USER - به‌روز شده با organizationId
+// ============================================
 export const addProviderUser = async (
   email: string,
   password: string,
-  role: 'banking-provider',
+  role: 'banking-provider' | 'organizational' | 'gallery',
   bucketName: string,
   sellerMobile: string,
   file: File,
@@ -96,12 +101,13 @@ export const addProviderUser = async (
   city: string,
   address: string,
   description: string,
-  domain: string,
+  domain: string | null,
   showcase: File | null,
   signedContract: number,
   businessLicense: number,
   businessLicenseImage: File | null,
   birthDate: string | null,
+  organizationId: number | null,
 ) => {
   const fd = new FormData();
 
@@ -120,23 +126,36 @@ export const addProviderUser = async (
   fd.append('city', city);
   fd.append('address', address);
   fd.append('description', description);
-  fd.append('domain', domain);
   fd.append('signed_contract', JSON.stringify(signedContract));
   fd.append('business_license', JSON.stringify(businessLicense));
 
-  // OPTIONAL
+  // OPTIONAL - فقط در صورت وجود مقدار اضافه کن
+  if (domain) fd.append('domain', domain);
   if (nationalCode) fd.append('national_code', nationalCode);
   if (showcase) fd.append('showcase', showcase, showcase.name);
-  if (businessLicenseImage)
+  if (businessLicenseImage) {
     fd.append('business_license_image', businessLicenseImage, businessLicenseImage.name);
+  }
   if (birthDate !== null && birthDate !== undefined) {
     const formatedDate = formatJalaliDate(birthDate);
     fd.append('birth_date', formatedDate);
   }
+  if (organizationId !== null && organizationId !== undefined) {
+    fd.append('organization_id', JSON.stringify(organizationId));
+  }
 
-  return adminUserApi.addProviderUserAPI(fd).then((r) => r.data ?? r);
+  try {
+    const response = await adminUserApi.addProviderUserAPI(fd);
+    return response.data ?? response;
+  } catch (err) {
+    console.error('Adding provider user failed.', err);
+    throw err;
+  }
 };
 
+// ============================================
+// EDIT PROVIDER USER - به‌روز شده با organizationId
+// ============================================
 export const editProviderUser = async (
   userId: number,
   email: string | null,
@@ -157,34 +176,66 @@ export const editProviderUser = async (
   businessLicense: number | null,
   businessLicenseImage: File | null,
   birthDate: string | null,
+  organizationId?: number | null,
 ) => {
   const fd = new FormData();
-  if (email !== null) fd.append('email', email);
-  if (password !== null) fd.append('password', password);
-  if (file !== null) fd.append('logo', file, file.name);
-  if (sellerMobile !== null) fd.append('seller_mobile', sellerMobile);
-  if (sellerFullName !== null) fd.append('seller_full_name', sellerFullName);
-  if (fullName !== null) fd.append('full_name', fullName);
-  if (mobile !== null) fd.append('mobile', mobile);
-  if (nationalCode !== null) fd.append('national_code', nationalCode);
-  if (refererName !== null) fd.append('referer_name', refererName);
-  if (province !== null) fd.append('province', province);
-  if (city !== null) fd.append('city', city);
-  if (address !== null) fd.append('address', address);
-  if (description !== null) fd.append('description', description);
-  if (showcase !== null) fd.append('showcase', showcase, showcase.name);
-  if (signedContract !== null) fd.append('signed_contract', JSON.stringify(signedContract));
-  if (businessLicense !== null) fd.append('business_license', JSON.stringify(businessLicense));
-  if (businessLicenseImage !== null)
+
+  // فقط فیلدهایی که مقدار دارند رو append کن
+  if (email !== null && email !== undefined) fd.append('email', email);
+  if (password !== null && password !== undefined) fd.append('password', password);
+  if (file !== null && file !== undefined) fd.append('logo', file, file.name);
+  if (sellerMobile !== null && sellerMobile !== undefined) {
+    fd.append('seller_mobile', sellerMobile);
+  }
+  if (sellerFullName !== null && sellerFullName !== undefined) {
+    fd.append('seller_full_name', sellerFullName);
+  }
+  if (fullName !== null && fullName !== undefined) fd.append('full_name', fullName);
+  if (mobile !== null && mobile !== undefined) fd.append('mobile', mobile);
+  if (nationalCode !== null && nationalCode !== undefined) {
+    fd.append('national_code', nationalCode);
+  }
+  if (refererName !== null && refererName !== undefined) {
+    fd.append('referer_name', refererName);
+  }
+  if (province !== null && province !== undefined) fd.append('province', province);
+  if (city !== null && city !== undefined) fd.append('city', city);
+  if (address !== null && address !== undefined) fd.append('address', address);
+  if (description !== null && description !== undefined) {
+    fd.append('description', description);
+  }
+  if (showcase !== null && showcase !== undefined) {
+    fd.append('showcase', showcase, showcase.name);
+  }
+  if (signedContract !== null && signedContract !== undefined) {
+    fd.append('signed_contract', JSON.stringify(signedContract));
+  }
+  if (businessLicense !== null && businessLicense !== undefined) {
+    fd.append('business_license', JSON.stringify(businessLicense));
+  }
+  if (businessLicenseImage !== null && businessLicenseImage !== undefined) {
     fd.append('business_license_image', businessLicenseImage, businessLicenseImage.name);
-  if (birthDate !== null) {
+  }
+  if (birthDate !== null && birthDate !== undefined) {
     const formatedDate = formatJalaliDate(birthDate);
     fd.append('birth_date', formatedDate);
   }
+  if (organizationId !== null && organizationId !== undefined) {
+    fd.append('organization_id', JSON.stringify(organizationId));
+  }
 
-  return adminUserApi.editProviderUserAPI(userId, fd).then((response) => response.data ?? response);
+  try {
+    const response = await adminUserApi.editProviderUserAPI(userId, fd);
+    return response.data ?? response;
+  } catch (err) {
+    console.error('Editing provider user failed.', err);
+    throw err;
+  }
 };
 
+// ============================================
+// سایر توابع
+// ============================================
 export const providerToggleStoreStatus = async (
   userId: number,
   closed: number,
@@ -194,7 +245,13 @@ export const providerToggleStoreStatus = async (
   fd.append('closed', String(closed));
   if (openingTime !== undefined) fd.append('opening_time', openingTime);
 
-  return adminUserApi.editProviderUserAPI(userId, fd).then((response) => response.data ?? response);
+  try {
+    const response = await adminUserApi.editProviderUserAPI(userId, fd);
+    return response.data ?? response;
+  } catch (err) {
+    console.error('Toggling store status failed.', err);
+    throw err;
+  }
 };
 
 export const userToggleEnabled = async (user_id: number) => {
