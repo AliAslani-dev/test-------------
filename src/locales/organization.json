@@ -19,18 +19,22 @@
     "En": "Error changing organization status",
     "Tu": "Organizasyon durumu değiştirilirken hata oluştu"
   },
-  "table": {
-    "organizations_table": {
-      "Fa": "جدول سازمان‌ها",
-      "En": "Organizations Table",
-      "Tu": "Organizasyonlar Tablosu"
-    },
+"table": {
+  "organizations_table": { "Fa": "جدول سازمان‌ها", "En": "Organizations Table", "Tu": "Organizasyonlar Tablosu" },
+  "no_data_to_display": { "Fa": "هیچ سازمانی یافت نشد", "En": "No organizations found", "Tu": "Organizasyon bulunamadı" },
+  "enabling": { "Fa": "فعال کردن", "En": "Enabling", "Tu": "Etkinleştiriliyor" },
+  "disabling": { "Fa": "غیرفعال کردن", "En": "Disabling", "Tu": "Devre dışı bırakılıyor" },
+  "enable": { "Fa": "فعال", "En": "Active", "Tu": "Aktif" },
+  "disable": { "Fa": "غیرفعال", "En": "Inactive", "Tu": "Pasif" },
+  "toggle_enabled_success_notification": { "Fa": "وضعیت سازمان با موفقیت تغییر کرد.", "En": "Organization status updated successfully.", "Tu": "Organizasyon durumu başarıyla güncellendi." },
+  "toggle_enabled_error_notification": { "Fa": "خطا در تغییر وضعیت سازمان", "En": "Error changing organization status", "Tu": "Organizasyon durumu değiştirme hatası" }
+},
     "no_data_to_display": {
       "Fa": "هیچ سازمانی یافت نشد",
       "En": "No organizations found",
       "Tu": "Organizasyon bulunamadı"
     }
-  },
+  ,
   "dialog": {
     "close": {
       "Fa": "بستن",

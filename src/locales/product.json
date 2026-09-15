@@ -251,6 +251,11 @@
         "Fa": "قیمت اضافات (ریال)",
         "En": "Extras Price (Dollar)",
         "Tu": "Ekstra Fiyat (Dolar)"
+      },
+      "sku": {
+        "Fa": "SKU",
+        "En": "SKU",
+        "Tu": "SKU"
       }
     },
     "model": {

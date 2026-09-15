@@ -41,7 +41,7 @@ const ProductVariantsTable: FunctionComponent<ProductVariantsTableProps> = ({ va
           >
             <TableCell align="center">{t('dialog.variant.stock')}</TableCell>
             <TableCell align="center">{t('dialog.variant.weight')}</TableCell>
-            {/* <TableCell align="center">{t('dialog.variant.id')}</TableCell> */}
+            <TableCell align="center">{t('dialog.variant.sku')}</TableCell>
           </TableRow>
         </TableHead>
 
@@ -52,7 +52,7 @@ const ProductVariantsTable: FunctionComponent<ProductVariantsTableProps> = ({ va
                 {variant.stock ?? 0}
               </TableCell>
               <TableCell align="center">{variant.weight ?? 0}</TableCell>
-              {/* <TableCell align="center">{variant.id ?? '-'}</TableCell> */}
+              <TableCell align="center">{variant.sku ?? '-'}</TableCell>
             </TableRow>
           ))}
         </TableBody>

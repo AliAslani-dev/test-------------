@@ -52,6 +52,7 @@ const makeStableKey = () =>
 
 const makeDraftVariant = (id: number): UIProductVariant => ({
   id,
+  sku: '',
   stock: 0,
   weight: 0,
   extraPrice: 0,

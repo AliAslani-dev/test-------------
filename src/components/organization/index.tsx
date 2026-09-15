@@ -26,7 +26,9 @@ const OrganizationTab: FunctionComponent = () => {
   const [loading, setLoading] = useState(false);
   const [modalMode, setModalMode] = useState<OrganizationModalMode>('add');
   const [modalOpen, setModalOpen] = useState(false);
-  const [showingOrganization, setShowingOrganization] = useState<OrganizationTable | undefined>(undefined);
+  const [showingOrganization, setShowingOrganization] = useState<OrganizationTable | undefined>(
+    undefined,
+  );
 
   const [filter, setFilter] = useState<string>(() => searchParams.get('q') ?? '');
   const [page, setPage] = useState<number>(() => {
@@ -108,9 +110,14 @@ const OrganizationTab: FunctionComponent = () => {
     setModalOpen(true);
   }, []);
 
+  const onLocalToggle = useCallback((id: number, next: boolean) => {
+    setData((prev) => prev.map((r) => (r.id === id ? { ...r, isEnabled: next } : r)));
+    setFilteredData((prev) => prev.map((r) => (r.id === id ? { ...r, isEnabled: next } : r)));
+  }, []);
+
   const columns = useMemo(
-    () => makeOrganizationTableColumns(onViewRow, onEditRow),
-    [onViewRow, onEditRow],
+    () => makeOrganizationTableColumns(onViewRow, onEditRow, onLocalToggle),
+    [onViewRow, onEditRow, onLocalToggle],
   );
 
   const onAdded = (organization: OrganizationTable) => {

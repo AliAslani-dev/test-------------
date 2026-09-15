@@ -36,16 +36,16 @@ export const drawerItems: DrawerItemType[] = [
     icon: DiamondRoundedIcon,
     link: '/dashboard/buckets',
   },
-   {
-    title: {
-      fa: 'اورگان ها',
-      en: 'organization',
-      tu: 'organization',
-    },
-    title_en: 'organization',
-    icon: BusinessCenterRoundedIcon,
-    link: '/dashboard/organization',
+{
+  title: {
+    fa: 'سازمان‌ها',
+    en: 'Organizations',
+    tu: 'Organizasyonlar',
   },
+  title_en: 'organization',
+  icon: BusinessCenterRoundedIcon,
+  link: '/dashboard/organization',
+},
   {
     title: {
       fa: 'دسته‌بندی‌ها',

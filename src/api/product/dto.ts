@@ -15,6 +15,7 @@ export type ProductVariant = {
   weight: number;
   extraPrice: number;
   extraWage: number;
+  sku: string;
 };
 
 export interface ProductByBucketDTO {
@@ -66,6 +67,7 @@ export const getProductsByFrameDTO = (response: {
           weight: variant.weight,
           extraPrice: variant.extra_price,
           extraWage: variant.extra_wage,
+          sku: variant.sku,
         })),
       };
     }),

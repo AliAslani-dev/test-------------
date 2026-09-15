@@ -33,6 +33,7 @@ const ProductDialogVariant: FunctionComponent<ProductDialogVariantProps> = ({
   const { lang } = useLang();
   const { t } = useText('product', lang);
 
+  const [sku] = useState<string>(String(initialState.sku ?? ''));
   const [stock, setStock] = useState<string>(String(initialState.stock ?? '0'));
   const [weight, setWeight] = useState<string>(String(initialState.weight ?? '0'));
   const [extraPrice, setExtraPrice] = useState<string>(String(initialState.extraPrice ?? '0'));
@@ -151,6 +152,14 @@ const ProductDialogVariant: FunctionComponent<ProductDialogVariantProps> = ({
 
       <Box sx={SX.inputs_wrapper}>
         <Box sx={SX.main_inputs}>
+          <CustomTextField
+            id={`sku-${rowKey}`}
+            title={t('dialog.variant.sku')}
+            value={String(initialState.sku ?? '')}
+            setValue={() => {}}
+            disabled
+          />
+
           <CustomTextField
             id={`weight-${rowKey}`}
             title={

@@ -77,6 +77,16 @@
         "Fa": "فروشنده زرهاب",
         "En": "Seller",
         "Tu": "Satış"
+      },
+      "organizational": {
+        "Fa": "سازمانی",
+        "En": "Organizational",
+        "Tu": "Organizational"
+      },
+      "gallery": {
+        "Fa": "گالری",
+        "En": "Gallery",
+        "Tu": "Gallery"
       }
     },
     "closing": {

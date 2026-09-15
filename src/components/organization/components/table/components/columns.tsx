@@ -3,44 +3,38 @@
 import { OrganizationTable } from '..';
 import { Column } from '@/components/shared/table';
 import OrganizationTableActionsCell from './actionsCell';
+import OrganizationTableEnabledCell from './enabledCell';
 import { organizationTableColumnsName } from '@/components/organization/data';
-import { Box, Chip } from '@mui/material';
+import { Box } from '@mui/material';
 
 export const makeOrganizationTableColumns = (
   onViewRow?: (row: OrganizationTable) => void,
   onEditRow?: (row: OrganizationTable) => void,
+  onLocalToggle?: (id: number, next: boolean) => void,
 ): Column<OrganizationTable>[] => [
-  { 
-    id: 'faName', 
-    label: organizationTableColumnsName['faName'], 
-    align: 'right' 
+  {
+    id: 'faName',
+    label: organizationTableColumnsName['faName'],
+    align: 'right',
   },
-  { 
-    id: 'enName', 
-    label: organizationTableColumnsName['enName'], 
-    align: 'right' 
+  {
+    id: 'enName',
+    label: organizationTableColumnsName['enName'],
+    align: 'right',
   },
-  { 
-    id: 'commission', 
-    label: organizationTableColumnsName['commission'], 
+  {
+    id: 'commission',
+    label: organizationTableColumnsName['commission'],
     align: 'center',
-    render: (value) => (
-      <Box>
-        {value}%
-      </Box>
-    ),
+    render: (value) => <Box>{value}%</Box>,
   },
-  { 
-    id: 'isEnabled', 
-    label: organizationTableColumnsName['isEnabled'], 
+  {
+    id: 'isEnabled',
+    label: organizationTableColumnsName['isEnabled'],
     align: 'center',
-    render: (value) => (
-      <Chip 
-        label={value ? 'فعال' : 'غیرفعال'} 
-        color={value ? 'success' : 'error'}
-        size="small"
-        sx={{ minWidth: 60 }}
-      />
+    width: 120,
+    render: (v, row) => (
+      <OrganizationTableEnabledCell value={!!v} row={row} onLocalToggle={onLocalToggle} />
     ),
   },
   {
@@ -50,10 +44,7 @@ export const makeOrganizationTableColumns = (
     width: 120,
     sortable: false,
     render: (_v, row) => (
-      <OrganizationTableActionsCell 
-        onView={() => onViewRow?.(row)} 
-        onEdit={() => onEditRow?.(row)} 
-      />
+      <OrganizationTableActionsCell onView={() => onViewRow?.(row)} onEdit={() => onEditRow?.(row)} />
     ),
   },
 ];

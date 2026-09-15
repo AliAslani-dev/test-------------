@@ -60,7 +60,7 @@ export const OrderTableFooter = ({
           —
         </TableCell>
         <TableCell align="center" sx={{ fontWeight: 900, color: '#9C7A2B', fontSize: '1.1rem' }}>
-          {tPD(finalGoldCredit.toFixed(3))} {t('dialog.grams')}
+          {tPD(finalGoldCredit)} {t('dialog.grams')}
         </TableCell>
         <TableCell colSpan={2} />
       </TableRow>

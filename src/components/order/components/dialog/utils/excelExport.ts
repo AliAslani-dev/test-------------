@@ -219,14 +219,7 @@ export const generateExcelFile = async (params: ExportExcelParams): Promise<void
   );
 
   if (finalGoldCredit !== undefined && finalGoldCredit !== null && order.status >= 2) {
-    addSummaryRow(
-      t('excel.final_gold_credit'),
-      '—',
-      '',
-      finalGoldCredit.toFixed(3),
-      t('excel.grams'),
-      true,
-    );
+    addSummaryRow(t('excel.final_gold_credit'), '—', '', finalGoldCredit, t('excel.grams'), true);
   }
 
   if (finalRialCredit !== undefined && finalRialCredit !== null && order.status >= 2) {

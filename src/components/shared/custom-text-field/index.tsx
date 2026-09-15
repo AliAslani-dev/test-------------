@@ -245,10 +245,7 @@ const CustomTextField: FunctionComponent<CustomTextFieldProps> = ({
   return (
     <Box sx={SX.wrapper}>
       <Box sx={SX.titles_container}>
-        <Typography 
-          sx={SX.title} 
-          component={typeof title === 'string' ? 'span' : 'div'}
-        >
+        <Typography sx={SX.title} component={typeof title === 'string' ? 'span' : 'div'}>
           {title}
         </Typography>
         {extraTitle && <Typography sx={SX.extra_title}>{extraTitle}</Typography>}
