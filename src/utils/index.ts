@@ -41,7 +41,7 @@ const fWC = (amount: number): string => {
 };
 
 const GENDER_IDS = new Set([48, 51, 54]);
-
+const ZARPLUS_GENDER_IDS = new Set([54, 51, 48]);
 function splitCategories(raw: any): { category: number | null; genderCategory: number | null } {
   const arr = toNumArray(raw);
   if (!Array.isArray(arr) || arr.length === 0) {
@@ -53,6 +53,22 @@ function splitCategories(raw: any): { category: number | null; genderCategory: n
 
   return { category: category ?? null, genderCategory: genderCategory ?? null };
 }
+
+function splitZarhubCategories(raw: any): {
+  category: number | null;
+  genderCategory: number | null;
+} {
+  const arr = toNumArray(raw);
+  if (!Array.isArray(arr) || arr.length === 0) {
+    return { category: null, genderCategory: null };
+  }
+
+  const genderCategory = arr.find((id) => ZARPLUS_GENDER_IDS.has(id)) ?? null;
+  const category = arr.find((id) => !ZARPLUS_GENDER_IDS.has(id)) ?? null;
+
+  return { category: category ?? null, genderCategory: genderCategory ?? null };
+}
+
 
 const persianToEnglishNumber = (input: string): string => {
   return input.replace(/[۰-۹]/g, (d) => String(d.charCodeAt(0) - 1776));
@@ -266,5 +282,6 @@ export {
   getRandomInt,
   createBlurredImageFile,
   formatJalaliDate,
-  jalaliToGregorian
+  jalaliToGregorian,
+  splitZarhubCategories
 };

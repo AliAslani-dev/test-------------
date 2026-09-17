@@ -14,6 +14,7 @@ export const PERMISSIONS = {
   TAGS_VIEW: 'tags.view',
   PROFILE_VIEW: 'profile.view',
   ORGANIZATION_VIEW: 'organization.view',
+  WHOLESALERS_VIEW: 'wholesalers.view',
 } as const;
 
 export type Permission = (typeof PERMISSIONS)[keyof typeof PERMISSIONS];
@@ -45,11 +46,13 @@ export const ROLE_PERMISSIONS: Record<UserRole, Permission[]> = {
   [USER_ROLES.ORGANIZATIONAL]: [
     PERMISSIONS.BUCKETS_VIEW,
     PERMISSIONS.ORDERS_VIEW,
+    PERMISSIONS.WHOLESALERS_VIEW,
     PERMISSIONS.DASHBOARD_VIEW,
   ],
   [USER_ROLES.GALLERY]: [
     PERMISSIONS.BUCKETS_VIEW,
     PERMISSIONS.ORDERS_VIEW,
+    PERMISSIONS.WHOLESALERS_VIEW,
     PERMISSIONS.DASHBOARD_VIEW,
   ],
 };
@@ -65,6 +68,7 @@ export const ROUTE_PERMISSIONS: Record<string, Permission> = {
   '/dashboard/orders': PERMISSIONS.ORDERS_VIEW,
   '/dashboard/tags': PERMISSIONS.TAGS_VIEW,
   '/dashboard/profile': PERMISSIONS.PROFILE_VIEW,
+  '/dashboard/wholesalers': PERMISSIONS.WHOLESALERS_VIEW,
 };
 
 /** طولانی‌ترین پیشوند منطبق را پیدا می‌کند تا مسیرهای Nested هم پوشش داده شوند */

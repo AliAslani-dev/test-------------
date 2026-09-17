@@ -27,6 +27,7 @@ const MENU_ITEM_PERMISSIONS: Record<string, Permission> = {
   profile: PERMISSIONS.PROFILE_VIEW,
   accounting: PERMISSIONS.ACCOUNTING_VIEW,
   organization: PERMISSIONS.ORGANIZATION_VIEW,
+  wholesalers: PERMISSIONS.WHOLESALERS_VIEW,
 };
 
 const ROUTE_MAP: Record<string, string> = {
@@ -44,6 +45,7 @@ const ROUTE_MAP: Record<string, string> = {
   orders: '/dashboard/orders',
   tag: '/dashboard/tag',
   organization: '/dashboard/organization',
+  wholesalers: '/dashboard/wholesalers',
 };
 
 function getDefaultTabByRole(hasPermission: (permission: Permission) => boolean): string {

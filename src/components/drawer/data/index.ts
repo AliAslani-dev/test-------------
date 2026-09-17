@@ -2,14 +2,14 @@ import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
 import PeopleRoundedIcon from '@mui/icons-material/PeopleRounded';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import DiamondRoundedIcon from '@mui/icons-material/DiamondRounded';
-import BusinessCenterRoundedIcon from '@mui/icons-material/BusinessCenterRounded'
+import BusinessCenterRoundedIcon from '@mui/icons-material/BusinessCenterRounded';
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import CategoryRoundedIcon from '@mui/icons-material/CategoryRounded';
 import ExitToAppRoundedIcon from '@mui/icons-material/ExitToAppRounded';
 import CollectionsIcon from '@mui/icons-material/Collections';
 import LockOpenIcon from '@mui/icons-material/LockOpen';
 import AccountBalanceRoundedIcon from '@mui/icons-material/AccountBalanceRounded';
-
+import WarehouseIcon from '@mui/icons-material/Warehouse';
 export type DrawerItemType = {
   title: {
     fa: string;
@@ -36,16 +36,26 @@ export const drawerItems: DrawerItemType[] = [
     icon: DiamondRoundedIcon,
     link: '/dashboard/buckets',
   },
-{
-  title: {
-    fa: 'سازمان‌ها',
-    en: 'Organizations',
-    tu: 'Organizasyonlar',
+  {
+    title: {
+      fa: 'سازمان‌ها',
+      en: 'Organizations',
+      tu: 'Organizasyonlar',
+    },
+    title_en: 'organization',
+    icon: BusinessCenterRoundedIcon,
+    link: '/dashboard/organization',
   },
-  title_en: 'organization',
-  icon: BusinessCenterRoundedIcon,
-  link: '/dashboard/organization',
-},
+  {
+    title: {
+      fa: 'بنکداری ها',
+      en: 'Wholesalers',
+      tu: 'Wholesalerslar',
+    },
+    title_en: 'wholesalers',
+    icon: WarehouseIcon,
+    link: '/dashboard/wholesalers',
+  },
   {
     title: {
       fa: 'دسته‌بندی‌ها',

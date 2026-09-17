@@ -1,6 +1,6 @@
-import { splitCategories, toStringArray } from '@/utils';
+import { splitCategories, toStringArray , toIranDate } from '@/utils';
 import { FramesByBucketDTO, normalizeAdditionalFields } from '../frame/dto';
-
+import { CategoryField } from '../admin/category/dto';
 export interface ProductsFilters {
   per_page: number;
   page: number;
@@ -27,6 +27,29 @@ export interface ProductByBucketDTO {
   images: string[];
   image: string | null;
   variants: ProductVariant[];
+}
+
+export interface ProductCategoryDTO {
+  id: number;
+  enName: string;
+  faName: string;
+  fields: CategoryField[] | null;
+  createdAt: Date;
+  updatedAt: Date;
+}
+
+export interface ProductGenderCategoryDTO {
+  id: number;
+  enName: string;
+  faName: string;
+  createdAt: Date;
+  updatedAt: Date;
+}
+
+export type ServerSideProductCaratDTO = Record<string, string | undefined>;
+export interface ProductCaratDTO {
+  amount: string;
+  value: string;
 }
 
 export const getProductsByFrameDTO = (response: {
@@ -100,4 +123,32 @@ export const getProductsByFrameDTO = (response: {
       total: response.meta.total,
     },
   };
+};
+
+
+export function getProductCaratsDTO(response: ServerSideProductCaratDTO): ProductCaratDTO[] {
+  return Object.entries(response)
+    .filter(([, v]) => v != null && String(v).trim() !== '')
+    .map(([amount, value]) => ({ amount, value: String(value) }));
+}
+
+export const getProductCategoriesDTO = (response: any): ProductCategoryDTO[] => {
+  return response.map((category: any) => ({
+    id: category.id,
+    enName: category.en_name,
+    faName: category.fa_name,
+    fields: category.fields ?? null,
+    createdAt: toIranDate(category.created_at),
+    updatedAt: toIranDate(category.updated_at),
+  }));
+};
+
+export const getProductGenderCategoriesDTO = (response: any): ProductGenderCategoryDTO[] => {
+  return response.map((category: any) => ({
+    id: category.id,
+    enName: category.en_name,
+    faName: category.fa_name,
+    createdAt: toIranDate(category.created_at),
+    updatedAt: toIranDate(category.updated_at),
+  }));
 };

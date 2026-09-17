@@ -9,3 +9,4 @@ export * as productApi from './product/api';
 export * as profileApi from './profile/api';
 export * as requestApi from './follower/api';
 export * as orderApi from './order/api';
+export * as zarhubApi from './zarhub/api';
