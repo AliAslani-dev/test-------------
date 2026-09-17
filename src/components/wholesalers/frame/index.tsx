@@ -1,9 +1,7 @@
 'use client';
 
 import { tPD } from '@/utils';
-import { getTwoFStatus } from '@/utils/auth';
 import useText from '@/hooks/useText';
-import { TwoFStatusDTO } from '@/api/auth/dto';
 import { FrameDTO } from '@/api/zarhub/dto';
 import { ProductCategoryDTO, ProductGenderCategoryDTO } from '@/api/product/dto';
 import {
@@ -13,7 +11,7 @@ import {
 } from '@/api/zarhub/service';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { FunctionComponent, useCallback, useEffect, useMemo, useState, useRef } from 'react';
-
+import { useDashboardContext } from '../../../../contexts/DashboardContext';
 import {
   Box,
   Typography,
@@ -475,10 +473,8 @@ const FrameTab: FunctionComponent<FrameTabProps> = ({
   wholesalerId,
   tagContext = null,
 }) => {
-  const twof = getTwoFStatus<TwoFStatusDTO>();
-
   const theme = useTheme();
-
+  const { userId } = useDashboardContext();
   const { t } = useText('frame');
 
   const router = useRouter();
@@ -801,7 +797,7 @@ const FrameTab: FunctionComponent<FrameTabProps> = ({
   }, [frameData?.genderCategory, genderIdToFaName]);
 
   const fetchData = useCallback(async () => {
-    if (!wholesalerId || !frameId || !twof?.id) {
+    if (!wholesalerId || !frameId || !userId) {
       setLoading(false);
       return;
     }
@@ -818,7 +814,7 @@ const FrameTab: FunctionComponent<FrameTabProps> = ({
       const productResponse = await getWholesalerFrameProducts(
         wholesalerId,
 
-        twof.id,
+        userId,
 
         frameId,
 
@@ -854,7 +850,7 @@ const FrameTab: FunctionComponent<FrameTabProps> = ({
     } finally {
       setLoading(false);
     }
-  }, [twof?.id, wholesalerId, frameId, page, rowsPerPage, debouncedFilter]);
+  }, [userId, wholesalerId, frameId, page, rowsPerPage, debouncedFilter]);
 
   useEffect(() => {
     fetchData();
@@ -929,7 +925,7 @@ const FrameTab: FunctionComponent<FrameTabProps> = ({
     saveToBasket(enrichedPayload);
   };
 
-  if (frameId === null || wholesalerId === null || !twof?.id) {
+  if (frameId === null || wholesalerId === null || !userId) {
     return null;
   }
 
