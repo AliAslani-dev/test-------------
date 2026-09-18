@@ -6,7 +6,7 @@ import LoadingSpinner from '@/components/shared/LoadingSpinner';
 import { USER_ROLES } from '@/constants/roles';
 
 //  ایمپورت کامپوننت تب سفارش مخصوص این دو رول سازمانی و گالری
-import OrganGalleryOrderTab from '@/components/order/OrganGalleryOrderTab'; 
+import OrganGalleryOrderTab from '@/components/wholesale-orders';
 
 export default function OrdersPage() {
   const { role, activeUserId, hasRole } = useDashboard();
@@ -17,7 +17,7 @@ export default function OrdersPage() {
   const isOrgOrGallery = hasRole(USER_ROLES.ORGANIZATIONAL, USER_ROLES.GALLERY);
 
   if (isOrgOrGallery) {
-    return <p>asd</p>;
+    return <OrganGalleryOrderTab />;
   }
 
   // پیشفرض: همون قبلی

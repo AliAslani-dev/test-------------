@@ -12,6 +12,7 @@ import {
   getSendTypesDTO,
   getAvailableCategoriesDTO,
   getTagsDTO,
+  getBuyerOrdersDTO,
   getTagDTO,
 } from './dto';
 import {
@@ -75,11 +76,7 @@ export const getWholesalerFrameProducts = async (
   params: ProductsFilters,
 ) => {
   try {
-    const response = await zarhubApi.getWholesalerFrameProductsAPI(
-      zarhubUserId,
-      frameId,
-      params,
-    );
+    const response = await zarhubApi.getWholesalerFrameProductsAPI(zarhubUserId, frameId, params);
     if (response && response.status === 200) {
       return getProductsByFrameDTO(response.data);
     }
@@ -128,27 +125,26 @@ export type OrderItemsType = (
 )[];
 
 export const addNewOrder = async (
-  zarhubUserId: number,
-  zarplusUserId: number,
-  bucketId: number,
+  seller_user_id: number,
+  buyer_id: number,
+  bucket_id: number,
   items: OrderItemsType,
   title: string | null,
-  fromZarhub: 0 | 1,
+  from_zarhub: 0 | 1,
 ) => {
   try {
     const response = await zarhubApi.addNewOrderAPI(
-      zarhubUserId,
-      zarplusUserId,
-      bucketId,
+      seller_user_id,
+      buyer_id,
+      bucket_id,
       items,
       title,
-      fromZarhub,
+      from_zarhub,
     );
 
     return response.data;
   } catch (err) {
     console.error('Adding new order failed.', err);
-
     throw err;
   }
 };
@@ -165,6 +161,18 @@ export const getWholesaleOrders = async (
   } catch (err) {
     console.error('Getting wholesale orders failed.', err);
     return getWholesaleOrdersDTO([]);
+  }
+};
+
+export const getBuyerOrders = async (buyerUserId: number, filters: WholesaleOrdersFilters) => {
+  try {
+    const response = await zarhubApi.getBuyerOrderApi(buyerUserId, filters);
+    if (response && response.status === 200) {
+      return getBuyerOrdersDTO(response.data);
+    }
+  } catch (err) {
+    console.error('Getting buyer orders failed.', err);
+    return getBuyerOrdersDTO([]);
   }
 };
 

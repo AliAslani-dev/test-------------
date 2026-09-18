@@ -435,6 +435,202 @@ export const getWholesaleOrdersDTO = (response: any): WholesaleOrder[] => {
     updatedAt: toIranDate(order.updated_at),
   }));
 };
+const toNumberOrNull = (value: any): number | null => {
+  if (value === null || value === undefined || value === '') return null;
+  const n = Number(value);
+  return Number.isNaN(n) ? null : n;
+};
+
+export const getBuyerOrdersDTO = (response: any): WholesaleOrder[] => {
+  if (!Array.isArray(response)) return [];
+
+  return response.map((order: any) => {
+    const isInternal = order.type === 'internal';
+
+    return {
+      id: order.id,
+      title: order.title ?? null,
+      bucketName: order.bucket_name ?? '',
+      bucketId: order.bucket_id,
+      status: order.status,
+
+      // 👈 external: user_id | internal: seller_user_id
+      userId: isInternal ? order.seller_user_id : order.user_id,
+
+      // 👈 external: zarplus_user_id | internal: buyer_user_id
+      zarplusUserId: isInternal ? order.buyer_user_id : order.zarplus_user_id,
+
+      items: (order.items ?? []).map((item: any) => {
+        const frameData = item.frame ?? {};
+        const { category, genderCategory } = splitZarhubCategories(frameData.categories ?? []);
+
+        const frame: FrameDTO = {
+          approved: true,
+          id: frameData.id,
+          bucketId: order.bucket_id,
+          bucketName: order.bucket_name,
+          category,
+          genderCategory,
+          model: String(frameData.model ?? ''),
+          wage: String(frameData.wage ?? ''),
+          profit: String(frameData.profit ?? ''),
+          discount: String(frameData.discount ?? ''),
+          carat: frameData.carat ?? '',
+          minWeight: String(frameData.min_weight ?? ''),
+          maxWeight: String(frameData.max_weight ?? ''),
+          totalWeight: String(frameData.total_weight ?? ''),
+          covers: frameData.covers === null ? [] : toStringArray(frameData.covers),
+        };
+
+        if (item.product === undefined) {
+          return {
+            weight: item.weight,
+            description: item.description ?? '',
+            frame,
+          };
+        }
+
+        const images = toStringArray(item.product.images);
+        const product: ProductByFrameDTO = {
+          id: item.product.id,
+          bucketId: order.bucket_id,
+          bucketName: order.bucket_name,
+          model: String(item.product.model ?? ''),
+          archived:
+            item.product.archived === 1 ||
+            item.product.archived === true ||
+            item.product.archived === '1',
+          images,
+          image: images.length > 0 ? images[0] : null,
+          variants: [],
+        };
+
+        if (item.variant === undefined) {
+          return {
+            weight: item.weight,
+            description: item.description ?? '',
+            frame,
+            product,
+          };
+        }
+
+        const variant: ProductVariant = {
+          id: item.variant.id,
+          stock: item.variant.stock,
+          weight: item.variant.weight,
+          extraPrice: item.variant.extra_price,
+          extraWage: item.variant.extra_wage,
+        };
+
+        return {
+          quantity: item.quantity,
+          description: item.description ?? '',
+          frame,
+          product,
+          variant,
+        };
+      }),
+
+      finalItems: Array.isArray(order.final_items)
+        ? order.final_items.map((item: any) => {
+            const frameData = item.frame ?? {};
+            const { category, genderCategory } = splitZarhubCategories(frameData.categories ?? []);
+
+            const frame: FrameDTO = {
+              approved: true,
+              id: frameData.id,
+              bucketId: order.bucket_id,
+              bucketName: order.bucket_name,
+              category,
+              genderCategory,
+              model: String(frameData.model ?? ''),
+              wage: String(frameData.wage ?? ''),
+              profit: String(frameData.profit ?? ''),
+              discount: String(frameData.discount ?? ''),
+              carat: frameData.carat ?? '',
+              minWeight: String(frameData.min_weight ?? ''),
+              maxWeight: String(frameData.max_weight ?? ''),
+              totalWeight: String(frameData.total_weight ?? ''),
+              covers: frameData.covers === null ? [] : toStringArray(frameData.covers),
+            };
+
+            if (item.product === undefined) {
+              return {
+                weight: item.weight,
+                description: item.description ?? '',
+                frame,
+              };
+            }
+
+            const images = toStringArray(item.product.images);
+            const product: ProductByFrameDTO = {
+              id: item.product.id,
+              bucketId: order.bucket_id,
+              bucketName: order.bucket_name,
+              model: String(item.product.model ?? ''),
+              archived:
+                item.product.archived === 1 ||
+                item.product.archived === true ||
+                item.product.archived === '1',
+              images,
+              image: images.length > 0 ? images[0] : null,
+              variants: [],
+            };
+
+            if (item.variant === undefined) {
+              return {
+                weight: item.weight,
+                description: item.description ?? '',
+                frame,
+                product,
+              };
+            }
+
+            const variant: ProductVariant = {
+              id: item.variant.id,
+              stock: item.variant.stock,
+              weight: item.variant.weight,
+              extraPrice: item.variant.extra_price,
+              extraWage: item.variant.extra_wage,
+            };
+
+            return {
+              quantity: item.quantity,
+              description: item.description ?? '',
+              frame,
+              product,
+              variant,
+            };
+          })
+        : null,
+
+      finalGoldCredit: toNumberOrNull(
+  order.zarplus_final_gold_credit ??
+    order.zarhub_final_gold_credit ??
+    order.buyer_final_gold_credit ??
+    order.seller_final_gold_credit,
+),
+finalRialCredit: toNumberOrNull(
+  order.zarplus_final_rial_credit ??
+    order.zarhub_final_rial_credit ??
+    order.buyer_final_rial_credit ??
+    order.seller_final_rial_credit,
+),
+
+      sendTypeId: order.send_type_id ?? null,
+      sendTypeAdditionalFields: normalizeAdditionalFields(order.send_type_additional_fields),
+      zarhubSendTypeAdditionalFields: normalizeAdditionalFields(
+        order.zarhub_send_type_additional_fields,
+      ),
+      settlementTypeAdditionalFields: normalizeAdditionalFields(
+        order.settlement_type_additional_fields,
+      ),
+      settlementTypeId: order.settlement_type_id ?? null,
+      createdAt: toIranDate(order.created_at),
+      updatedAt: toIranDate(order.updated_at),
+    };
+  });
+};
 
 export interface PurchaseSettlementTypeDTO {
   id: number;

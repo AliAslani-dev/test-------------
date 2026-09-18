@@ -53,7 +53,7 @@ const addNewViewWholesalerRequestAPI = (zarhub_user_id: number, zarplus_user_id:
 
 const addNewOrderAPI = (
   seller_user_id: number,
-  buyer_id: number,
+  buyer_user_id: number,
   bucket_id: number,
   items: OrderItemsType,
   title: string | null,
@@ -61,7 +61,7 @@ const addNewOrderAPI = (
 ) => {
   const params: any = {
     seller_user_id,
-    buyer_id,
+    buyer_user_id,
     items,
     from_zarhub,
   };
@@ -80,8 +80,14 @@ const getWholesaleOrdersAPI = (zarplus_user_id: number, params: WholesaleOrdersF
   return response;
 };
 
+const getBuyerOrderApi = (buyer_user_id: number, params: WholesaleOrdersFilters) => {
+  const route = `/api/zarhub_admin/orders/${buyer_user_id}`;
+  const response = axiosPrivate.get(route, { params });
+  return response;
+};
+
 const rejectOrderAPI = (order_id: number) => {
-  const response = axiosPrivate.put(`/api/zarplus_admin/reject_order/${order_id}`);
+  const response = axiosPrivate.put(`/api/zarhub_admin/reject_order/${order_id}`);
   return response;
 };
 
@@ -162,4 +168,5 @@ export {
   getTagsAPI,
   getTagAPI,
   getLatestTagsAPI,
+  getBuyerOrderApi,
 };

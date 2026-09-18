@@ -1,0 +1,423 @@
+{
+  "tab_title": {
+    "Fa": "سفارش‌ها",
+    "En": "Orders",
+    "Tu": "Siparişler"
+  },
+  "filter": {
+    "name": {
+      "Fa": "فیلتر جستجو",
+      "En": "Search filter",
+      "Tu": "Arama filtresi"
+    },
+    "placeholder": {
+      "Fa": "نام بنکداری ...",
+      "En": "Wholesaler name ...",
+      "Tu": "Toptancı adı ..."
+    }
+  },
+  "table": {
+    "wholesaler_orders_table": {
+      "Fa": "جدول سفارش‌ها",
+      "En": "Orders table",
+      "Tu": "Siparişler tablosu"
+    },
+    "no_data_to_display": {
+      "Fa": "داده‌ای جهت نمایش وجود ندارد",
+      "En": "No data to display",
+      "Tu": "Görüntülenecek veri yok"
+    }
+  },
+  "select": {
+    "placeholder": {
+      "Fa": "انتخاب کنید...",
+      "En": "Select...",
+      "Tu": "Seçiniz..."
+    }
+  },
+  "dialog": {
+    "order_details": {
+      "Fa": "مشاهده سفارش",
+      "En": "View order",
+      "Tu": "Siparişi görüntüle"
+    },
+    "close": {
+      "Fa": "بستن",
+      "En": "Close",
+      "Tu": "Kapat"
+    },
+    "success_notif": {
+      "Fa": "سفارش شما با موفقیت ثبت شد",
+      "En": "Your order was successfully submitted",
+      "Tu": "Siparişiniz başarıyla gönderildi"
+    },
+    "error_notif": {
+      "Fa": "خطا در ثبت سفارش. لطفا مجددا تلاش کنید.",
+      "En": "Error submitting order. Please try again.",
+      "Tu": "Sipariş gönderilirken hata oluştu. Lütfen tekrar deneyin."
+    },
+    "empty_text": {
+      "Fa": "سبد سفارش از بنکداری‌ها خالی است.",
+      "En": "The wholesalers order basket is empty.",
+      "Tu": "Toptancı sipariş sepeti boş."
+    },
+    "basket": {
+      "Fa": "سبد سفارش",
+      "En": "Order basket",
+      "Tu": "Sipariş sepeti"
+    },
+    "warning": {
+      "Fa": "توجه: این سبد تنها روی همین دستگاه موقتاً ذخیره شده است.",
+      "En": "Note: This basket is only temporarily saved on this device.",
+      "Tu": "Not: Bu sepet yalnızca bu cihazda geçici olarak kaydedilir."
+    },
+    "order_from": {
+      "Fa": "سفارش از:",
+      "En": "Order from:",
+      "Tu": "Sipariş kaynağı:"
+    },
+    "sort_group": {
+      "Fa": "مرتب‌سازی",
+      "En": "Sort",
+      "Tu": "Sırala"
+    },
+    "explanation": {
+      "Fa": "شرح",
+      "En": "Description",
+      "Tu": "Açıklama"
+    },
+    "gallery_numbers": {
+      "Fa": "اولیه (گالری)",
+      "En": "Initial (Gallery)",
+      "Tu": "Başlangıç (Galeri)"
+    },
+    "wholesaler_numbers": {
+      "Fa": "نهایی (بنکداری)",
+      "En": "Final (Wholesaler)",
+      "Tu": "Nihai (Toptancı)"
+    },
+    "row": {
+      "Fa": "ردیف",
+      "En": "Row",
+      "Tu": "Satır"
+    },
+    "image": {
+      "Fa": "تصویر",
+      "En": "Image",
+      "Tu": "Resim"
+    },
+    "frame": {
+      "Fa": "قاب",
+      "En": "Frame",
+      "Tu": "Çerçeve"
+    },
+    "carat": {
+      "Fa": "عیار",
+      "En": "Carat",
+      "Tu": "Ayar"
+    },
+    "product": {
+      "Fa": "کالا",
+      "En": "Product",
+      "Tu": "Ürün"
+    },
+    "weight_of_variant": {
+      "Fa": "تنوع (وزن)",
+      "En": "Variant (weight)",
+      "Tu": "Varyant (ağırlık)"
+    },
+    "amount": {
+      "Fa": "مقدار / تعداد",
+      "En": "Amount / Quantity",
+      "Tu": "Miktar / Adet"
+    },
+    "unit": {
+      "Fa": "واحد",
+      "En": "Unit",
+      "Tu": "Birim"
+    },
+    "remove": {
+      "Fa": "حذف",
+      "En": "Remove",
+      "Tu": "Kaldır"
+    },
+    "grams": {
+      "Fa": "گرم",
+      "En": "grams",
+      "Tu": "gram"
+    },
+    "count": {
+      "Fa": "عدد",
+      "En": "pcs",
+      "Tu": "adet"
+    },
+    "rial": {
+      "Fa": "ریال",
+      "En": "Rial",
+      "Tu": "Riyal"
+    },
+    "description": {
+      "Fa": "توضیحات:",
+      "En": "Description:",
+      "Tu": "Açıklama:"
+    },
+    "gallery_description": {
+      "Fa": "توضیحات گالری:",
+      "En": "Gallery description:",
+      "Tu": "Galeri açıklaması:"
+    },
+    "wholesaler_note_placeholder": {
+      "Fa": "یادداشت بنکدار:",
+      "En": "Wholesaler note:",
+      "Tu": "Toptancı notu:"
+    },
+    "no_des": {
+      "Fa": "ندارد",
+      "En": "None",
+      "Tu": "Yok"
+    },
+    "total_initial_amount": {
+      "Fa": "مجموع وزن خالص طلا (۷۵۰):",
+      "En": "Total net gold weight (750):",
+      "Tu": "Toplam net altın ağırlığı (750):"
+    },
+    "total_final_amount": {
+      "Fa": "مجموع وزن نهایی:",
+      "En": "Total final weight:",
+      "Tu": "Toplam nihai ağırlık:"
+    },
+    "active_rows_count": {
+      "Fa": "تعداد سطرهای غیر صفر:",
+      "En": "Non-zero rows count:",
+      "Tu": "Sıfır olmayan satır sayısı:"
+    },
+    "rows": {
+      "Fa": "ردیف",
+      "En": "Rows",
+      "Tu": "Satırlar"
+    },
+    "final_gold_credit": {
+      "Fa": "گرم کل طلایی نهایی (۷۵۰):",
+      "En": "Total final gold (750):",
+      "Tu": "Toplam nihai altın (750):"
+    },
+    "final_rial_credit": {
+      "Fa": "مجموع اضافات ریالی نهایی:",
+      "En": "Total final rial credit:",
+      "Tu": "Toplam nihai riyal kredisi:"
+    },
+    "confirm_and_submit": {
+      "Fa": "تایید و ثبت سفارش",
+      "En": "Confirm and submit order",
+      "Tu": "Onayla ve siparişi gönder"
+    },
+    "submitting": {
+      "Fa": "در حال ثبت...",
+      "En": "Submitting...",
+      "Tu": "Gönderiliyor..."
+    },
+    "reject_order": {
+      "Fa": "رد سفارش",
+      "En": "Reject order",
+      "Tu": "Siparişi reddet"
+    },
+    "cancel_order": {
+      "Fa": "لغو سفارش",
+      "En": "Cancel order",
+      "Tu": "Siparişi iptal et"
+    },
+    "approve_order": {
+      "Fa": "تایید نهایی سفارش",
+      "En": "Final approve order",
+      "Tu": "Siparişi nihai onayla"
+    },
+    "receive_order": {
+      "Fa": "تایید دریافت سفارش",
+      "En": "Confirm order receipt",
+      "Tu": "Sipariş teslimini onayla"
+    },
+    "settlement_type": {
+      "Fa": "روش پرداخت",
+      "En": "Payment method",
+      "Tu": "Ödeme yöntemi"
+    },
+    "send_type": {
+      "Fa": "روش ارسال",
+      "En": "Shipping method",
+      "Tu": "Gönderim yöntemi"
+    },
+    "export_excel": {
+      "Fa": "خروجی اکسل",
+      "En": "Export Excel",
+      "Tu": "Excel'e aktar"
+    },
+    "clone_order_button": {
+      "Fa": "کپی سفارش",
+      "En": "Clone order",
+      "Tu": "Siparişi kopyala"
+    },
+    "clone_order": {
+      "title": {
+        "Fa": "کپی سفارش",
+        "En": "Clone order",
+        "Tu": "Siparişi kopyala"
+      },
+      "add_new_row": {
+        "Fa": "افزودن سطر جدید",
+        "En": "Add new row",
+        "Tu": "Yeni satır ekle"
+      },
+      "add_to_basket": {
+        "Fa": "افزودن به سبد",
+        "En": "Add to basket",
+        "Tu": "Sepete ekle"
+      },
+      "added_to_basket_successfully": {
+        "Fa": "آیتم‌ها با موفقیت به سبد افزوده شدند، برای ثبت سفارش به سبد سفارش مراجعه کنید",
+        "En": "Items were successfully added to the basket. To submit the order, go to the order basket.",
+        "Tu": "Öğeler sepete başarıyla eklendi. Siparişi göndermek için sipariş sepetine gidin."
+      }
+    }
+  },
+  "excel": {
+    "sheet_name": {
+      "Fa": "سفارش",
+      "En": "Order",
+      "Tu": "Sipariş"
+    },
+    "order_from": {
+      "Fa": "سفارش از:",
+      "En": "Order from:",
+      "Tu": "Sipariş kaynağı:"
+    },
+    "order_number": {
+      "Fa": "شماره سفارش:",
+      "En": "Order number:",
+      "Tu": "Sipariş numarası:"
+    },
+    "status": {
+      "Fa": "وضعیت:",
+      "En": "Status:",
+      "Tu": "Durum:"
+    },
+    "created_at": {
+      "Fa": "تاریخ ثبت سفارش:",
+      "En": "Order date:",
+      "Tu": "Sipariş tarihi:"
+    },
+    "updated_at": {
+      "Fa": "آخرین تغییر وضعیت:",
+      "En": "Last status change:",
+      "Tu": "Son durum değişikliği:"
+    },
+    "row": {
+      "Fa": "ردیف",
+      "En": "Row",
+      "Tu": "Satır"
+    },
+    "frame": {
+      "Fa": "قاب",
+      "En": "Frame",
+      "Tu": "Çerçeve"
+    },
+    "carat": {
+      "Fa": "عیار",
+      "En": "Carat",
+      "Tu": "Ayar"
+    },
+    "product": {
+      "Fa": "کالا",
+      "En": "Product",
+      "Tu": "Ürün"
+    },
+    "weight_of_variant": {
+      "Fa": "تنوع (وزن)",
+      "En": "Variant (weight)",
+      "Tu": "Varyant (ağırlık)"
+    },
+    "gallery_numbers": {
+      "Fa": "اولیه (گالری)",
+      "En": "Initial (Gallery)",
+      "Tu": "Başlangıç (Galeri)"
+    },
+    "wholesaler_numbers": {
+      "Fa": "نهایی (بنکداری)",
+      "En": "Final (Wholesaler)",
+      "Tu": "Nihai (Toptancı)"
+    },
+    "gallery_description": {
+      "Fa": "توضیحات گالری",
+      "En": "Gallery description",
+      "Tu": "Galeri açıklaması"
+    },
+    "wholesaler_note_placeholder": {
+      "Fa": "یادداشت بنکدار",
+      "En": "Wholesaler note",
+      "Tu": "Toptancı notu"
+    },
+    "count": {
+      "Fa": "عدد",
+      "En": "pcs",
+      "Tu": "adet"
+    },
+    "grams": {
+      "Fa": "گرم",
+      "En": "grams",
+      "Tu": "gram"
+    },
+    "rows": {
+      "Fa": "ردیف",
+      "En": "Rows",
+      "Tu": "Satırlar"
+    },
+    "total_initial_amount": {
+      "Fa": "مجموع وزن خالص طلا (۷۵۰):",
+      "En": "Total net gold weight (750):",
+      "Tu": "Toplam net altın ağırlığı (750):"
+    },
+    "active_rows_count": {
+      "Fa": "تعداد سطرهای غیر صفر:",
+      "En": "Non-zero rows count:",
+      "Tu": "Sıfır olmayan satır sayısı:"
+    },
+    "final_gold_credit": {
+      "Fa": "گرم کل طلایی نهایی (۷۵۰):",
+      "En": "Total final gold (750):",
+      "Tu": "Toplam nihai altın (750):"
+    },
+    "final_rial_credit": {
+      "Fa": "مجموع اضافات ریالی نهایی:",
+      "En": "Total final rial credit:",
+      "Tu": "Toplam nihai riyal kredisi:"
+    },
+    "rial": {
+      "Fa": "ریال",
+      "En": "Rial",
+      "Tu": "Riyal"
+    },
+    "settlement_type": {
+      "Fa": "روش پرداخت:",
+      "En": "Payment method:",
+      "Tu": "Ödeme yöntemi:"
+    },
+    "send_type": {
+      "Fa": "روش ارسال:",
+      "En": "Shipping method:",
+      "Tu": "Gönderim yöntemi:"
+    }
+  },
+  "purchase_settlement_type_select": {
+    "title": {
+      "Fa": "روش پرداخت",
+      "En": "Payment method",
+      "Tu": "Ödeme yöntemi"
+    }
+  },
+  "send_type_select": {
+    "title": {
+      "Fa": "روش ارسال",
+      "En": "Shipping method",
+      "Tu": "Gönderim yöntemi"
+    }
+  }
+}

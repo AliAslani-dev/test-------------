@@ -50,9 +50,9 @@ axiosPrivate.interceptors.response.use(
     const status = error.response?.status;
     const cfg = error.config as typeof error.config & { skipAuthRedirect?: boolean };
 
-    if (!cfg?.skipAuthRedirect && (status === 403 || status === 401)) {
-      redirectToLoginOnce();
-    }
+    // if (!cfg?.skipAuthRedirect && (status === 403 || status === 401)) {
+    //   redirectToLoginOnce();
+    // }
 
     return Promise.reject(error);
   },

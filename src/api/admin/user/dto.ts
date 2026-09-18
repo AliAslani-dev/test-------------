@@ -9,7 +9,7 @@ export interface UserDTO {
   enabled: boolean;
   emailVerifiedAt: null | Date;
   refCode: null | string;
-
+ bucketName: null | string;
   logo: null | string;
   sellerMobile: null | string;
   sellerFullName: null | string;
@@ -67,7 +67,7 @@ export const getUsersDTO = (response: any): UserDTO[] => {
     enabled: user.enabled ? user.enabled == 1 : false,
     refCode: user.ref_code ?? null,
     emailVerifiedAt: user.email_verified_at ? toIranDate(user.email_verified_at) : null,
-
+    bucketName: user.bucket_name ?? null, 
     logo: user.logo ? user.logo : null,
     sellerMobile: user.seller_mobile ?? null,
     sellerFullName: user.seller_full_name ?? null,

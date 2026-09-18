@@ -16,7 +16,7 @@ import organization from '../locales/organization.json';
 import wholesalers from '../locales/wholesalers.json';
 import wholesaler from '../locales/wholesaler.json';
 import basket from '../locales/basket.json';
-
+import wholesaleOrder from "../locales/wholesaleOrder.json"
 const locales = {
   base,
   bucket,
@@ -36,6 +36,7 @@ const locales = {
   wholesalers,
   wholesaler,
   basket,
+  wholesaleOrder
 };
 
 interface UseTextReturn {
