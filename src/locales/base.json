@@ -19,6 +19,16 @@
         "En": "Seller",
         "Tu": "Satış"
     },
+    "organizational": {
+        "Fa": "سازمانی",
+        "En": "Organizational",
+        "Tu": "Kurumsal"
+    },
+    "gallery": {
+        "Fa": "گالری",
+        "En": "Gallery",
+        "Tu": "Galeri"
+    },
     "accesses": {
         "Fa": "دسترسی‌ها",
         "En": "Accesses",

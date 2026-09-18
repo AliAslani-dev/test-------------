@@ -1,0 +1,167 @@
+{
+  "success_notif": {
+    "Fa": "سفارش شما با موفقیت ثبت شد",
+    "En": "Your order was successfully submitted",
+    "Tu": "Your order was successfully submitted"
+  },
+  "error_notif": {
+    "Fa": "خطا در ثبت سفارش. لطفا مجددا تلاش کنید.",
+    "En": "Error submitting order. Please try again.",
+    "Tu": "Error submitting order. Please try again."
+  },
+  "empty_text": {
+    "Fa": "سبد سفارش از بنکداری‌ها خالی است.",
+    "En": "The wholesalers order basket is empty.",
+    "Tu": "The wholesalers order basket is empty."
+  },
+  "basket": {
+    "Fa": "سبد سفارش",
+    "En": "Order basket",
+    "Tu": "Order basket"
+  },
+  "warning": {
+    "Fa": "توجه: این سبد تنها روی همین دستگاه موقتاً ذخیره شده است.",
+    "En": "Note: This basket is only temporarily saved on this device.",
+    "Tu": "Note: This basket is only temporarily saved on this device."
+  },
+  "order_from": {
+    "Fa": "سفارش از:",
+    "En": "Order from:",
+    "Tu": "Order from:"
+  },
+  "title": {
+    "Fa": "عنوان سفارش",
+    "En": "Order title",
+    "Tu": "Order title"
+  },
+  "title_placeholder": {
+    "Fa": "عنوان سفارش را وارد کنید (اختیاری)",
+    "En": "Enter order title (optional)",
+    "Tu": "Enter order title (optional)"
+  },
+  "explanation": {
+    "Fa": "شرح",
+    "En": "Description",
+    "Tu": "Description"
+  },
+  "gallery_numbers": {
+    "Fa": "اولیه (گالری)",
+    "En": "Initial (Gallery)",
+    "Tu": "Initial (Gallery)"
+  },
+  "wholesaler_numbers": {
+    "Fa": "نهایی (بنکداری)",
+    "En": "Final (Wholesaler)",
+    "Tu": "Final (Wholesaler)"
+  },
+  "row": {
+    "Fa": "ردیف",
+    "En": "Row",
+    "Tu": "Row"
+  },
+  "image": {
+    "Fa": "تصویر",
+    "En": "Image",
+    "Tu": "Image"
+  },
+  "frame": {
+    "Fa": "قاب",
+    "En": "Frame",
+    "Tu": "Frame"
+  },
+  "product": {
+    "Fa": "کالا",
+    "En": "Product",
+    "Tu": "Product"
+  },
+  "carat": {
+    "Fa": "عیار",
+    "En": "Carat",
+    "Tu": "Carat"
+  },
+  "weight_of_variant": {
+    "Fa": "تنوع (وزن)",
+    "En": "Variant (weight)",
+    "Tu": "Variant (weight)"
+  },
+  "amount": {
+    "Fa": "مقدار / تعداد",
+    "En": "Amount / Quantity",
+    "Tu": "Amount / Quantity"
+  },
+  "unit": {
+    "Fa": "واحد",
+    "En": "Unit",
+    "Tu": "Unit"
+  },
+  "remove": {
+    "Fa": "حذف",
+    "En": "Remove",
+    "Tu": "Remove"
+  },
+  "grams": {
+    "Fa": "گرم",
+    "En": "grams",
+    "Tu": "grams"
+  },
+  "count": {
+    "Fa": "عدد",
+    "En": "pcs",
+    "Tu": "pcs"
+  },
+  "description": {
+    "Fa": "توضیحات:",
+    "En": "Description:",
+    "Tu": "Description:"
+  },
+  "no_des": {
+    "Fa": "ندارد",
+    "En": "None",
+    "Tu": "None"
+  },
+  "total_initial_amount": {
+    "Fa": "مجموع وزن اولیه:",
+    "En": "Total initial weight:",
+    "Tu": "Total initial weight:"
+  },
+  "confirm_and_submit": {
+    "Fa": "تایید و ثبت سفارش",
+    "En": "Confirm and submit order",
+    "Tu": "Confirm and submit order"
+  },
+  "submitting": {
+    "Fa": "در حال ثبت...",
+    "En": "Submitting...",
+    "Tu": "Submitting..."
+  },
+  "remove_table_success": {
+    "Fa": "سفارشات این بنکداری با موفقیت از سبد حذف شد.",
+    "En": "This wholesaler's orders were successfully removed from the basket.",
+    "Tu": "This wholesaler's orders were successfully removed from the basket."
+  },
+  "clear_order_table": {
+    "Fa": "حذف سفارش بنکداری",
+    "En": "Remove wholesaler order",
+    "Tu": "Remove wholesaler order"
+  },
+  "confirm_delete_title": {
+    "Fa": "تایید حذف سفارش",
+    "En": "Confirm order removal",
+    "Tu": "Confirm order removal"
+  },
+  "confirm_delete_desc": {
+    "Fa": "آیا از حذف کامل سفارشات این بنکداری از سبد اطمینان دارید؟ این عمل غیرقابل بازگشت است.",
+    "En": "Are you sure you want to completely remove this wholesaler's orders from the basket? This action is irreversible.",
+    "Tu": "Are you sure you want to completely remove this wholesaler's orders from the basket? This action is irreversible."
+  },
+  "cancel": {
+    "Fa": "انصراف",
+    "En": "Cancel",
+    "Tu": "Cancel"
+  },
+  "confirm_delete": {
+    "Fa": "تایید حذف",
+    "En": "Confirm removal",
+    "Tu": "Confirm removal"
+  }
+}

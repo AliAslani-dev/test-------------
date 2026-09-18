@@ -15,6 +15,7 @@ export const PERMISSIONS = {
   PROFILE_VIEW: 'profile.view',
   ORGANIZATION_VIEW: 'organization.view',
   WHOLESALERS_VIEW: 'wholesalers.view',
+  BASKET_VIEW: 'basket.view', 
 } as const;
 
 export type Permission = (typeof PERMISSIONS)[keyof typeof PERMISSIONS];
@@ -32,7 +33,11 @@ export const ROLE_PERMISSIONS: Record<UserRole, Permission[]> = {
     PERMISSIONS.TAGS_VIEW,
     PERMISSIONS.ORGANIZATION_VIEW,
   ],
-  [USER_ROLES.SELLER]: [PERMISSIONS.DASHBOARD_VIEW, PERMISSIONS.TAGS_VIEW, PERMISSIONS.ORDERS_VIEW],
+  [USER_ROLES.SELLER]: [
+    PERMISSIONS.DASHBOARD_VIEW,
+    PERMISSIONS.TAGS_VIEW,
+    PERMISSIONS.ORDERS_VIEW,
+  ],
   [USER_ROLES.PROVIDER]: [
     PERMISSIONS.BUCKETS_VIEW,
     PERMISSIONS.FRAMES_VIEW,
@@ -48,12 +53,14 @@ export const ROLE_PERMISSIONS: Record<UserRole, Permission[]> = {
     PERMISSIONS.ORDERS_VIEW,
     PERMISSIONS.WHOLESALERS_VIEW,
     PERMISSIONS.DASHBOARD_VIEW,
+    PERMISSIONS.BASKET_VIEW, 
   ],
   [USER_ROLES.GALLERY]: [
     PERMISSIONS.BUCKETS_VIEW,
     PERMISSIONS.ORDERS_VIEW,
     PERMISSIONS.WHOLESALERS_VIEW,
     PERMISSIONS.DASHBOARD_VIEW,
+    PERMISSIONS.BASKET_VIEW, 
   ],
 };
 
@@ -69,6 +76,7 @@ export const ROUTE_PERMISSIONS: Record<string, Permission> = {
   '/dashboard/tags': PERMISSIONS.TAGS_VIEW,
   '/dashboard/profile': PERMISSIONS.PROFILE_VIEW,
   '/dashboard/wholesalers': PERMISSIONS.WHOLESALERS_VIEW,
+  '/dashboard/basket': PERMISSIONS.BASKET_VIEW, // ✅ مسیر سبد خرید
 };
 
 /** طولانی‌ترین پیشوند منطبق را پیدا می‌کند تا مسیرهای Nested هم پوشش داده شوند */

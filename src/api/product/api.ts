@@ -1,6 +1,12 @@
 import { ProductsFilters } from './dto';
 import { axiosPrivate } from '@/api/axios';
 
+const getProductCaratsAPI = () => {
+  const route = `/api/product_carats`;
+  const response = axiosPrivate.get(route);
+  return response;
+};
+
 const getProductsByFrameAPI = (bucket_id: number, frame_id: number, params: ProductsFilters) => {
   const route = `/api/products/${bucket_id}/${frame_id}`;
   const response = axiosPrivate.get(route, { params });
@@ -67,4 +73,5 @@ export {
   editProductAPI,
   addProductVariantAPI,
   editProductVariantAPI,
+  getProductCaratsAPI,
 };

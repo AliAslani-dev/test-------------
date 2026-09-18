@@ -1,5 +1,23 @@
 import { productApi } from '@/api';
-import { getProductsByFrameDTO, ProductsFilters } from './dto';
+import { getProductsByFrameDTO, ProductsFilters ,  getProductCaratsDTO } from './dto';
+
+import {
+  _product_carats,
+  _product_categories,
+  _product_gender_categories,
+} from './hard-code-response';
+export const getProductCarats = async () => {
+  return getProductCaratsDTO(_product_carats);
+  // try {
+  //   const response = await productAPI.getProductCaratsAPI();
+  //   if (response && response.status === 200) {
+  //     return getProductCaratsDTO(response.data);
+  //   }
+  // } catch (err) {
+  //   console.error('Getting product carats failed.', err);
+  //   return [];
+  // }
+};
 
 export const getProductsByFrame = async (
   bucket_id: number,

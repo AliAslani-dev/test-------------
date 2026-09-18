@@ -1,0 +1,62 @@
+{
+  "without_title": {
+    "Fa": "بدون نام",
+    "En": "Without title",
+    "Tu": "Without title"
+  },
+  "enter_to_wholesaler": {
+    "Fa": "ورود به بنکداری",
+    "En": "Enter to wholesaler",
+    "Tu": "Enter to wholesaler"
+  },
+  "wholesaler": {
+    "Fa": "بنکداری",
+    "En": "Wholesaler",
+    "Tu": "Wholesaler"
+  },
+  "wholesaler_showcase": {
+    "Fa": "تصویر فروشگاه",
+    "En": "Shop showcase",
+    "Tu": "Shop showcase"
+  },
+  "click_for_see": {
+    "Fa": "برای مشاهده محصولات کلیک کنید",
+    "En": "Click to see products",
+    "Tu": "Click to see products"
+  },
+  "enter": {
+    "Fa": "ورود",
+    "En": "Enter",
+    "Tu": "Enter"
+  },
+  "wholesalers": {
+    "Fa": "بنکداری‌ها",
+    "En": "Wholesalers",
+    "Tu": "Wholesalers"
+  },
+  "results": {
+    "Fa": "نتیجه",
+    "En": "Results",
+    "Tu": "Results"
+  },
+  "search_field_placeholder": {
+    "Fa": "جستجو نام بنکداری، آدرس، استان یا شهر ...",
+    "En": "Search wholesaler name, address, province or city ...",
+    "Tu": "Search wholesaler name, address, province or city ..."
+  },
+  "wholesalers_filters": {
+    "Fa": "فیلتر بنکداری‌ها",
+    "En": "Wholesalers filters",
+    "Tu": "Wholesalers filters"
+  },
+  "approved": {
+    "Fa": "بنکداری‌ها تایید شده",
+    "En": "Approved wholesalers",
+    "Tu": "Approved wholesalers"
+  },
+  "not_approved": {
+    "Fa": "بنکداری‌ها تایید نشده",
+    "En": "Not approved wholesalers",
+    "Tu": "Not approved wholesalers"
+  }
+}

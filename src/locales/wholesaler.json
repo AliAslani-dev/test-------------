@@ -1,0 +1,82 @@
+{
+  "management": {
+    "Fa": "مدیریت",
+    "En": "Management",
+    "Tu": "Management"
+  },
+  "call_serller": {
+    "Fa": "تماس با مسئول فروش",
+    "En": "Call sales representative",
+    "Tu": "Call sales representative"
+  },
+  "loading": {
+    "Fa": "...",
+    "En": "...",
+    "Tu": "..."
+  },
+  "view_request_button": {
+    "Fa": "درخواست مشاهده و سفارش",
+    "En": "Request to view and order",
+    "Tu": "Request to view and order"
+  },
+  "approved_button": {
+    "Fa": "درخواست تایید شده",
+    "En": "Approved request",
+    "Tu": "Approved request"
+  },
+  "products_vitrin": {
+    "Fa": "ویترین محصولات",
+    "En": "Products showcase",
+    "Tu": "Products showcase"
+  },
+  "carat": {
+    "Fa": "عیار",
+    "En": "Carat",
+    "Tu": "Carat"
+  },
+  "view_product": {
+    "Fa": "مشاهده محصول",
+    "En": "View product",
+    "Tu": "View product"
+  },
+  "title": {
+    "Fa": "مشاهده جزئیات و سفارش محصول",
+    "En": "View product details and order",
+    "Tu": "View product details and order"
+  },
+  "description": {
+    "Fa": "به منظور مشاهده جزئیات کامل و ثبت سفارش، لازم است در سامانه «زرپلاس»—شبکه تخصصی گالری‌های معتبر طرف قرارداد—نام‌نویسی نمایید. پس از تکمیل فرآیند عضویت که کمتر از ۵ دقیقه به طول می‌انجامد، پنل اختصاصی شما فعال شده و امکان بررسی دقیق محصولات فراهم خواهد شد.",
+    "En": "In order to view full details and place an order, you need to register in the ZarPlus system — a specialized network of trusted contracted galleries. After completing the registration process, which takes less than 5 minutes, your dedicated panel will be activated and you will be able to review products in detail.",
+    "Tu": "In order to view full details and place an order, you need to register in the ZarPlus system — a specialized network of trusted contracted galleries. After completing the registration process, which takes less than 5 minutes, your dedicated panel will be activated and you will be able to review products in detail."
+  },
+  "features": {
+    "Fa": "زرپلاس علاوه بر ایجاد سهولت در خرید، بستری هوشمند برای رشد چشمگیر فروش گالری شماست. جهت آشنایی با خدمات، ماه نخست عضویت کاملاً رایگان بوده و هیچ هزینه‌ای دریافت نمی‌گردد.",
+    "En": "In addition to making purchases easier, ZarPlus is a smart platform for significant growth in your gallery's sales. To get familiar with the services, the first month of membership is completely free and no fees are charged.",
+    "Tu": "In addition to making purchases easier, ZarPlus is a smart platform for significant growth in your gallery's sales. To get familiar with the services, the first month of membership is completely free and no fees are charged."
+  },
+  "purchase_notif": {
+    "Fa": "به منظور مشاهده جزئیات کامل و ثبت سفارش، لازم است در صفحه‌ی ویژه‌ی ویترین‌دارها درخواست ثبت نمایید تا در کوتاه‌ترین زمان ممکن با شما تماس بگیریم.",
+    "En": "In order to view full details and place an order, you need to submit a request on the dedicated showcase owners page so that we can contact you as soon as possible.",
+    "Tu": "In order to view full details and place an order, you need to submit a request on the dedicated showcase owners page so that we can contact you as soon as possible."
+  },
+  "request_access_title": {
+    "Fa": "درخواست مشاهده و سفارش از بنکداری",
+    "En": "Request to view and order from wholesaler",
+    "Tu": "Request to view and order from wholesaler"
+  },
+  "request_access_description": {
+    "Fa": "پس از تایید دسترسی گالری شما توسط بنکداری، دسترسی شما به مشاهده جزئیات و سفارش از بنکداری فعال می‌شود.",
+    "En": "After your gallery access is approved by the wholesaler, your access to view details and order from the wholesaler will be activated.",
+    "Tu": "After your gallery access is approved by the wholesaler, your access to view details and order from the wholesaler will be activated."
+  },
+  "confirm": {
+    "Fa": "تایید",
+    "En": "Confirm",
+    "Tu": "Confirm"
+  },
+  "cancel": {
+    "Fa": "لغو",
+    "En": "Cancel",
+    "Tu": "Cancel"
+  }
+}

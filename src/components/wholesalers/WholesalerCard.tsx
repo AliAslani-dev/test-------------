@@ -150,7 +150,6 @@ export default function WholesalerCard({ row }: WholesalerCardProps) {
       <CardActionArea
         component="a"
         href={href}
-        target="_blank"
         rel="noopener noreferrer"
         sx={{
           display: 'block',

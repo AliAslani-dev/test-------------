@@ -1,4 +1,4 @@
-import { splitCategories, toStringArray , toIranDate } from '@/utils';
+import { splitCategories, toStringArray, toIranDate } from '@/utils';
 import { FramesByBucketDTO, normalizeAdditionalFields } from '../frame/dto';
 import { CategoryField } from '../admin/category/dto';
 export interface ProductsFilters {
@@ -124,7 +124,6 @@ export const getProductsByFrameDTO = (response: {
     },
   };
 };
-
 
 export function getProductCaratsDTO(response: ServerSideProductCaratDTO): ProductCaratDTO[] {
   return Object.entries(response)

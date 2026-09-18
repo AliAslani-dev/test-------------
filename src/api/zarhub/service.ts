@@ -56,9 +56,9 @@ export const getWholesalers = async () => {
   }
 };
 
-export const getWholesalerFrames = async (zarhubUserId: number, zarplusUserId: number) => {
+export const getWholesalerFrames = async (zarhubUserId: number) => {
   try {
-    const response = await zarhubApi.getWholesalerFramesAPI(zarhubUserId, zarplusUserId);
+    const response = await zarhubApi.getWholesalerFramesAPI(zarhubUserId);
     if (response && response.status === 200) {
       return getWholesalerFramesDTO(response.data);
     }
@@ -70,14 +70,13 @@ export const getWholesalerFrames = async (zarhubUserId: number, zarplusUserId: n
 
 export const getWholesalerFrameProducts = async (
   zarhubUserId: number,
-  zarplusUserId: number,
+  // zarplusUserId: number,
   frameId: number,
   params: ProductsFilters,
 ) => {
   try {
     const response = await zarhubApi.getWholesalerFrameProductsAPI(
       zarhubUserId,
-      zarplusUserId,
       frameId,
       params,
     );

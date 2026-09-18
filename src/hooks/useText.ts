@@ -13,6 +13,9 @@ import galleryAccounting from '../locales/galleryAccounting.json';
 import tags from '../locales/tags.json';
 import accounting from '../locales/accounting.json';
 import organization from '../locales/organization.json';
+import wholesalers from '../locales/wholesalers.json';
+import wholesaler from '../locales/wholesaler.json';
+import basket from '../locales/basket.json';
 
 const locales = {
   base,
@@ -30,6 +33,9 @@ const locales = {
   tags,
   accounting,
   organization,
+  wholesalers,
+  wholesaler,
+  basket,
 };
 
 interface UseTextReturn {

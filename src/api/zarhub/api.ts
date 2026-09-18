@@ -15,24 +15,24 @@ const getZarhubGenderCategoriesAPI = () => {
 };
 
 const getWholesalersAPI = () => {
-  const route = `/api/zarplus_admin/providers`;
+  const route = `/api/zarhub_admin/providers`;
   const response = axiosPrivate.get(route);
   return response;
 };
 
-const getWholesalerFramesAPI = (zarhub_user_id: number, zarplus_user_id: number) => {
-  const route = `/api/zarplus_admin/provider_frames/${zarhub_user_id}/${zarplus_user_id}`;
+const getWholesalerFramesAPI = (zarhub_user_id: number) => {
+  const route = `/api/zarhub_admin/provider_frames/${zarhub_user_id}`;
   const response = axiosPrivate.get(route);
   return response;
 };
 
 const getWholesalerFrameProductsAPI = (
   zarhub_user_id: number,
-  zarplus_user_id: number,
+  // zarplus_user_id: number,
   frame_id: number,
   params: ProductsFilters,
 ) => {
-  const route = `/api/zarplus_admin/provider_products/${frame_id}/${zarhub_user_id}/${zarplus_user_id}`;
+  const route = `/api/zarhub_admin/provider_products/${frame_id}/${zarhub_user_id}`;
   const response = axiosPrivate.get(route, { params });
   return response;
 };
@@ -52,16 +52,16 @@ const addNewViewWholesalerRequestAPI = (zarhub_user_id: number, zarplus_user_id:
 };
 
 const addNewOrderAPI = (
-  zarhub_user_id: number,
-  zarplus_user_id: number,
+  seller_user_id: number,
+  buyer_id: number,
   bucket_id: number,
   items: OrderItemsType,
   title: string | null,
   from_zarhub: 0 | 1,
 ) => {
   const params: any = {
-    zarhub_user_id,
-    zarplus_user_id,
+    seller_user_id,
+    buyer_id,
     items,
     from_zarhub,
   };
@@ -70,11 +70,10 @@ const addNewOrderAPI = (
     params.title = title;
   }
 
-  const response = axiosPrivate.post(`/api/zarplus_admin/new_order/${bucket_id}`, params);
+  const response = axiosPrivate.post(`/api/zarhub_admin/new_order/${bucket_id}`, params);
 
   return response;
 };
-
 const getWholesaleOrdersAPI = (zarplus_user_id: number, params: WholesaleOrdersFilters) => {
   const route = `/api/zarplus_admin/orders/${zarplus_user_id}`;
   const response = axiosPrivate.get(route, { params });

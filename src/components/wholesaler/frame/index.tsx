@@ -9,9 +9,12 @@ import {
   getZarhubCategories,
   getZarhubGenderCategories,
 } from '@/api/zarhub/service';
+import { getFrameGenderCategories } from '@/api/frame/service';
+import { getProductsByFrame } from '@/api/product/service';
+import { getCategories } from '@/api/admin/category/service';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { FunctionComponent, useCallback, useEffect, useMemo, useState, useRef } from 'react';
-import { useDashboardContext } from '../../../../contexts/DashboardContext';
+
 import {
   Box,
   Typography,
@@ -48,13 +51,11 @@ const FrameSkeleton = () => (
   <Box
     sx={{
       display: 'grid',
-
       gridTemplateColumns: {
         xs: '1fr',
         md: '1fr 280px',
         lg: '1fr 380px',
       },
-
       gap: {
         xs: 3,
         md: 3,
@@ -66,11 +67,8 @@ const FrameSkeleton = () => (
       <Box
         sx={{
           height: 300,
-
           bgcolor: 'rgba(0,0,0,0.04)',
-
           borderRadius: 4,
-
           mb: 4,
         }}
       />
@@ -78,15 +76,11 @@ const FrameSkeleton = () => (
       <Box
         sx={{
           display: 'grid',
-
           gridTemplateColumns: {
             xs: 'repeat(2, 1fr)',
-
             sm: 'repeat(3, 1fr)',
-
             xl: 'repeat(5, 1fr)',
           },
-
           gap: 2,
         }}
       >
@@ -95,9 +89,7 @@ const FrameSkeleton = () => (
             key={i}
             sx={{
               height: 280,
-
               bgcolor: 'rgba(0,0,0,0.04)',
-
               borderRadius: 4,
             }}
           />
@@ -108,9 +100,7 @@ const FrameSkeleton = () => (
     <Box
       sx={{
         height: 480,
-
         bgcolor: 'rgba(0,0,0,0.04)',
-
         borderRadius: 4,
       }}
     />
@@ -121,29 +111,22 @@ const DataRow = ({ icon, label, value, isHighlight }: any) => (
   <Box
     sx={{
       display: 'flex',
-
       justifyContent: 'space-between',
-
       alignItems: 'center',
-
       py: 1.5,
     }}
   >
     <Box
       sx={{
         display: 'flex',
-
         alignItems: 'center',
-
         gap: 1,
-
         color: 'text.secondary',
       }}
     >
       <Box
         sx={{
           color: '#9C7A2B',
-
           display: 'flex',
         }}
       >
@@ -153,7 +136,6 @@ const DataRow = ({ icon, label, value, isHighlight }: any) => (
       <Typography
         sx={{
           fontSize: '0.85rem',
-
           fontWeight: 600,
         }}
       >
@@ -164,9 +146,7 @@ const DataRow = ({ icon, label, value, isHighlight }: any) => (
     <Typography
       sx={{
         fontWeight: 800,
-
         fontSize: '0.95rem',
-
         color: isHighlight ? '#d32f2f' : '#1a1a1a',
       }}
     >
@@ -185,38 +165,28 @@ function StickyFrameCard({ frame }: { frame: any }) {
       elevation={0}
       sx={{
         borderRadius: 4,
-
         border: '1px solid #eaeaea',
-
         bgcolor: 'white',
-
         overflow: 'hidden',
-
         boxShadow: '0 10px 40px rgba(0,0,0,0.04)',
       }}
     >
       <Box
         sx={{
           position: 'relative',
-
           width: '100%',
-
           pt: '100%',
-
           bgcolor: 'white',
-
           borderBottom: '1px solid #f0f0f0',
         }}
       >
         <Box
           sx={{
             position: 'absolute',
-
             top: 0,
             left: 0,
             right: 0,
             bottom: 0,
-
             p: {
               xs: 2,
               md: 2.5,
@@ -226,31 +196,20 @@ function StickyFrameCard({ frame }: { frame: any }) {
           <Box
             sx={{
               position: 'relative',
-
               width: '100%',
               height: '100%',
-
               borderRadius: 4,
-
               overflow: 'hidden',
-
               bgcolor: '#f8f8f8',
-
               border: '1px solid rgba(0,0,0,0.03)',
-
               '& .swiper': {
                 width: '100%',
-
                 height: '100%',
               },
-
               '& .swiper-pagination-bullet-active': {
                 backgroundColor: '#9C7A2B',
-
                 opacity: 1,
-
                 width: '20px',
-
                 borderRadius: '4px',
               },
             }}
@@ -262,7 +221,6 @@ function StickyFrameCard({ frame }: { frame: any }) {
               }}
               navigation={{
                 nextEl: '.swiper-custom-next',
-
                 prevEl: '.swiper-custom-prev',
               }}
               loop={images.length > 1}
@@ -272,18 +230,14 @@ function StickyFrameCard({ frame }: { frame: any }) {
                   key={idx}
                   style={{
                     display: 'flex',
-
                     alignItems: 'center',
-
                     justifyContent: 'center',
                   }}
                 >
                   <Box
                     sx={{
                       position: 'relative',
-
                       width: '100%',
-
                       height: '100%',
                     }}
                   >
@@ -307,35 +261,20 @@ function StickyFrameCard({ frame }: { frame: any }) {
                   className="swiper-custom-prev"
                   sx={{
                     position: 'absolute',
-
                     top: '50%',
-
                     right: 8,
-
                     transform: 'translateY(-50%)',
-
                     zIndex: 10,
-
                     display: 'flex',
-
                     alignItems: 'center',
-
                     justifyContent: 'center',
-
                     width: 32,
-
                     height: 32,
-
                     borderRadius: '50%',
-
                     bgcolor: 'rgba(255, 255, 255, 0.9)',
-
                     backdropFilter: 'blur(8px)',
-
                     boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
-
                     cursor: 'pointer',
-
                     color: '#444',
                   }}
                 >
@@ -346,35 +285,20 @@ function StickyFrameCard({ frame }: { frame: any }) {
                   className="swiper-custom-next"
                   sx={{
                     position: 'absolute',
-
                     top: '50%',
-
                     left: 8,
-
                     transform: 'translateY(-50%)',
-
                     zIndex: 10,
-
                     display: 'flex',
-
                     alignItems: 'center',
-
                     justifyContent: 'center',
-
                     width: 32,
-
                     height: 32,
-
                     borderRadius: '50%',
-
                     bgcolor: 'rgba(255, 255, 255, 0.9)',
-
                     backdropFilter: 'blur(8px)',
-
                     boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
-
                     cursor: 'pointer',
-
                     color: '#444',
                   }}
                 >
@@ -389,7 +313,6 @@ function StickyFrameCard({ frame }: { frame: any }) {
       <Box
         sx={{
           p: 2.5,
-
           bgcolor: '#fafafa',
         }}
       >
@@ -462,19 +385,19 @@ const DEBOUNCE_DELAY = 800;
 
 interface FrameTabProps {
   wholesalerId: number | null;
-
   frameId: number | null;
-
+  userId: number | null;
   tagContext?: TagFrameContext | null;
 }
 
 const FrameTab: FunctionComponent<FrameTabProps> = ({
   frameId,
   wholesalerId,
+  userId,
   tagContext = null,
 }) => {
   const theme = useTheme();
-  const { userId } = useDashboardContext();
+
   const { t } = useText('frame');
 
   const router = useRouter();
@@ -736,9 +659,9 @@ const FrameTab: FunctionComponent<FrameTabProps> = ({
     (async () => {
       try {
         const [categoriesRes, genderCategoriesRes] = await Promise.all([
-          getZarhubCategories(),
+          getCategories(),
 
-          getZarhubGenderCategories(),
+          getFrameGenderCategories(),
         ]);
 
         if (!mounted) {
@@ -811,15 +734,7 @@ const FrameTab: FunctionComponent<FrameTabProps> = ({
         filter: debouncedFilter || undefined,
       };
 
-      const productResponse = await getWholesalerFrameProducts(
-        wholesalerId,
-
-        userId,
-
-        frameId,
-
-        apiParams,
-      );
+      const productResponse = await getWholesalerFrameProducts(wholesalerId, frameId, apiParams);
 
       setTotalRows(productResponse?.meta?.total ?? 0);
 
@@ -926,7 +841,7 @@ const FrameTab: FunctionComponent<FrameTabProps> = ({
   };
 
   if (frameId === null || wholesalerId === null || !userId) {
-    return null;
+    return <p>asdasdd</p>;
   }
 
   return (

@@ -14,7 +14,8 @@ export type AdminTab =
   | 'tag'
   | 'orders-provider'
   | 'orders'
-  | 'organization';
+  | 'organization'
+  | 'wholesalers';
 export type ProviderTab =
   | 'dashboard'
   | 'buckets'
@@ -23,7 +24,8 @@ export type ProviderTab =
   | 'followers-provider'
   | 'orders-provider'
   | 'accounting'
-  | 'profile';
+  | 'profile'
+  | 'wholesalers';
 export type { UserRole } from './roles';
 export { USER_ROLES } from './roles';
 export type ClientType = 'admin' | 'zarplus' | 'modopod';

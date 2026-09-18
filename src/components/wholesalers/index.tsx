@@ -11,14 +11,13 @@ import type { AvailableCategoryDTO } from '@/api/zarhub/dto';
 import { getAvailableCategories } from '@/api/zarhub/service';
 
 import useText from '@/hooks/useText';
-
+import { useLang } from '@/hooks/LanContext';
 import ModeSwitcher from './ModeSwitcher';
 import WholesalersContent from './WholesalersContent';
 import CollectionsContent from './collections';
 import TagsLoading from './collections/TagsLoading';
 
 import type { PageMode } from './types';
-
 
 interface WholesalersTabProps {
   setActiveWholesalerId?: Dispatch<SetStateAction<number | null>>;
@@ -30,9 +29,10 @@ const WholesalersTab: FunctionComponent<WholesalersTabProps> = ({
   setActiveWholesalerId: _setActiveWholesalerId,
   onOpenTagFrame,
 }) => {
-  const { t } = useText('wholesalers');
+  const { lang } = useLang();
+  const { t } = useText('wholesalers', lang);
 
-  const [pageMode, setPageMode] = useState<PageMode | null>(null);
+  const [pageMode, setPageMode] = useState<PageMode | null>('moreSales');
 
   const [categories, setCategories] = useState<AvailableCategoryDTO[]>([]);
 
@@ -57,8 +57,9 @@ const WholesalersTab: FunctionComponent<WholesalersTabProps> = ({
 
         setCategories(safeCategories);
 
+       
         if (!userChangedModeRef.current) {
-          setPageMode(safeCategories.length > 0 ? 'tags' : 'moreSales');
+          setPageMode('moreSales');
         }
       } catch (error) {
         console.error('Getting available categories failed.', error);

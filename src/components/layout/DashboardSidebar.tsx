@@ -77,6 +77,8 @@ function resolveActiveMenuKey(
   if (pathname.startsWith('/dashboard/products')) return 'products';
   if (pathname.startsWith('/dashboard/tag')) return 'tag';
   if (pathname.startsWith('/dashboard/organization')) return 'organization';
+  if (pathname.startsWith('/dashboard/wholesalers')) return 'wholesalers';
+
   return getDefaultTabByRole(hasPermission) as AdminTab | ProviderTab;
 }
 
@@ -151,7 +153,11 @@ export default function DashboardSidebar() {
                       ? t('banking-seller')
                       : role === USER_ROLES.PROVIDER
                         ? t('gold_wholesaler')
-                        : t('user')}
+                        : role === USER_ROLES.ORGANIZATIONAL
+                          ? t('organizational')
+                          : role === USER_ROLES.GALLERY
+                            ? t('gallery')
+                            : t('user')}
                 </Typography>
               </Box>
             )}

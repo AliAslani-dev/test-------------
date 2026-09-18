@@ -196,10 +196,10 @@ export default function ModeSwitcher({ value, onChange, tagsDisabled = false }: 
             },
           }}
         >
-          <ToggleButton value="tags" disabled={tagsDisabled}>
+          {/* <ToggleButton value="tags" disabled={tagsDisabled}>
             <LocalOfferRoundedIcon />
             کالکشن‌ها
-          </ToggleButton>
+          </ToggleButton> */}
 
           <ToggleButton value="moreSales">
             <WarehouseIcon />
